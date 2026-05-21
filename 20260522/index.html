@@ -1,501 +1,768 @@
-     1|     1|     1|     1|<!DOCTYPE html>
-     2|     2|     2|     2|<html lang="zh-CN">
-     3|     3|     3|     3|<head>
-     4|     4|     4|     4|<meta charset="UTF-8">
-     5|     5|     5|     5|<meta name="viewport" content="width=device-width, initial-scale=1.0">
-     6|     6|     6|     6|<title>幼教市场周报 — 2026年5月19-22日 | West Shore Furniture</title>
-     7|     7|     7|     7|<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-     8|     8|     8|     8|<style>
-     9|     9|     9|     9|  :root {
-    10|    10|    10|    10|    --navy: #061b31;
-    11|    11|    11|    11|    --navy-light: #0d253d;
-    12|    12|    12|    12|    --slate: #64748d;
-    13|    13|    13|    13|    --slate-dark: #273951;
-    14|    14|    14|    14|    --border: #e5edf5;
-    15|    15|    15|    15|    --white: #ffffff;
-    16|    16|    16|    16|    --warm-bg: #f8f9fb;
-    17|    17|    17|    17|    --accent: #2563eb;
-    18|    18|    18|    18|    --accent-hover: #1d4ed8;
-    19|    19|    19|    19|    --accent-light: #eff6ff;
-    20|    20|    20|    20|    --gold: #b8860b;
-    21|    21|    21|    21|    --gold-light: #fef9e7;
-    22|    22|    22|    22|    --red: #dc2626;
-    23|    23|    23|    23|    --red-light: #fef2f2;
-    24|    24|    24|    24|    --green: #16a34a;
-    25|    25|    25|    25|    --green-light: #f0fdf4;
-    26|    26|    26|    26|    --amber: #d97706;
-    27|    27|    27|    27|    --amber-light: #fffbeb;
-    28|    28|    28|    28|    --shadow-sm: rgba(23,23,23,0.06) 0px 3px 6px;
-    29|    29|    29|    29|    --shadow: rgba(50,50,93,0.15) 0px 20px 40px -20px, rgba(0,0,0,0.06) 0px 12px 24px -12px;
-    30|    30|    30|    30|    --shadow-lg: rgba(50,50,93,0.20) 0px 30px 50px -25px, rgba(0,0,0,0.08) 0px 18px 36px -15px;
-    31|    31|    31|    31|    --radius: 8px;
-    32|    32|    32|    32|    --radius-sm: 6px;
-    33|    33|    33|    33|    --radius-xs: 4px;
-    34|    34|    34|    34|  }
-    35|    35|    35|    35|
-    36|    36|    36|    36|  * { margin: 0; padding: 0; box-sizing: border-box; }
-    37|    37|    37|    37|
-    38|    38|    38|    38|  body {
-    39|    39|    39|    39|    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', sans-serif;
-    40|    40|    40|    40|    color: var(--navy);
-    41|    41|    41|    41|    background: var(--warm-bg);
-    42|    42|    42|    42|    line-height: 1.6;
-    43|    43|    43|    43|    -webkit-font-smoothing: antialiased;
-    44|    44|    44|    44|    font-size: 15px;
-    45|    45|    45|    45|  }
-    46|    46|    46|    46|
-    47|    47|    47|    47|  /* ── Header ── */
-    48|    48|    48|    48|  .report-header {
-    49|    49|    49|    49|    background: linear-gradient(135deg, var(--navy) 0%, #0f2240 100%);
-    50|    50|    50|    50|    color: white;
-    51|    51|    51|    51|    padding: 48px 0 40px;
-    52|    52|    52|    52|    position: relative;
-    53|    53|    53|    53|    overflow: hidden;
-    54|    54|    54|    54|  }
-    55|    55|    55|    55|  .report-header::after {
-    56|    56|    56|    56|    content: '';
-    57|    57|    57|    57|    position: absolute;
-    58|    58|    58|    58|    top: -60px;
-    59|    59|    59|    59|    right: -80px;
-    60|    60|    60|    60|    width: 320px;
-    61|    61|    61|    61|    height: 320px;
-    62|    62|    62|    62|    border-radius: 50%;
-    63|    63|    63|    63|    background: rgba(37,99,235,0.12);
-    64|    64|    64|    64|    pointer-events: none;
-    65|    65|    65|    65|  }
-    66|    66|    66|    66|  .report-header::before {
-    67|    67|    67|    67|    content: '';
-    68|    68|    68|    68|    position: absolute;
-    69|    69|    69|    69|    bottom: -40px;
-    70|    70|    70|    70|    left: -40px;
-    71|    71|    71|    71|    width: 200px;
-    72|    72|    72|    72|    height: 200px;
-    73|    73|    73|    73|    border-radius: 50%;
-    74|    74|    74|    74|    background: rgba(184,134,11,0.08);
-    75|    75|    75|    75|    pointer-events: none;
-    76|    76|    76|    76|  }
-    77|    77|    77|    77|  .header-inner {
-    78|    78|    78|    78|    max-width: 1120px;
-    79|    79|    79|    79|    margin: 0 auto;
-    80|    80|    80|    80|    padding: 0 32px;
-    81|    81|    81|    81|    position: relative;
-    82|    82|    82|    82|    z-index: 1;
-    83|    83|    83|    83|  }
-    84|    84|    84|    84|  .header-brand {
-    85|    85|    85|    85|    font-size: 13px;
-    86|    86|    86|    86|    font-weight: 500;
-    87|    87|    87|    87|    letter-spacing: 0.08em;
-    88|    88|    88|    88|    text-transform: uppercase;
-    89|    89|    89|    89|    color: rgba(255,255,255,0.5);
-    90|    90|    90|    90|    margin-bottom: 12px;
-    91|    91|    91|    91|  }
-    92|    92|    92|    92|  .header-title {
-    93|    93|    93|    93|    font-size: 36px;
-    94|    94|    94|    94|    font-weight: 300;
-    95|    95|    95|    95|    letter-spacing: -0.5px;
-    96|    96|    96|    96|    line-height: 1.2;
-    97|    97|    97|    97|    margin-bottom: 8px;
-    98|    98|    98|    98|  }
-    99|    99|    99|    99|  .header-subtitle {
-   100|   100|   100|   100|    font-size: 16px;
-   101|   101|   101|   101|    font-weight: 400;
-   102|   102|   102|   102|    color: rgba(255,255,255,0.6);
-   103|   103|   103|   103|    margin-bottom: 20px;
-   104|   104|   104|   104|  }
-   105|   105|   105|   105|  .header-meta {
-   106|   106|   106|   106|    display: flex;
-   107|   107|   107|   107|    gap: 24px;
-   108|   108|   108|   108|    flex-wrap: wrap;
-   109|   109|   109|   109|  }
-   110|   110|   110|   110|  .header-meta-item {
-   111|   111|   111|   111|    display: flex;
-   112|   112|   112|   112|    align-items: center;
-   113|   113|   113|   113|    gap: 6px;
-   114|   114|   114|   114|    font-size: 13px;
-   115|   115|   115|   115|    color: rgba(255,255,255,0.45);
-   116|   116|   116|   116|  }
-   117|   117|   117|   117|  .header-meta-item .dot {
-   118|   118|   118|   118|    width: 6px; height: 6px;
-   119|   119|   119|   119|    border-radius: 50%;
-   120|   120|   120|   120|    background: var(--accent);
-   121|   121|   121|   121|  }
-   122|   122|   122|   122|
-   123|   123|   123|   123|  /* ── Container ── */
-   124|   124|   124|   124|  .container {
-   125|   125|   125|   125|    max-width: 1120px;
-   126|   126|   126|   126|    margin: 0 auto;
-   127|   127|   127|   127|    padding: 0 32px;
-   128|   128|   128|   128|  }
-   129|   129|   129|   129|
-   130|   130|   130|   130|  /* ── Executive Summary ── */
-   131|   131|   131|   131|  .summary-section {
-   132|   132|   132|   132|    margin-top: -28px;
-   133|   133|   133|   133|    position: relative;
-   134|   134|   134|   134|    z-index: 2;
-   135|   135|   135|   135|  }
-   136|   136|   136|   136|  .summary-card {
-   137|   137|   137|   137|    background: var(--white);
-   138|   138|   138|   138|    border: 1px solid var(--border);
-   139|   139|   139|   139|    border-radius: var(--radius);
-   140|   140|   140|   140|    padding: 28px 32px;
-   141|   141|   141|   141|    box-shadow: var(--shadow);
-   142|   142|   142|   142|    margin-bottom: 32px;
-   143|   143|   143|   143|  }
-   144|   144|   144|   144|  .summary-card h2 {
-   145|   145|   145|   145|    font-size: 20px;
-   146|   146|   146|   146|    font-weight: 600;
-   147|   147|   147|   147|    color: var(--navy);
-   148|   148|   148|   148|    margin-bottom: 16px;
-   149|   149|   149|   149|    letter-spacing: -0.3px;
-   150|   150|   150|   150|  }
-   151|   151|   151|   151|  .summary-intro {
-   152|   152|   152|   152|    color: var(--slate);
-   153|   153|   153|   153|    font-size: 15px;
-   154|   154|   154|   154|    line-height: 1.7;
-   155|   155|   155|   155|    margin-bottom: 20px;
-   156|   156|   156|   156|  }
-   157|   157|   157|   157|  .highlight-grid {
-   158|   158|   158|   158|    display: grid;
-   159|   159|   159|   159|    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-   160|   160|   160|   160|    gap: 12px;
-   161|   161|   161|   161|  }
-   162|   162|   162|   162|  .highlight-item {
-   163|   163|   163|   163|    background: var(--accent-light);
-   164|   164|   164|   164|    border: 1px solid rgba(37,99,235,0.15);
-   165|   165|   165|   165|    border-radius: var(--radius-sm);
-   166|   166|   166|   166|    padding: 14px 16px;
-   167|   167|   167|   167|    display: flex;
-   168|   168|   168|   168|    align-items: flex-start;
-   169|   169|   169|   169|    gap: 10px;
-   170|   170|   170|   170|  }
-   171|   171|   171|   171|  .highlight-icon {
-   172|   172|   172|   172|    font-size: 20px;
-   173|   173|   173|   173|    flex-shrink: 0;
-   174|   174|   174|   174|    margin-top: 1px;
-   175|   175|   175|   175|  }
-   176|   176|   176|   176|  .highlight-text {
-   177|   177|   177|   177|    font-size: 13px;
-   178|   178|   178|   178|    font-weight: 500;
-   179|   179|   179|   179|    color: var(--navy);
-   180|   180|   180|   180|    line-height: 1.5;
-   181|   181|   181|   181|  }
-   182|   182|   182|   182|  .highlight-text span {
-   183|   183|   183|   183|    display: block;
-   184|   184|   184|   184|    font-weight: 400;
-   185|   185|   185|   185|    color: var(--slate);
-   186|   186|   186|   186|    font-size: 12px;
-   187|   187|   187|   187|    margin-top: 2px;
-   188|   188|   188|   188|  }
-   189|   189|   189|   189|
-   190|   190|   190|   190|  /* ── Metric Cards ── */
-   191|   191|   191|   191|  .metric-row {
-   192|   192|   192|   192|    display: grid;
-   193|   193|   193|   193|    grid-template-columns: repeat(5, 1fr);
-   194|   194|   194|   194|    gap: 12px;
-   195|   195|   195|   195|    margin-bottom: 32px;
-   196|   196|   196|   196|  }
-   197|   197|   197|   197|  .metric-card {
-   198|   198|   198|   198|    background: var(--white);
-   199|   199|   199|   199|    border: 1px solid var(--border);
-   200|   200|   200|   200|    border-radius: var(--radius);
-   201|   201|   201|   201|    padding: 20px 18px;
-   202|   202|   202|   202|    text-align: center;
-   203|   203|   203|   203|    box-shadow: var(--shadow-sm);
-   204|   204|   204|   204|    transition: box-shadow 0.2s, transform 0.2s;
-   205|   205|   205|   205|    cursor: default;
-   206|   206|   206|   206|  }
-   207|   207|   207|   207|  .metric-card:hover {
-   208|   208|   208|   208|    box-shadow: var(--shadow);
-   209|   209|   209|   209|    transform: translateY(-2px);
-   210|   210|   210|   210|  }
-   211|   211|   211|   211|  .metric-flag {
-   212|   212|   212|   212|    font-size: 32px;
-   213|   213|   213|   213|    margin-bottom: 8px;
-   214|   214|   214|   214|  }
-   215|   215|   215|   215|  .metric-country {
-   216|   216|   216|   216|    font-size: 13px;
-   217|   217|   217|   217|    font-weight: 600;
-   218|   218|   218|   218|    color: var(--navy);
-   219|   219|   219|   219|    margin-bottom: 10px;
-   220|   220|   220|   220|  }
-   221|   221|   221|   221|  .metric-status {
-   222|   222|   222|   222|    display: inline-block;
-   223|   223|   223|   223|    padding: 3px 10px;
-   224|   224|   224|   224|    border-radius: 9999px;
-   225|   225|   225|   225|    font-size: 11px;
-   226|   226|   226|   226|    font-weight: 600;
-   227|   227|   227|   227|    letter-spacing: 0.03em;
-   228|   228|   228|   228|  }
-   229|   229|   229|   229|  .status-hot { background: var(--red-light); color: var(--red); }
-   230|   230|   230|   230|  .status-warm { background: var(--amber-light); color: var(--amber); }
-   231|   231|   231|   231|  .status-stable { background: var(--accent-light); color: var(--accent); }
-   232|   232|   232|   232|  .status-cold { background: #f1f5f9; color: var(--slate); }
-   233|   233|   233|   233|
-   234|   234|   234|   234|  .metric-detail {
-   235|   235|   235|   235|    font-size: 11px;
-   236|   236|   236|   236|    color: var(--slate);
-   237|   237|   237|   237|    margin-top: 8px;
-   238|   238|   238|   238|    line-height: 1.4;
-   239|   239|   239|   239|  }
-   240|   240|   240|   240|
-   241|   241|   241|   241|  /* ── Country Tabs ── */
-   242|   242|   242|   242|  .tabs-section {
-   243|   243|   243|   243|    margin-bottom: 32px;
-   244|   244|   244|   244|  }
-   245|   245|   245|   245|  .tabs-nav {
-   246|   246|   246|   246|    display: flex;
-   247|   247|   247|   247|    gap: 2px;
-   248|   248|   248|   248|    background: var(--white);
-   249|   249|   249|   249|    border: 1px solid var(--border);
-   250|   250|   250|   250|    border-radius: var(--radius) var(--radius) 0 0;
-   251|   251|   251|   251|    padding: 4px;
-   252|   252|   252|   252|    overflow-x: auto;
-   253|   253|   253|   253|  }
-   254|   254|   254|   254|  .tab-btn {
-   255|   255|   255|   255|    flex: 1;
-   256|   256|   256|   256|    min-width: 100px;
-   257|   257|   257|   257|    padding: 12px 16px;
-   258|   258|   258|   258|    border: none;
-   259|   259|   259|   259|    background: transparent;
-   260|   260|   260|   260|    font-family: inherit;
-   261|   261|   261|   261|    font-size: 14px;
-   262|   262|   262|   262|    font-weight: 500;
-   263|   263|   263|   263|    color: var(--slate);
-   264|   264|   264|   264|    cursor: pointer;
-   265|   265|   265|   265|    border-radius: var(--radius-xs);
-   266|   266|   266|   266|    transition: all 0.15s;
-   267|   267|   267|   267|    white-space: nowrap;
-   268|   268|   268|   268|  }
-   269|   269|   269|   269|  .tab-btn:hover { background: var(--warm-bg); color: var(--navy); }
-   270|   270|   270|   270|  .tab-btn.active {
-   271|   271|   271|   271|    background: var(--accent);
-   272|   272|   272|   272|    color: white;
-   273|   273|   273|   273|    font-weight: 600;
-   274|   274|   274|   274|  }
-   275|   275|   275|   275|  .tab-panel {
-   276|   276|   276|   276|    display: none;
-   277|   277|   277|   277|    background: var(--white);
-   278|   278|   278|   278|    border: 1px solid var(--border);
-   279|   279|   279|   279|    border-top: none;
-   280|   280|   280|   280|    border-radius: 0 0 var(--radius) var(--radius);
-   281|   281|   281|   281|    padding: 28px 32px;
-   282|   282|   282|   282|    box-shadow: var(--shadow-sm);
-   283|   283|   283|   283|  }
-   284|   284|   284|   284|  .tab-panel.active { display: block; }
-   285|   285|   285|   285|
-   286|   286|   286|   286|  .country-section h3 {
-   287|   287|   287|   287|    font-size: 16px;
-   288|   288|   288|   288|    font-weight: 600;
-   289|   289|   289|   289|    color: var(--navy);
-   290|   290|   290|   290|    margin-bottom: 14px;
-   291|   291|   291|   291|    padding-bottom: 8px;
-   292|   292|   292|   292|    border-bottom: 1px solid var(--border);
-   293|   293|   293|   293|    letter-spacing: -0.2px;
-   294|   294|   294|   294|  }
-   295|   295|   295|   295|  .country-section h3:not(:first-child) {
-   296|   296|   296|   296|    margin-top: 24px;
-   297|   297|   297|   297|  }
-   298|   298|   298|   298|  .info-list {
-   299|   299|   299|   299|    list-style: none;
-   300|   300|   300|   300|    display: flex;
-   301|   301|   301|   301|    flex-direction: column;
-   302|   302|   302|   302|    gap: 6px;
-   303|   303|   303|   303|  }
-   304|   304|   304|   304|  .info-list li {
-   305|   305|   305|   305|    font-size: 14px;
-   306|   306|   306|   306|    color: var(--slate-dark);
-   307|   307|   307|   307|    line-height: 1.6;
-   308|   308|   308|   308|    padding: 6px 10px;
-   309|   309|   309|   309|    border-radius: var(--radius-xs);
-   310|   310|   310|   310|    border-left: 3px solid transparent;
-   311|   311|   311|   311|    transition: background 0.15s;
-   312|   312|   312|   312|  }
-   313|   313|   313|   313|  .info-list li:hover { background: var(--warm-bg); }
-   314|   314|   314|   314|  .info-list li.policy { border-left-color: var(--accent); }
-   315|   315|   315|   315|  .info-list li.expansion { border-left-color: var(--green); }
-   316|   316|   316|   316|  .info-list li.demand { border-left-color: var(--amber); }
-   317|   317|   317|   317|  .info-list li.risk { border-left-color: var(--red); }
-   318|   318|   318|   318|  .tag {
-   319|   319|   319|   319|    display: inline-block;
-   320|   320|   320|   320|    font-size: 10px;
-   321|   321|   321|   321|    font-weight: 600;
-   322|   322|   322|   322|    padding: 1px 6px;
-   323|   323|   323|   323|    border-radius: 3px;
-   324|   324|   324|   324|    margin-right: 6px;
-   325|   325|   325|   325|    letter-spacing: 0.03em;
-   326|   326|   326|   326|    text-transform: uppercase;
-   327|   327|   327|   327|  }
-   328|   328|   328|   328|  .tag-policy { background: var(--accent-light); color: var(--accent); }
-   329|   329|   329|   329|  .tag-expand { background: var(--green-light); color: var(--green); }
-   330|   330|   330|   330|  .tag-demand { background: var(--amber-light); color: var(--amber); }
-   331|   331|   331|   331|  .tag-risk { background: var(--red-light); color: var(--red); }
-   332|   332|   332|   332|
-   333|   333|   333|   333|  .source-link {
-   334|   334|   334|   334|    font-size: 11px;
-   335|   335|   335|   335|    color: var(--accent);
-   336|   336|   336|   336|    text-decoration: none;
-   337|   337|   337|   337|    margin-left: 6px;
-   338|   338|   338|   338|    opacity: 0.6;
-   339|   339|   339|   339|    transition: opacity 0.15s;
-   340|   340|   340|   340|  }
-   341|   341|   341|   341|  .source-link:hover { opacity: 1; text-decoration: underline; }
-   342|   342|   342|   342|
-   343|   343|   343|   343|  /* ── Opportunity Matrix ── */
-   344|   344|   344|   344|  .opp-section {
-   345|   345|   345|   345|    margin-bottom: 32px;
-   346|   346|   346|   346|  }
-   347|   347|   347|   347|  .opp-section h2 {
-   348|   348|   348|   348|    font-size: 22px;
-   349|   349|   349|   349|    font-weight: 600;
-   350|   350|   350|   350|    color: var(--navy);
-   351|   351|   351|   351|    margin-bottom: 20px;
-   352|   352|   352|   352|    letter-spacing: -0.3px;
-   353|   353|   353|   353|  }
-   354|   354|   354|   354|  .opp-grid {
-   355|   355|   355|   355|    display: grid;
-   356|   356|   356|   356|    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-   357|   357|   357|   357|    gap: 16px;
-   358|   358|   358|   358|  }
-   359|   359|   359|   359|  .opp-card {
-   360|   360|   360|   360|    background: var(--white);
-   361|   361|   361|   361|    border: 1px solid var(--border);
-   362|   362|   362|   362|    border-radius: var(--radius);
-   363|   363|   363|   363|    padding: 22px 24px;
-   364|   364|   364|   364|    box-shadow: var(--shadow-sm);
-   365|   365|   365|   365|    transition: box-shadow 0.2s;
-   366|   366|   366|   366|    border-top: 3px solid transparent;
-   367|   367|   367|   367|  }
-   368|   368|   368|   368|  .opp-card:hover { box-shadow: var(--shadow); }
-   369|   369|   369|   369|  .opp-card.priority-high { border-top-color: var(--red); }
-   370|   370|   370|   370|  .opp-card.priority-mid { border-top-color: var(--amber); }
-   371|   371|   371|   371|  .opp-card.priority-watch { border-top-color: var(--accent); }
-   372|   372|   372|   372|  .opp-priority {
-   373|   373|   373|   373|    display: inline-block;
-   374|   374|   374|   374|    font-size: 10px;
-   375|   375|   375|   375|    font-weight: 700;
-   376|   376|   376|   376|    letter-spacing: 0.06em;
-   377|   377|   377|   377|    text-transform: uppercase;
-   378|   378|   378|   378|    padding: 2px 8px;
-   379|   379|   379|   379|    border-radius: 9999px;
-   380|   380|   380|   380|    margin-bottom: 10px;
-   381|   381|   381|   381|  }
-   382|   382|   382|   382|  .pri-high { background: var(--red-light); color: var(--red); }
-   383|   383|   383|   383|  .pri-mid { background: var(--amber-light); color: var(--amber); }
-   384|   384|   384|   384|  .pri-watch { background: var(--accent-light); color: var(--accent); }
-   385|   385|   385|   385|
-   386|   386|   386|   386|  .opp-card h4 {
-   387|   387|   387|   387|    font-size: 16px;
-   388|   388|   388|   388|    font-weight: 600;
-   389|   389|   389|   389|    color: var(--navy);
-   390|   390|   390|   390|    margin-bottom: 6px;
-   391|   391|   391|   391|  }
-   392|   392|   392|   392|  .opp-card .opp-country {
-   393|   393|   393|   393|    font-size: 12px;
-   394|   394|   394|   394|    color: var(--slate);
-   395|   395|   395|   395|    margin-bottom: 10px;
-   396|   396|   396|   396|  }
-   397|   397|   397|   397|  .opp-card .opp-detail {
-   398|   398|   398|   398|    font-size: 13px;
-   399|   399|   399|   399|    color: var(--slate-dark);
-   400|   400|   400|   400|    line-height: 1.6;
-   401|   401|   401|   401|    margin-bottom: 12px;
-   402|   402|   402|   402|  }
-   403|   403|   403|   403|  .opp-action {
-   404|   404|   404|   404|    font-size: 12px;
-   405|   405|   405|   405|    font-weight: 500;
-   406|   406|   406|   406|    color: var(--accent);
-   407|   407|   407|   407|    background: var(--accent-light);
-   408|   408|   408|   408|    padding: 6px 12px;
-   409|   409|   409|   409|    border-radius: var(--radius-xs);
-   410|   410|   410|   410|    display: inline-block;
-   411|   411|   411|   411|  }
-   412|   412|   412|   412|
-   413|   413|   413|   413|  /* ── Footer ── */
-   414|   414|   414|   414|  .report-footer {
-   415|   415|   415|   415|    background: var(--white);
-   416|   416|   416|   416|    border-top: 1px solid var(--border);
-   417|   417|   417|   417|    padding: 24px 0;
-   418|   418|   418|   418|    margin-top: 40px;
-   419|   419|   419|   419|  }
-   420|   420|   420|   420|  .footer-inner {
-   421|   421|   421|   421|    max-width: 1120px;
-   422|   422|   422|   422|    margin: 0 auto;
-   423|   423|   423|   423|    padding: 0 32px;
-   424|   424|   424|   424|    display: flex;
-   425|   425|   425|   425|    justify-content: space-between;
-   426|   426|   426|   426|    align-items: center;
-   427|   427|   427|   427|    flex-wrap: wrap;
-   428|   428|   428|   428|    gap: 12px;
-   429|   429|   429|   429|  }
-   430|   430|   430|   430|  .footer-text {
-   431|   431|   431|   431|    font-size: 12px;
-   432|   432|   432|   432|    color: var(--slate);
-   433|   433|   433|   433|  }
-   434|   434|   434|   434|  .footer-brand {
-   435|   435|   435|   435|    font-size: 12px;
-   436|   436|   436|   436|    font-weight: 600;
-   437|   437|   437|   437|    color: var(--navy);
-   438|   438|   438|   438|    letter-spacing: 0.03em;
-   439|   439|   439|   439|  }
-   440|   440|   440|   440|
-   441|   441|   441|   441|  /* ── Print Styles ── */
-   442|   442|   442|   442|  @media print {
-   443|   443|   443|   443|    body { background: white; font-size: 11px; }
-   444|   444|   444|   444|    .report-header { background: var(--navy) !important; -webkit-print-color-adjust: exact; }
-   445|   445|   445|   445|    .metric-row { grid-template-columns: repeat(5, 1fr); }
-   446|   446|   446|   446|    .opp-grid { grid-template-columns: repeat(2, 1fr); }
-   447|   447|   447|   447|    .tab-panel { display: block !important; border: none; box-shadow: none; break-inside: avoid; }
-   448|   448|   448|   448|    .tabs-nav { display: none; }
-   449|   449|   449|   449|    .container { max-width: 100%; padding: 0 20px; }
-   450|   450|   450|   450|  }
-   451|   451|   451|   451|
-   452|   452|   452|   452|  /* ── Responsive ── */
-   453|   453|   453|   453|  @media (max-width: 900px) {
-   454|   454|   454|   454|    .metric-row { grid-template-columns: repeat(3, 1fr); }
-   455|   455|   455|   455|    .opp-grid { grid-template-columns: 1fr; }
-   456|   456|   456|   456|    .header-title { font-size: 26px; }
-   457|   457|   457|   457|  }
-   458|   458|   458|   458|  @media (max-width: 600px) {
-   459|   459|   459|   459|    .metric-row { grid-template-columns: repeat(2, 1fr); }
-   460|   460|   460|   460|    .header-title { font-size: 22px; }
-   461|   461|   461|   461|    .container, .header-inner { padding: 0 16px; }
-   462|   462|   462|   462|    .tab-panel { padding: 16px; }
-   463|   463|   463|   463|  }
-   464|   464|   464|   464|</style>
-   465|   465|   465|   465|</head>
-   466|   466|   466|   466|<body>
-   467|   467|   467|   467|
-   468|   468|   468|   468|<!-- ═══════════════ HEADER ═══════════════ -->
-   469|   469|   469|   469|<header class="report-header">
-   470|   470|   470|   470|  <div class="header-inner">
-   471|   471|   471|   471|    <div class="header-brand">West Shore Furniture · 市场情报</div>
-   472|   472|   472|   472|    <h1 class="header-title">幼教市场周报</h1>
-   473|   473|   473|   473|    <p class="header-subtitle">澳大利亚 · 加拿大 · 新西兰 · 新加坡 · 英国 — 五国幼教市场动态追踪</p>
-   474|   474|   474|   474|    <div class="header-meta">
-   475|   475|   475|   475|      <div class="header-meta-item"><span class="dot"></span> 报告周期：2026年5月19日 – 22日</div>
-   476|   476|   476|   476|      <div class="header-meta-item"><span class="dot"></span> 生成时间：2026年5月22日 10:00 NZST</div>
-   477|   477|   477|   477|      <div class="header-meta-item"><span class="dot"></span> 数据来源：政府官网 · 行业媒体 · 新闻聚合</div>
-   478|   478|   478|   478|    </div>
-   479|   479|   479|   479|  </div>
-   480|   480|   480|   480|</header>
-   481|   481|   481|   481|
-   482|   482|   482|   482|<div class="container">
-   483|   483|   483|   483|
-   484|   484|   484|   484|  <!-- ═══════════════ WEEKLY SUMMARY ═══════════════ -->
-   485|   485|   485|   485|  <section class="summary-section">
-   486|   486|   486|   486|    <div class="summary-card">
-   487|   487|   487|   487|      <h2>📌 本周概览</h2>
-   488|   488|   488|   488|      <p class="summary-intro">
-   489|   489|   489|   489|        本周五国幼教市场呈现<b>「英加澳扩张、新西兰收缩、新加坡结构化升级」</b>的分化格局。
-   490|   490|   490|   490|        英国 331 所学校托儿所项目与加拿大 BC 省新一轮托育投资是本周最大的实体建设信号；
-   491|   491|   491|   491|        澳大利亚联邦预算推进 3 天保障法案，但 G8 Education 关闭 40 所中心暴露需求侧疲软；
-   492|   492|   492|   492|        新西兰 ECE 行业危机加剧，多达 400 所中心面临关闭风险。
-   493|   493|   493|   493|      </p>
-   494|   494|   494|   494|      <div class="highlight-grid">
-   495|   495|   495|   495|        <div class="highlight-item">
-   496|   496|   496|   496|          <span class="highlight-icon">🇬🇧</span>
-   497|   497|   497|   497|          <div class="highlight-text">英国最大机会<span>331 所学校托儿所新建 + Kids Planet 突破 300 园所</span></div>
-   498|   498|   498|   498|        </div>
-   499|   499|   499|   499|        <div class="highlight-item">
-   500|   500|   500|   500|          <span class="highlight-icon">🇨🇦</span>
-   501|
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>幼教市场周报 — 2026年5月19-22日 | West Shore Furniture</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #061b31;
+    --navy-light: #0d253d;
+    --slate: #64748d;
+    --slate-dark: #273951;
+    --border: #e5edf5;
+    --white: #ffffff;
+    --warm-bg: #f8f9fb;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --accent-light: #eff6ff;
+    --gold: #b8860b;
+    --gold-light: #fef9e7;
+    --red: #dc2626;
+    --red-light: #fef2f2;
+    --green: #16a34a;
+    --green-light: #f0fdf4;
+    --amber: #d97706;
+    --amber-light: #fffbeb;
+    --shadow-sm: rgba(23,23,23,0.06) 0px 3px 6px;
+    --shadow: rgba(50,50,93,0.15) 0px 20px 40px -20px, rgba(0,0,0,0.06) 0px 12px 24px -12px;
+    --shadow-lg: rgba(50,50,93,0.20) 0px 30px 50px -25px, rgba(0,0,0,0.08) 0px 18px 36px -15px;
+    --radius: 8px;
+    --radius-sm: 6px;
+    --radius-xs: 4px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', sans-serif;
+    color: var(--navy);
+    background: var(--warm-bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+  }
+
+  /* ── Header ── */
+  .report-header {
+    background: linear-gradient(135deg, var(--navy) 0%, #0f2240 100%);
+    color: white;
+    padding: 48px 0 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .report-header::after {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -80px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: rgba(37,99,235,0.12);
+    pointer-events: none;
+  }
+  .report-header::before {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(184,134,11,0.08);
+    pointer-events: none;
+  }
+  .header-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 32px;
+    position: relative;
+    z-index: 1;
+  }
+  .header-brand {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 12px;
+  }
+  .header-title {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .header-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 20px;
+  }
+  .header-meta {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .header-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+  }
+  .header-meta-item .dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  /* ── Container ── */
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ── Executive Summary ── */
+  .summary-section {
+    margin-top: -28px;
+    position: relative;
+    z-index: 2;
+  }
+  .summary-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px 32px;
+    box-shadow: var(--shadow);
+    margin-bottom: 32px;
+  }
+  .summary-card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 16px;
+    letter-spacing: -0.3px;
+  }
+  .summary-intro {
+    color: var(--slate);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  .highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+  }
+  .highlight-item {
+    background: var(--accent-light);
+    border: 1px solid rgba(37,99,235,0.15);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .highlight-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .highlight-text {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--navy);
+    line-height: 1.5;
+  }
+  .highlight-text span {
+    display: block;
+    font-weight: 400;
+    color: var(--slate);
+    font-size: 12px;
+    margin-top: 2px;
+  }
+
+  /* ── Metric Cards ── */
+  .metric-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  .metric-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 18px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: default;
+  }
+  .metric-card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+  }
+  .metric-flag {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .metric-country {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .metric-status {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+  .status-hot { background: var(--red-light); color: var(--red); }
+  .status-warm { background: var(--amber-light); color: var(--amber); }
+  .status-stable { background: var(--accent-light); color: var(--accent); }
+  .status-cold { background: #f1f5f9; color: var(--slate); }
+
+  .metric-detail {
+    font-size: 11px;
+    color: var(--slate);
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+
+  /* ── Country Tabs ── */
+  .tabs-section {
+    margin-bottom: 32px;
+  }
+  .tabs-nav {
+    display: flex;
+    gap: 2px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius) var(--radius) 0 0;
+    padding: 4px;
+    overflow-x: auto;
+  }
+  .tab-btn {
+    flex: 1;
+    min-width: 100px;
+    padding: 12px 16px;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--slate);
+    cursor: pointer;
+    border-radius: var(--radius-xs);
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .tab-btn:hover { background: var(--warm-bg); color: var(--navy); }
+  .tab-btn.active {
+    background: var(--accent);
+    color: white;
+    font-weight: 600;
+  }
+  .tab-panel {
+    display: none;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 var(--radius) var(--radius);
+    padding: 28px 32px;
+    box-shadow: var(--shadow-sm);
+  }
+  .tab-panel.active { display: block; }
+
+  .country-section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    letter-spacing: -0.2px;
+  }
+  .country-section h3:not(:first-child) {
+    margin-top: 24px;
+  }
+  .info-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .info-list li {
+    font-size: 14px;
+    color: var(--slate-dark);
+    line-height: 1.6;
+    padding: 6px 10px;
+    border-radius: var(--radius-xs);
+    border-left: 3px solid transparent;
+    transition: background 0.15s;
+  }
+  .info-list li:hover { background: var(--warm-bg); }
+  .info-list li.policy { border-left-color: var(--accent); }
+  .info-list li.expansion { border-left-color: var(--green); }
+  .info-list li.demand { border-left-color: var(--amber); }
+  .info-list li.risk { border-left-color: var(--red); }
+  .tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-right: 6px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .tag-policy { background: var(--accent-light); color: var(--accent); }
+  .tag-expand { background: var(--green-light); color: var(--green); }
+  .tag-demand { background: var(--amber-light); color: var(--amber); }
+  .tag-risk { background: var(--red-light); color: var(--red); }
+
+  .source-link {
+    font-size: 11px;
+    color: var(--accent);
+    text-decoration: none;
+    margin-left: 6px;
+    opacity: 0.6;
+    transition: opacity 0.15s;
+  }
+  .source-link:hover { opacity: 1; text-decoration: underline; }
+
+  /* ── Opportunity Matrix ── */
+  .opp-section {
+    margin-bottom: 32px;
+  }
+  .opp-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 20px;
+    letter-spacing: -0.3px;
+  }
+  .opp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 16px;
+  }
+  .opp-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s;
+    border-top: 3px solid transparent;
+  }
+  .opp-card:hover { box-shadow: var(--shadow); }
+  .opp-card.priority-high { border-top-color: var(--red); }
+  .opp-card.priority-mid { border-top-color: var(--amber); }
+  .opp-card.priority-watch { border-top-color: var(--accent); }
+  .opp-priority {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 9999px;
+    margin-bottom: 10px;
+  }
+  .pri-high { background: var(--red-light); color: var(--red); }
+  .pri-mid { background: var(--amber-light); color: var(--amber); }
+  .pri-watch { background: var(--accent-light); color: var(--accent); }
+
+  .opp-card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .opp-card .opp-country {
+    font-size: 12px;
+    color: var(--slate);
+    margin-bottom: 10px;
+  }
+  .opp-card .opp-detail {
+    font-size: 13px;
+    color: var(--slate-dark);
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  .opp-action {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 6px 12px;
+    border-radius: var(--radius-xs);
+    display: inline-block;
+  }
+
+  /* ── Footer ── */
+  .report-footer {
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    padding: 24px 0;
+    margin-top: 40px;
+  }
+  .footer-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-text {
+    font-size: 12px;
+    color: var(--slate);
+  }
+  .footer-brand {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--navy);
+    letter-spacing: 0.03em;
+  }
+
+  /* ── Print Styles ── */
+  @media print {
+    body { background: white; font-size: 11px; }
+    .report-header { background: var(--navy) !important; -webkit-print-color-adjust: exact; }
+    .metric-row { grid-template-columns: repeat(5, 1fr); }
+    .opp-grid { grid-template-columns: repeat(2, 1fr); }
+    .tab-panel { display: block !important; border: none; box-shadow: none; break-inside: avoid; }
+    .tabs-nav { display: none; }
+    .container { max-width: 100%; padding: 0 20px; }
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 900px) {
+    .metric-row { grid-template-columns: repeat(3, 1fr); }
+    .opp-grid { grid-template-columns: 1fr; }
+    .header-title { font-size: 26px; }
+  }
+  @media (max-width: 600px) {
+    .metric-row { grid-template-columns: repeat(2, 1fr); }
+    .header-title { font-size: 22px; }
+    .container, .header-inner { padding: 0 16px; }
+    .tab-panel { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ HEADER ═══════════════ -->
+<header class="report-header">
+  <div class="header-inner">
+    <div class="header-brand">West Shore Furniture · 市场情报</div>
+    <h1 class="header-title">幼教市场周报</h1>
+    <p class="header-subtitle">澳大利亚 · 加拿大 · 新西兰 · 新加坡 · 英国 — 五国幼教市场动态追踪</p>
+    <div class="header-meta">
+      <div class="header-meta-item"><span class="dot"></span> 报告周期：2026年5月19日 – 22日</div>
+      <div class="header-meta-item"><span class="dot"></span> 生成时间：2026年5月22日 10:00 NZST</div>
+      <div class="header-meta-item"><span class="dot"></span> 数据来源：政府官网 · 行业媒体 · 新闻聚合</div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- ═══════════════ WEEKLY SUMMARY ═══════════════ -->
+  <section class="summary-section">
+    <div class="summary-card">
+      <h2>📌 本周概览</h2>
+      <p class="summary-intro">
+        本周各国幼教政策密集出台，呈现<b>「各国加码投入、执行层面临挑战」</b>的格局。
+        加拿大 CWELCC 续签 5 年并拨款 35 亿加元，锁定全球最大规模幼教协议；
+        澳大利亚 NSW 调查揭露开发商主导建园的「儿童农场」现象，监管升级将催生合规家具需求；
+        新西兰预算拨 2 亿纽币用于 ECE，重点扩大弱势社区覆盖；
+        英国学校附属幼儿园计划遇冷——仅 20% 学校响应，空间和成本是主要障碍。
+      </p>
+      <div class="highlight-grid">
+        <div class="highlight-item">
+          <span class="highlight-icon">🇨🇦</span>
+          <div class="highlight-text">CWELCC 续签 5 年<span>35 亿加元锁定全球最大幼教托儿协议</span></div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🇬🇧</span>
+          <div class="highlight-text">学校附属园计划遇冷<span>仅 20% 学校响应，空间和成本是主要障碍</span></div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🇦🇺</span>
+          <div class="highlight-text">NSW「儿童农场」调查<span>监管升级将催生合规家具需求</span></div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🇳🇿</span>
+          <div class="highlight-text">预算 2 亿纽币投入 ECE<span>重点扩大弱势社区覆盖</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ COUNTRY SNAPSHOT CARDS ═══════════════ -->
+  <div class="metric-row">
+    <div class="metric-card">
+      <div class="metric-flag">🇦🇺</div>
+      <div class="metric-country">澳大利亚</div>
+      <span class="metric-status status-hot">🔴 活跃</span>
+      <div class="metric-detail">NSW 调查报告 · 维州加薪 · 三日保障生效 · 100亿承诺</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-flag">🇨🇦</div>
+      <div class="metric-country">加拿大</div>
+      <span class="metric-status status-stable">🟢 稳定</span>
+      <div class="metric-detail">CWELCC 续签 5 年 · 35 亿锁定 · 2 亿师资专项</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-flag">🇳🇿</div>
+      <div class="metric-country">新西兰</div>
+      <span class="metric-status status-warm">🟡 调整</span>
+      <div class="metric-detail">预算 2 亿 ECE · 石棉清除 · 教师禁业 · 教改推进</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-flag">🇸🇬</div>
+      <div class="metric-country">新加坡</div>
+      <span class="metric-status status-warm">🟡 调整</span>
+      <div class="metric-detail">费改 + 融合教育 · 生育率 0.87 · 数字化 IDP 2.0</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-flag">🇬🇧</div>
+      <div class="metric-country">英国</div>
+      <span class="metric-status status-hot">🔴 活跃</span>
+      <div class="metric-detail">免费时数扩面 · 学校附属园遇冷 · 保育员危机</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ COUNTRY TABS ═══════════════ -->
+  <section class="tabs-section">
+    <div class="tabs-nav">
+      <button class="tab-btn active" onclick="switchTab(event, 'tab-au')">🇦🇺 澳大利亚</button>
+      <button class="tab-btn" onclick="switchTab(event, 'tab-ca')">🇨🇦 加拿大</button>
+      <button class="tab-btn" onclick="switchTab(event, 'tab-nz')">🇳🇿 新西兰</button>
+      <button class="tab-btn" onclick="switchTab(event, 'tab-sg')">🇸🇬 新加坡</button>
+      <button class="tab-btn" onclick="switchTab(event, 'tab-uk')">🇬🇧 英国</button>
+    </div>
+
+        <!-- AUSTRALIA -->
+    <div class="tab-panel active" id="tab-au">
+      <div class="country-section">
+        <h3>🏛️ 政策动态</h3>
+        <ul class="info-list">
+          <li class="policy"><span class="tag tag-policy">重磅</span> <b>NSW 议会调查报告</b>揭露房产开发商主导幼教中心建设，部分中心被形容为「儿童农场」——以「每平方米最大儿童数」为导向。澳家庭将收入 16% 用于托育（瑞典仅 4%）。</li>
+          <li class="policy"><span class="tag tag-policy">生效</span> <b>「三日保障」正式生效</b>：Activity Test 取消，每两周 72 小时补贴，不论工作状态。联邦政府承诺 <b>$100 亿</b>用于学前教育普及化。</li>
+          <li class="policy"><span class="tag tag-policy">薪酬</span> 维多利亚州教师/幼教<b>大幅加薪</b>，成为全澳幼教薪酬最高辖区之一。行业呼吁联邦提供长期工资资金保障。</li>
+          <li class="policy"><span class="tag tag-policy">偏远</span> 教育部长宣布新措施，加大对 regional and remote 社区幼教支持力度。</li>
+        </ul>
+        <h3>🏗️ 新园动态</h3>
+        <ul class="info-list">
+          <li class="expansion"><span class="tag tag-expand">资本</span> <b>Quadrant PE</b> 对旗下 OSHC 平台 <b>Junior Adventure Group</b> 启动战略审查准备退出——新买家可能重新采购家具。</li>
+          <li class="expansion"><span class="tag tag-expand">趋势</span> 三日保障预计将推动需求激增，现有中心面临扩容压力。</li>
+        </ul>
+        <h3>📊 需求信号</h3>
+        <ul class="info-list">
+          <li class="demand"><span class="tag tag-demand">监管</span> NSW 调查重点关注空间利用和安全标准，可能推动监管升级——<b>合规升级型家具采购需求</b>。</li>
+          <li class="demand"><span class="tag tag-demand">需求</span> 取消 Activity Test 预计释放大量被压抑需求，尤其在低收入家庭和偏远地区。</li>
+          <li class="risk"><span class="tag tag-risk">警告</span> 在家托儿项目因成本上升面临威胁；残疾儿童融合资金被冻结。</li>
+        </ul>
+      </div>
+    </div>
+    <!-- CANADA -->
+    <div class="tab-panel" id="tab-ca">
+      <div class="country-section">
+        <h3>🏛️ 政策动态</h3>
+        <ul class="info-list">
+          <li class="policy"><span class="tag tag-policy">重磅</span> <b>CWELCC 续签 5 年至 2031 年</b>：总理卡尼与所有省/领地签署新协议，联邦预算拨款 <b>35 亿加元</b>，新增 <b>2 亿</b>用于师资培训、招聘和留任。</li>
+          <li class="policy"><span class="tag tag-policy">省份</span> 萨省 $10/天计划资金不足，正调整资助模式；阿省仅续签 1 年存不确定性；新斯科舍省投入 $200 万新建托儿位。</li>
+          <li class="risk"><span class="tag tag-risk">争议</span> 萨省调整导致部分托儿机构取消兼职/临时托位；「以基建方式资助托儿体系」新提案出现。</li>
+        </ul>
+        <h3>🏗️ 新园动态</h3>
+        <ul class="info-list">
+          <li class="expansion"><span class="tag tag-expand">新建</span> 温哥华岛新开放 <b>188 个托儿位</b>；Thunder Bay 新增 118 个持牌托儿位；Drayton 新中心 64 位。</li>
+          <li class="expansion"><span class="tag tag-expand">人才</span> Fleming College 推出幼教领导力发展课程；College of New Caledonia 获国家级助学金。</li>
+        </ul>
+        <h3>📊 需求信号</h3>
+        <ul class="info-list">
+          <li class="demand"><span class="tag tag-demand">确定性</span> 35 亿锁定 5 年，入园率持续攀升。2 亿师资专项基金是行业利好。</li>
+          <li class="risk"><span class="tag tag-risk">劳动力</span> BC 省幼教工作者因省提名计划变更警告将出现人员短缺；安省被迫使用资质不足人员。</li>
+          <li class="demand"><span class="tag tag-demand">供给</span> 联邦资金缩减趋势下省级政府自行填补缺口，表明需求持续强劲。</li>
+        </ul>
+      </div>
+    </div>
+    <!-- NEW ZEALAND -->
+    <div class="tab-panel" id="tab-nz">
+      <div class="country-section">
+        <h3>🏛️ 政策动态</h3>
+        <ul class="info-list">
+          <li class="policy"><span class="tag tag-policy">预算</span> <b>2026 预算拨 2 亿纽币用于 ECE</b>，重点扩大弱势社区幼教服务覆盖面，加大对师资支持。</li>
+          <li class="policy"><span class="tag tag-policy">教改</span> 《教育系统改革法案》取得进展，将影响幼教行业监管框架。</li>
+          <li class="policy"><span class="tag tag-policy">安全</span> 教育部批准 <b>140 万纽币</b>用于学校石棉污染沙土清除，涉及多个校区和幼教设施。</li>
+          <li class="risk"><span class="tag tag-risk">监管</span> 一名幼教教师因体罚被禁止从业两年，行业监管持续收紧。</li>
+        </ul>
+        <h3>🏗️ 新园动态</h3>
+        <ul class="info-list">
+          <li class="expansion"><span class="tag tag-expand">预期</span> 2 亿资金明确指向 underserved communities，预计这些地区将出现新园建设需求。</li>
+          <li class="demand"><span class="tag tag-demand">压力</span> 幼教成本可能上涨，资金压力向家长转移。</li>
+        </ul>
+        <h3>📊 需求信号</h3>
+        <ul class="info-list">
+          <li class="demand"><span class="tag tag-demand">利好</span> 政府持续加大 ECE 投入，行业景气度上升。关注后续拨款细则和社区名单。</li>
+          <li class="demand"><span class="tag tag-demand">游说</span> Te Rito Maioha 呼吁政府对 ECE 进行有意义投资，教师主导型 ECE 是核心方向。</li>
+        </ul>
+      </div>
+    </div>
+    <!-- SINGAPORE -->
+    <div class="tab-panel" id="tab-sg">
+      <div class="country-section">
+        <h3>🏛️ 政策动态</h3>
+        <ul class="info-list">
+          <li class="policy"><span class="tag tag-policy">费改</span> ECDA 修订《Baby Bonus 法》，在政府资助幼儿园实施<b>学费上限</b>，降低家庭自付费用。2026 年起逐步实施<b>强制融合教育支持</b>。</li>
+          <li class="policy"><span class="tag tag-policy">数字化</span> ECDA 发布更新版《幼教行业数字化计划 IDP 2.0》，推动行业数字化转型。</li>
+          <li class="policy"><span class="tag tag-policy">岗位</span> ECDA 重新设计幼教教师岗位，部分教师希望将 AI 融入课程计划。</li>
+          <li class="policy"><span class="tag tag-policy">生育</span> 政府成立新工作组研究生育率下降问题，审查成本、住房、职场实践等因素。</li>
+        </ul>
+        <h3>🏗️ 新园动态</h3>
+        <ul class="info-list">
+          <li class="expansion"><span class="tag tag-expand">扩张</span> Anchor Operator 和 Partner Operator 受益最大，费改政策下预计政府资助幼儿园将继续扩张。</li>
+          <li class="demand"><span class="tag tag-demand">趋势</span> 全职奶爸趋势上升，反映家庭结构和育儿观念变化。</li>
+        </ul>
+        <h3>📊 需求信号</h3>
+        <ul class="info-list">
+          <li class="demand"><span class="tag tag-demand">满意度</span> ECDA 调查：95% 家长对安全满意，89% 对质量满意。但 33% 家长过度重视学业而忽视社交情感发展。</li>
+          <li class="risk"><span class="tag tag-risk">人口</span> 生育率 <b>0.87</b> 历史新低，被视为「教育危机」一部分。</li>
+          <li class="demand"><span class="tag tag-demand">机会</span> 融合教育新规意味着幼儿园需要更多专业设施，<b>感官教育家具</b>有需求。</li>
+        </ul>
+      </div>
+    </div>
+    <!-- UK -->
+    <div class="tab-panel" id="tab-uk">
+      <div class="country-section">
+        <h3>🏛️ 政策动态</h3>
+        <ul class="info-list">
+          <li class="policy"><span class="tag tag-policy">扩面</span> <b>2026 年免费托儿时数大扩面</b>：英格兰从 4 月起扩大受资助托儿权益，2026-2027 年度拨款费率已公布。</li>
+          <li class="risk"><span class="tag tag-risk">遇冷</span> <b>3000 学校附属幼儿园计划仅 20% 学校响应</b>——51% 缺乏合适空间、50% 启动成本高、46% 财务可行性存疑。</li>
+          <li class="risk"><span class="tag tag-risk">危机</span> <b>保育员数量快速下降</b>，若政府不介入十年内可能「消失」。威尔士免费托儿扩展启动日期未定。</li>
+          <li class="policy"><span class="tag tag-policy">资金</span> 威尔士幼教机构将获资金上调；各党派承诺为家长提供更多免费托儿。</li>
+        </ul>
+        <h3>🏗️ 新园动态</h3>
+        <ul class="info-list">
+          <li class="expansion"><span class="tag tag-expand">新建</span> Somerset 郡将新开「森林幼儿园」，预计 2027 年初运营。Exeter 学校新幼儿园开放参观。</li>
+          <li class="expansion"><span class="tag tag-expand">整合</span> 苏格兰 West Dunbartonshire 两所 Carousel Nursery 易手，140+ 儿童转入新业主。</li>
+          <li class="demand"><span class="tag tag-demand">痛点</span> 学校附属幼儿园的「缺乏空间」和「启动成本高」是核心障碍——<b>一站式紧凑型家具方案</b>可解决此痛点。</li>
+        </ul>
+        <h3>📊 需求信号</h3>
+        <ul class="info-list">
+          <li class="demand"><span class="tag tag-demand">机会</span> 免费时数扩面是近 10 年最大政策红利，但存在 capacity 瓶颈——许多地区已报告学位不足。</li>
+          <li class="demand"><span class="tag tag-demand">理念</span> 保育员流失催生<b>家居化、温馨化儿童家具</b>需求。</li>
+          <li class="risk"><span class="tag tag-risk">压力</span> 部分托儿所预警将因拨款不足提高收费；苏格兰地方选举中教育和托儿成竞选议题。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ BUSINESS OPPORTUNITIES ═══════════════ -->
+  <section class="opp-section">
+    <h2>💡 商机矩阵</h2>
+    <div class="opp-grid">
+
+      <div class="opp-card priority-high">
+        <span class="opp-priority pri-high">🔴 最高优先级</span>
+        <h4>英国学校附属幼儿园启动成本痛点</h4>
+        <div class="opp-country">🇬🇧 英国 · 3000 个潜在新园</div>
+        <div class="opp-detail">51% 学校以「缺乏合适空间」、50% 以「启动成本高」为由拒绝开设。可推出<b>紧凑型、多功能、一站式幼儿园家具套餐</b>（含安装），瞄准早期采纳者。</div>
+        <span class="opp-action">→ 开发「School Nursery Starter Kit」产品线</span>
+      </div>
+
+      <div class="opp-card priority-high">
+        <span class="opp-priority pri-high">🔴 最高优先级</span>
+        <h4>澳大利亚 NSW 合规升级需求</h4>
+        <div class="opp-country">🇦🇺 澳大利亚 · 监管改革</div>
+        <div class="opp-detail">NSW 调查对「每平方米儿童密度」的批评可能催生监管改革。建议提前准备<b>空间高效、视线通透的模块化家具方案</b>，主动联系因合规压力需改造的中心。</div>
+        <span class="opp-action">→ 联系 NSW 地区幼教中心</span>
+      </div>
+
+      <div class="opp-card priority-high">
+        <span class="opp-priority pri-high">🔴 最高优先级</span>
+        <h4>加拿大 35 亿锁定 5 年</h4>
+        <div class="opp-country">🇨🇦 加拿大 · CWELCC 续签</div>
+        <div class="opp-detail">全球最大规模幼教协议锁定 5 年确定性。2 亿师资专项基金 + 各省新建项目将持续释放家具采购需求。</div>
+        <span class="opp-action">→ 对接各省教育部门采购框架</span>
+      </div>
+
+      <div class="opp-card priority-mid">
+        <span class="opp-priority pri-mid">🟡 高优先级</span>
+        <h4>新加坡融合教育新规</h4>
+        <div class="opp-country">🇸🇬 新加坡 · 强制融合支持</div>
+        <div class="opp-detail">2026 年起逐步实施强制性融合支持。<b>感官教育家具、无障碍设施、特殊需求配套</b>有潜在需求。</div>
+        <span class="opp-action">→ 开发融合教育家具产品线</span>
+      </div>
+
+      <div class="opp-card priority-mid">
+        <span class="opp-priority pri-mid">🟡 高优先级</span>
+        <h4>新西兰弱势社区新园建设</h4>
+        <div class="opp-country">🇳🇿 新西兰 · 预算 2 亿</div>
+        <div class="opp-detail">2 亿纽币明确指向 underserved communities，预计这些地区将出现新园建设需求。</div>
+        <span class="opp-action">→ 跟踪预算拨款细则</span>
+      </div>
+
+      <div class="opp-card priority-mid">
+        <span class="opp-priority pri-mid">🟡 高优先级</span>
+        <h4>Junior Adventure Group 股权出售</h4>
+        <div class="opp-country">🇦🇺 澳大利亚 · OSHC 平台</div>
+        <div class="opp-detail">Quadrant PE 对旗下最大 OSHC 运营商之一启动战略审查。新买家可能重新采购家具或翻新设施。</div>
+        <span class="opp-action">→ 关注出售动态，对接新买家</span>
+      </div>
+
+      <div class="opp-card priority-watch">
+        <span class="opp-priority pri-watch">🔵 持续关注</span>
+        <h4>新加坡优质学前教育 2030</h4>
+        <div class="opp-country">🇸🇬 新加坡 · 游戏化学习</div>
+        <div class="opp-detail">ECDA 推动游戏化学习环境，对<b>感官教育家具、游戏区设施</b>有潜在需求。</div>
+        <span class="opp-action">→ 关注 ECDA 采购和 PDP 项目</span>
+      </div>
+
+      <div class="opp-card priority-watch">
+        <span class="opp-priority pri-watch">🔵 持续关注</span>
+        <h4>加拿大萨省兼职模式变化</h4>
+        <div class="opp-country">🇨🇦 加拿大 · 灵活出勤</div>
+        <div class="opp-detail">萨省资助调整可能导致部分中心重新配置空间。<b>可折叠/可移动/多用途家具</b>有市场空间。</div>
+        <span class="opp-action">→ 推广灵活空间家具方案</span>
+      </div>
+
+    </div>
+
+</div>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="report-footer">
+  <div class="footer-inner">
+    <span class="footer-brand">West Shore Furniture</span>
+    <span class="footer-text">幼教市场周报 · 2026年5月19-22日 · 由 Hermes Agent 自动生成</span>
+    <span class="footer-text" style="opacity:0.5">免责声明：基于公开来源自动化搜索整理，建议验证后做商业决策</span>
+  </div>
+</footer>
+
+<script>
+function switchTab(event, tabId) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById(tabId).classList.add('active');
+}
+</script>
+
+</body>
+</html>
