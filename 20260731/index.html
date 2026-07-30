@@ -218,7 +218,6 @@
   .status-hot { background: var(--red-light); color: var(--red); }
   .status-warm { background: var(--amber-light); color: var(--amber); }
   .status-stable { background: var(--accent-light); color: var(--accent); }
-  .status-cold { background: #f1f5f9; color: var(--slate); }
   .metric-detail {
     font-size: 11px;
     color: var(--slate);
@@ -417,7 +416,7 @@
 </head>
 <body>
 
-<!-- ═══════════════════════ HEADER ═══════════════════════ -->
+<!-- HEADER -->
 <header class="report-header">
   <div class="header-inner">
     <div class="header-brand">West Shore Furniture · ECE Market Intelligence</div>
@@ -431,187 +430,206 @@
   </div>
 </header>
 
-<!-- ═══════════════════════ EXECUTIVE SUMMARY ═══════════════════════ -->
+<!-- EXECUTIVE SUMMARY -->
 <div class="container">
   <div class="summary-section">
     <div class="summary-card">
       <h2>📋 本周核心发现 Executive Summary</h2>
       <p class="summary-intro">
-        本周（7月27日-7月31日）全球幼教市场呈现"投资加速+监管趋严"双轨格局。英国再成焦点：创纪录£95亿早期教育投资持续落地，331笔校园幼儿园新拨款发放，30小时免费托儿政策扩大覆盖，Ofsted新"报告卡"评级体系全面上线。加拿大市场信号密集：BC省获53.8亿加元联邦资金确认，安大略获延期维持$19/天，联邦$10/天计划五年回顾暴露"可用性危机"——从"没钱送"变为"没位送"。澳大利亚8500万澳元托儿投资组合上市，悉尼虐待丑闻持续发酵推动安全合规升级。新加坡家长满意度达95%，49所学前中心纳入收费管控，IDP 2.0数字化计划推出。新西兰ECE资金体系改革进入公众参与阶段，未资质人员问题引发行业关注。
+        本周（7月27日-7月31日）全球幼教市场呈现"投资爆发+安全升级+政策深化"格局。英国是本周绝对焦点：政府宣布创纪录£95亿早期教育投资，DfE再发放331笔校园幼儿园建设拨款，新学期30小时免费托儿政策全面铺开。加拿大市场信号强劲：BC省获$53.8亿联邦资金确认，新斯科舍省斥资数百万新建托儿位，$10/天计划五年回顾暴露"可用性危机"。澳大利亚$8500万+全国托儿投资组合上市（11个项目），悉尼虐待丑闻持续发酵推动安全合规升级。新加坡ECDA推出家长合作指南和IDP 2.0数字化计划，95%家长对学前安全满意。新西兰ECE资金体系审查持续推进，大量未资质工作人员引发行业担忧。
       </p>
       <div class="highlight-grid">
         <div class="highlight-item">
           <div class="highlight-icon">🇬🇧</div>
-          <div class="highlight-text">£95亿投资 + 331笔校园幼儿园拨款<span>创纪录投资持续落地，30小时免费托儿扩大覆盖，Ofsted新评级体系上线</span></div>
+          <div class="highlight-text">£95亿创纪录投资 + 331笔校园幼儿园拨款<span>30小时免费托儿政策扩大，教育大臣审查隐性费用，新部长上任</span></div>
         </div>
         <div class="highlight-item">
           <div class="highlight-icon">🇨🇦</div>
-          <div class="highlight-text">BC省53.8亿联邦资金 + 可用性危机<span>联邦大额资金确认，多省密集新建，但$10/天面临"有价无位"困境</span></div>
+          <div class="highlight-text">BC省$53.8亿联邦资金 + 多省密集新建<span>$10/天计划从可负担性危机转向可用性危机，NB省、贾斯珀均有扩建</span></div>
         </div>
         <div class="highlight-item">
           <div class="highlight-icon">🇦🇺</div>
-          <div class="highlight-text">$8500万投资组合上市 + 安全丑闻<span>11个托儿投资项目推向市场，悉尼虐待丑闻推动全行业安全升级</span></div>
+          <div class="highlight-text">$8500万+托儿投资组合上市 + 安全丑闻<span>11个投资项目推向市场，悉尼虐待案120+家庭被调查，合规环境趋严</span></div>
         </div>
         <div class="highlight-item">
           <div class="highlight-icon">🇸🇬</div>
-          <div class="highlight-text">95%家长满意 + 49中心收费管控<span>补贴收入门槛提高惠及6万+家庭，IDP 2.0数字化计划+AI教学改革</span></div>
+          <div class="highlight-text">ECDA家长合作指南 + IDP 2.0数字化<span>95%家长满意度，49所中心降费扩招，教师角色重新设计</span></div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ═══════════════════════ COUNTRY METRIC CARDS ═══════════════════════ -->
+  <!-- COUNTRY METRIC CARDS -->
   <div class="metric-row">
     <div class="metric-card">
       <div class="metric-flag">🇬🇧</div>
       <div class="metric-country">英国</div>
       <div class="metric-status status-hot">🔥 HOT</div>
-      <div class="metric-detail">£95亿投资 | 331笔新拨款 | 30h免费扩大 | Ofsted新评级</div>
+      <div class="metric-detail">£95亿投资 | 331笔拨款 | 30h免费 | 新部长 | Ofsted报告</div>
     </div>
     <div class="metric-card">
       <div class="metric-flag">🇨🇦</div>
       <div class="metric-country">加拿大</div>
       <div class="metric-status status-hot">🔥 HOT</div>
-      <div class="metric-detail">BC 53.8亿 | ON延期$19/天 | 可用性危机 | 多省新建</div>
+      <div class="metric-detail">$53.8亿BC | NB新资金 | 贾斯珀扩建 | 可用性危机</div>
     </div>
     <div class="metric-card">
       <div class="metric-flag">🇦🇺</div>
       <div class="metric-country">澳大利亚</div>
       <div class="metric-status status-warm">⚡ ACTIVE</div>
-      <div class="metric-detail">$85M投资组合 | 安全丑闻 | 合规趋严 | ECA大会</div>
+      <div class="metric-detail">$8500万投资组合 | 安全丑闻 | 劳动力普查 | ECA大会</div>
     </div>
     <div class="metric-card">
       <div class="metric-flag">🇸🇬</div>
       <div class="metric-country">新加坡</div>
       <div class="metric-status status-warm">⚡ ACTIVE</div>
-      <div class="metric-detail">95%满意 | 49中心收费管控 | IDP 2.0 | AI教学</div>
+      <div class="metric-detail">家长指南 | IDP 2.0 | 95%满意度 | 收费管控扩大</div>
     </div>
     <div class="metric-card">
       <div class="metric-flag">🇳🇿</div>
       <div class="metric-country">新西兰</div>
       <div class="metric-status status-stable">📊 WATCH</div>
-      <div class="metric-detail">资金体系改革 | 未资质人员 | 配比审查搁置</div>
+      <div class="metric-detail">ECE资金审查 | 未资质人员 | 师资比例争议 | 预算冻结</div>
     </div>
   </div>
 
-  <!-- ═══════════════════════ COUNTRY TABS ═══════════════════════ -->
+  <!-- COUNTRY TABS -->
   <div class="tabs-section">
     <div class="tabs-nav">
-      <button class="tab-btn" onclick="switchTab('gb')">🇬🇧 英国</button>
+      <button class="tab-btn active" onclick="switchTab('gb')">🇬🇧 英国</button>
       <button class="tab-btn" onclick="switchTab('ca')">🇨🇦 加拿大</button>
-      <button class="tab-btn active" onclick="switchTab('au')">🇦🇺 澳大利亚</button>
+      <button class="tab-btn" onclick="switchTab('au')">🇦🇺 澳大利亚</button>
       <button class="tab-btn" onclick="switchTab('sg')">🇸🇬 新加坡</button>
       <button class="tab-btn" onclick="switchTab('nz')">🇳🇿 新西兰</button>
     </div>
 
-    <!-- ── UK ── -->
-    <div class="tab-panel" id="panel-gb">
+    <!-- UK -->
+    <div class="tab-panel active" id="panel-gb">
       <div class="country-section">
-        <h3>🏛️ 政策与补贴 Policy &amp; Funding</h3>
+        <h3>🏛️ 政策与补贴 Policy & Funding</h3>
         <ul class="info-list">
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>创纪录£95亿早期教育投资落地</strong>：英国政府宣布有史以来最大规模的早期教育投资，直接驱动学位供给扩张和设施新建需求。
+            <strong>创纪录£95亿早期教育投资</strong>：英国政府宣布有史以来最大规模的早期教育投资，是当前全球幼教市场最强的需求驱动信号。
             <a class="source-link" href="https://www.gov.uk">GOV.UK 7/30</a>
           </li>
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>DfE再发放331笔校园幼儿园建设拨款</strong>：新一批校园内幼儿园（School-based Nursery）建设资金已发放，每校约£150,000预算含家具配套。明确的新建+采购信号。
-            <a class="source-link" href="https://www.gov.uk">GOV.UK 7/30</a>
+            <strong>DfE再发放331笔校园幼儿园建设拨款</strong>：新一批校园内幼儿园建设拨款已发放，明确的新建+采购信号。UCL追踪校园幼儿园项目实际落地进展。
+            <a class="source-link" href="https://www.trucknetuk.com">Trucknet UK 7/30</a>
           </li>
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>新学期30小时免费托儿政策扩大覆盖</strong>：BBC报道免费托儿时数政策扩大至更多工薪家庭，推动学位需求增长。
+            <strong>新学期30小时免费托儿政策全面铺开</strong>：BBC报道免费托儿时数政策扩大覆盖范围，工薪家庭如何申请的详细指南发布，推动学位需求增长。
             <a class="source-link" href="https://www.bbc.co.uk">BBC 7/30</a>
           </li>
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>教育大臣要求竞争监管机构审查隐性托儿费用</strong>：CMA介入价格监管，部分幼儿园额外收费弥补资金缺口问题受关注。
+            <strong>EYFS早期基础阶段评估结果2025-2026发布</strong>：DfE发布了2025-2026学年EYFS档案评估的官方统计数据，是衡量幼教质量的关键指标。
+            <a class="source-link" href="https://www.gov.uk">GOV.UK 7/31</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>英国任命新任幼教部长Paul Waugh</strong>：政府改组后新部长上任，可能带来幼教政策方向调整。同时发布社会流动性政策回应文件。
+            <a class="source-link" href="https://www.thesector.com.au">The Sector 7/27</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>教育大臣要求竞争监管机构审查隐性托儿费用</strong>：部分幼儿园额外收费弥补资金缺口，政府开始介入价格监管。
             <a class="source-link" href="https://www.bbc.co.uk">BBC 7/30</a>
           </li>
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>国防家庭将获得最高£6,000/年托儿补贴</strong>：军人家庭专属托儿支持计划，增加特定区域（军事基地周边）托儿需求。
+            <strong>国防家庭将获得最高£6,000/年托儿补贴</strong>：军人家庭专属托儿支持计划，增加特定区域托儿需求。
             <a class="source-link" href="https://www.gov.uk">GOV.UK 7/30</a>
           </li>
-          <li class="policy">
-            <span class="tag tag-policy">政策</span>
-            <strong>政府承诺在新学年前削减家长成本</strong>：降低教育和育儿成本措施将推动更多家庭选择正规幼教。
+        </ul>
+
+        <h3>🏗️ 新园与行业动态 New Centres & Industry</h3>
+        <ul class="info-list">
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>政府投资青年项目，提供更多就近机会</strong>：在社区层面为年轻人提供更多教育和发展机会，可能涉及学校/幼教设施建设。
+            <a class="source-link" href="https://www.gov.uk">GOV.UK 7/29</a>
+          </li>
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>政府承诺在新学年前削减家长成本</strong>：降低家长的教育和育儿成本，更多家庭选择正规幼教将推动需求增长。
+            <a class="source-link" href="https://www.gov.uk">GOV.UK 7/29</a>
+          </li>
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>学前教育质量网络研讨会系列启动</strong>：DfE推出Reception质量网络研讨会系列，提升早期教育质量。
+            <a class="source-link" href="https://www.gov.uk">GOV.UK 7/29</a>
+          </li>
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>儿童社会护理改革：打击牟利行为</strong>：政府宣布对儿童社会护理系统进行改革，打击利用儿童护理牟利的行为。
             <a class="source-link" href="https://www.gov.uk">GOV.UK 7/29</a>
           </li>
         </ul>
 
-        <h3>📊 行业监管与评估 Assessment &amp; Regulation</h3>
+        <h3>📈 需求与趋势 Demand Signals</h3>
         <ul class="info-list">
           <li class="demand">
             <span class="tag tag-demand">趋势</span>
-            <strong>EYFS 2025-2026早期基础阶段评估结果发布</strong>：DfE发布官方统计数据，是衡量幼教质量的关键指标。
+            <strong>SEND儿童需求识别与支持研究报告发布</strong>：DfE发布关于如何在主流学校中识别和支持SEND儿童的研究报告，可能影响包容性设施标准。
             <a class="source-link" href="https://www.gov.uk">GOV.UK 7/31</a>
           </li>
           <li class="demand">
             <span class="tag tag-demand">趋势</span>
-            <strong>Ofsted新"报告卡"评级体系全面上线</strong>：推出全新inspection report cards和grades系统，改变原有检查评级方式，影响所有幼教机构合规投资方向。
-            <a class="source-link" href="https://www.gov.uk">Ofsted 7/28</a>
-          </li>
-          <li class="demand">
-            <span class="tag tag-demand">趋势</span>
-            <strong>SEND儿童主流环境支持研究报告发布</strong>：DfE发布关于如何在主流学校中识别和支持特殊教育需求与残疾儿童的研究报告。
+            <strong>家庭优先儿童探路者项目第二阶段评估</strong>：DfE发布评估报告，关注家庭参与儿童服务的模式。
             <a class="source-link" href="https://www.gov.uk">GOV.UK 7/31</a>
-          </li>
-          <li class="policy">
-            <span class="tag tag-policy">政策</span>
-            <strong>儿童社会护理改革：打击牟利行为</strong>：政府宣布改革儿童社会照护系统，打击利用儿童护理牟利的行为。
-            <a class="source-link" href="https://www.gov.uk">GOV.UK 7/29</a>
           </li>
         </ul>
 
         <h3>🎯 West Shore 关联分析</h3>
         <ul class="info-list">
-          <li class="expansion">331笔校园幼儿园拨款 + £95亿投资 = <strong>英国市场是当前最强的新建采购信号</strong>。每校£150,000预算含家具，建议主动联系新获拨款学校了解采购时间表。</li>
-          <li class="policy">Ofsted新"报告卡"评级体系 = <strong>合规驱动的设施更新潮</strong>。新评级标准可能要求更高品质的家具和环境配置，推出"Ofsted合规家具方案"。</li>
-          <li class="demand">30小时免费托儿扩大 + 军人家庭£6,000补贴 = <strong>需求端持续增长</strong>，学位供给压力加大，更多新建/扩建项目将启动。</li>
+          <li class="expansion">£95亿投资 + 331笔校园幼儿园拨款 = <strong>英国市场是当前全球最强的新建采购信号</strong>。建议主动联系331个新获拨款的学校，提供全套家具方案。校园幼儿园项目是最明确的短期采购机会。</li>
+          <li class="policy">新部长上任 + 30小时免费政策扩大 = <strong>政策窗口期</strong>。新政府的幼教政策方向将在未来3-6个月明确，提前布局英国市场客户关系。</li>
+          <li class="demand">SEND研究报告 + 包容性基金 = <strong>合规家具需求上升</strong>。SEND专项投资意味着更多包容性设施需求，可推出"SEND合规家具方案"。</li>
         </ul>
       </div>
     </div>
 
-    <!-- ── Canada ── -->
+    <!-- Canada -->
     <div class="tab-panel" id="panel-ca">
       <div class="country-section">
-        <h3>🏛️ 政策与补贴 Policy &amp; Funding</h3>
+        <h3>🏛️ 政策与补贴 Policy & Funding</h3>
         <ul class="info-list">
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>BC省获53.8亿加元联邦幼教资金确认</strong>：BC省幼教组织庆祝联邦政府确认大规模资金用于该省幼教系统建设，是联邦-省级协议的重要里程碑。直接带动新建/扩建幼教设施。
+            <strong>BC省获$53.8亿加元联邦幼教资金确认</strong>：BC省幼教组织庆祝联邦政府确认$53.8亿资金用于该省幼教系统建设，是联邦-省级幼教协议的重要里程碑。
             <a class="source-link" href="https://childcarecanada.org">Childcare Canada 7/29</a>
           </li>
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>安大略省获1年延期，维持平均$19/天费用</strong>：联邦补贴托儿计划原定2026年3月31日到期，安大略成功延期，维持市场稳定性。
+            <strong>$10/天托儿计划五年回顾：从可负担性危机转向可用性危机</strong>：《环球邮报》深度报道指出，五年来该计划的多项承诺仍未实现。即使价格降低，也找不到足够的托儿名额。
+            <a class="source-link" href="https://www.theglobeandmail.com">Globe and Mail 7/29</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>安大略省获1年延期，维持平均$19/天费用</strong>：联邦政府补贴托儿计划原定2026年3月31日到期，安大略省成功获得一年延期。
             <a class="source-link" href="https://childcarecanada.org">Childcare Canada 7/29</a>
           </li>
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>联邦$10/天托儿计划五年回顾：多项承诺未兑现</strong>：Globe and Mail深度报道，五年来多项承诺未实现，安大略警告长期可持续性存疑。
-            <a class="source-link" href="https://www.theglobeandmail.com">Globe and Mail 7/30</a>
-          </li>
-          <li class="policy">
-            <span class="tag tag-policy">政策</span>
-            <strong>联邦政府与育空地区延长5年幼教协议</strong>：签署五年期早期学习和托儿协议延期。
-            <a class="source-link" href="https://childcarecanada.org">Childcare Canada 7/29</a>
-          </li>
-          <li class="policy">
-            <span class="tag tag-policy">政策</span>
-            <strong>《加拿大幼教2024/2025》年度报告（第15版）发布</strong>：CRRU发布权威年度报告，涵盖各省/地区ECEC服务概况、29张对比表。
+            <strong>《加拿大幼教2024/2025》年度报告发布</strong>：CRRU发布最新年度报告，全面概述加拿大幼教政策与服务现状，涵盖29张对比表。
             <a class="source-link" href="https://childcarecanada.org">Childcare Canada 7/31</a>
           </li>
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>加拿大儿童福利金（CCB）上调</strong>：联邦儿童福利金提高，家庭可支配收入增加，间接利好托育消费。
-            <a class="source-link" href="https://www.cbc.ca">CBC 7/29</a>
+            <strong>联邦政府与育空地区延长5年幼教协议</strong>：联邦政府宣布与育空地区签署五年期ELCC协议延期。
+            <a class="source-link" href="https://childcarecanada.org">Childcare Canada 7/29</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>加拿大儿童福利金（CCB）上调</strong>：联邦儿童福利金于周一上调，为有孩家庭提供更多经济支持，间接利好托育消费。
+            <a class="source-link" href="https://childcarecanada.org">Childcare Canada 7/28</a>
           </li>
         </ul>
 
-        <h3>🏗️ 新园与行业动态 New Centres &amp; Industry</h3>
+        <h3>🏗️ 新园与行业动态 New Centres & Industry</h3>
         <ul class="info-list">
           <li class="expansion">
             <span class="tag tag-expand">扩张</span>
@@ -625,18 +643,33 @@
           </li>
           <li class="expansion">
             <span class="tag tag-expand">扩张</span>
-            <strong>新不伦瑞克省宣布资金减少托儿等候名单和费用</strong>：新资金用于缩短等候名单并降低家庭费用。
+            <strong>曼尼托巴省预算将增加托儿资金</strong>：省财政部长确认下周预算将提升托儿拨款。
+            <a class="source-link" href="https://winnipeg.citynews.ca">CityNews 7/30</a>
+          </li>
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>新不伦瑞克省宣布资金减少托儿等候名单和费用</strong>：新资金用于缩短托儿等候名单并降低家庭费用。
             <a class="source-link" href="https://childcarecanada.org">Childcare Canada 7/29</a>
           </li>
           <li class="expansion">
             <span class="tag tag-expand">扩张</span>
-            <strong>Jasper投入40万加元扩展托儿空间</strong>：Pursuit公司承诺投入资金扩展Jasper地区托儿服务。
+            <strong>贾斯珀投入$40万加元扩展22个托儿位</strong>：Pursuit公司向Wildflowers Childcare项目注资。
             <a class="source-link" href="https://childcarecanada.org">Childcare Canada 7/29</a>
           </li>
           <li class="risk">
             <span class="tag tag-risk">风险</span>
-            <strong>阿尔伯塔Montessori托儿集团被临时接管</strong>：法院下令接管，AlixPartners将控制资金、监督运营并推进资产出售。可能涉及设施设备处置。
+            <strong>阿尔伯塔蒙特梭利托儿集团被临时接管</strong>：因安全问题被法院下令临时接管，AlixPartners将控制资金并推进资产出售。
             <a class="source-link" href="https://childcarecanada.org">Childcare Canada 7/29</a>
+          </li>
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>渥太华大学日托关闭，"严重干扰"家庭生活</strong>：校园内日托中心关闭，家长和倡导者表示没有校园内托儿服务使平衡极为困难。
+            <a class="source-link" href="https://childcarecanada.org">Childcare Canada 7/29</a>
+          </li>
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>PEI托儿运营商：省级削减25%辅助人员支持令其处境艰难</strong>
+            <a class="source-link" href="https://www.cbc.ca">CBC 7/30</a>
           </li>
         </ul>
 
@@ -644,184 +677,213 @@
         <ul class="info-list">
           <li class="demand">
             <span class="tag tag-demand">趋势</span>
-            <strong>$10/天目标：从"可负担性危机"到"可用性危机"</strong>：Globe and Mail社论指出，即使价格降低也找不到足够托位——供需失衡将推动更多建设。
-            <a class="source-link" href="https://www.theglobeandmail.com">Globe and Mail 7/29</a>
-          </li>
-          <li class="demand">
-            <span class="tag tag-demand">趋势</span>
-            <strong>曼尼托巴省预算将增加托儿资金</strong>：省财政部长确认下周预算将提升托儿拨款。
-            <a class="source-link" href="https://winnipeg.citynews.ca">CityNews 7/30</a>
-          </li>
-          <li class="demand">
-            <span class="tag tag-demand">趋势</span>
-            <strong>安大略省扩大托儿服务的经济效益报告</strong>：研究报告论证扩大托儿服务的经济正向影响，为政策制定提供数据支持。
+            <strong>安大略省扩大托儿服务的经济效益报告</strong>：研究报告分析了安大略省扩大托儿服务带来的经济效益，为政策制定提供数据支持。
             <a class="source-link" href="https://childcarecanada.org">Childcare Canada 7/29</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>班夫新托儿中心：省级资金调整导致可负担性下降</strong>：新中心开业但受资金政策变化影响，运营模式面临调整。
+            <a class="source-link" href="https://childcarecanada.org">Childcare Canada 7/30</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>全国户外与土地基础早期学习环境扫描报告发布</strong>：关注户外学习空间设计，可能影响户外教育设施需求。
+            <a class="source-link" href="https://childcarecanada.org">Childcare Canada 7/30</a>
           </li>
         </ul>
 
         <h3>🎯 West Shore 关联分析</h3>
         <ul class="info-list">
-          <li class="expansion">BC省53.8亿 + 新斯科舍省 + NB省 + Jasper = <strong>加拿大是当前最活跃的新建市场</strong>。多省同步扩建，联邦资金持续注入，家具采购需求明确。重点关注BC和安大略市场。</li>
-          <li class="demand">"可用性危机" = <strong>政府将被迫加大新设施建设力度</strong>。等候名单增长意味着学位供给不足是政治压力，将持续驱动建设投资。</li>
-          <li class="risk">阿尔伯塔Montessori集团接管 = <strong>潜在资产处置机会</strong>。关注AlixPartners的资产出售计划，可能涉及设施设备批量处置。</li>
+          <li class="expansion">BC省$53.8亿 + 新斯科舍省数百万 + 贾斯珀$40万 = <strong>加拿大西部和大西洋省份是当前最密集的新建采购窗口</strong>。BC省和新斯科舍省的新建项目值得优先跟进。</li>
+          <li class="policy">$10/天计划可用性危机 + 联邦-育空协议延期 = <strong>政策持续性增强，但供给缺口推动更多建设</strong>。各省ChildCareBC New Spaces Fund等项目的招标信息值得密切关注。</li>
+          <li class="demand">阿尔伯塔蒙特梭利集团接管 + PEI名额空置 = <strong>市场分化加剧</strong>。部分地区供不应求，部分地区运营困难。建议精准定位BC、ON、NS等高需求省份。</li>
         </ul>
       </div>
     </div>
 
-    <!-- ── Australia ── -->
-    <div class="tab-panel active" id="panel-au">
+    <!-- Australia -->
+    <div class="tab-panel" id="panel-au">
       <div class="country-section">
-        <h3>🏗️ 新园与投资动态 New Centres &amp; Investment</h3>
+        <h3>🏛️ 政策与补贴 Policy & Funding</h3>
         <ul class="info-list">
-          <li class="expansion">
-            <span class="tag tag-expand">扩张</span>
-            <strong>全国托儿投资组合上市，估值超8500万澳元</strong>：涵盖维多利亚、新南威尔士、昆士兰和ACT共11个幼教投资项目的全国托儿资产组合已推向市场。可能需要新家具采购。
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>全国托儿投资组合上市，估值超$8500万澳元</strong>：涵盖维州、新州、昆州和ACT共11个幼教投资项目已推向市场，是本周澳洲最大规模的资产交易信号。
             <a class="source-link" href="https://thesector.com.au">The Sector 7/31</a>
-          </li>
-          <li class="expansion">
-            <span class="tag tag-expand">扩张</span>
-            <strong>阿德莱德新建一体化早教中心</strong>：NACYS托儿中心将改造成专门建造的综合早教中心，与Swallowcliffe School P-6共同选址。新建项目=家具采购机会。
-            <a class="source-link" href="https://thesector.com.au">The Sector 7/27</a>
-          </li>
-          <li class="expansion">
-            <span class="tag tag-expand">扩张</span>
-            <strong>Mayfield Childcare（ASX: MFD）Q2入住率改善</strong>：运营逐步改善，但成本压力仍在。入住率上升→运营商可能扩大规模→家具采购需求增加。
-            <a class="source-link" href="https://thesector.com.au">The Sector 7/27</a>
-          </li>
-          <li class="expansion">
-            <span class="tag tag-expand">扩张</span>
-            <strong>OAC任命新首席运营官，强化管理层</strong>：Only About Children（OAC）任命新COO，体现扩张决心。
-            <a class="source-link" href="https://thesector.com.au">The Sector 7/31</a>
-          </li>
-        </ul>
-
-        <h3>🏛️ 政策与合规 Policy &amp; Compliance</h3>
-        <ul class="info-list">
-          <li class="risk">
-            <span class="tag tag-risk">风险</span>
-            <strong>悉尼托儿所虐待丑闻持续发酵</strong>：新南威尔士州托儿所工人面临329项虐待指控，警方已联系120多个家庭。将推动全行业安全合规升级（监控、隔离设施、安全家具）。
-            <a class="source-link" href="https://www.theguardian.com">The Guardian 7/30</a>
           </li>
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>合规新时代：幼教服务商面临前所未有的合规复杂度</strong>：The Sector专题指出当前Approved Providers面临史上最复杂的合规环境。家具采购需关注合规认证要求变化。
+            <strong>全国劳动力普查注册截止日期临近</strong>：各州和领地的幼教服务机构被提醒注册2026年全国劳动力普查。
+            <a class="source-link" href="https://thesector.com.au">The Sector 7/31</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>合规新时代：幼教服务商面临前所未有的合规复杂度</strong>：The Sector专题指出当前Approved Providers面临史上最复杂的合规环境，政策快速演变。
             <a class="source-link" href="https://thesector.com.au">The Sector 7/28</a>
           </li>
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>全国劳动力普查注册截止日期临近</strong>：各州幼教服务机构被提醒注册2026年全国劳动力普查。
+            <strong>员工折扣政策：不影响CCS补贴</strong>：经批准的幼教机构可为员工提供折扣托儿服务，且不影响家庭的托儿补贴资格。
             <a class="source-link" href="https://thesector.com.au">The Sector 7/31</a>
           </li>
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>员工折扣政策：不影响CCS补贴</strong>：经批准的幼教机构可为员工提供折扣托儿服务，且不影响家庭CCS资格。
+            <strong>全球报告呼吁加大公共投资保护公平幼教</strong>：国际教育联盟呼吁各国政府增加对幼教的公共投资，认为市场化体制可能加剧不平等。
             <a class="source-link" href="https://thesector.com.au">The Sector 7/31</a>
           </li>
         </ul>
 
-        <h3>📈 行业趋势与活动 Industry Trends</h3>
+        <h3>🏗️ 新园与行业动态 New Centres & Industry</h3>
         <ul class="info-list">
-          <li class="demand">
-            <span class="tag tag-demand">趋势</span>
-            <strong>全球报告呼吁加大公共投资保护公平幼教</strong>：国际教育联盟呼吁各国政府增加对幼教的公共投资，市场化体制可能加剧不平等。
-            <a class="source-link" href="https://thesector.com.au">The Sector 7/31</a>
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>阿德莱德Davoren Park新建一体化早教中心</strong>：NACYS托儿中心将被改造成专门建造的综合早教中心，与Swallowcliffe School P-6共同选址。新建项目=家具采购机会。
+            <a class="source-link" href="https://thesector.com.au">The Sector 7/27</a>
           </li>
-          <li class="demand">
-            <span class="tag tag-demand">趋势</span>
-            <strong>幼教工作者薪资低、倦怠严重</strong>：ABC报道幼教工作者身心俱疲，行业人才流失加剧，可能影响新园运营能力。
-            <a class="source-link" href="https://www.abc.net.au">ABC 7/30</a>
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>澳洲ECA全国大会2026即将召开</strong>：Early Childhood Australia年度全国大会即将举行，是行业重要交流平台，可关注家具展示/合作机会。
+            <a class="source-link" href="https://www.earlychildhoodaustralia.org.au">ECA 7/31</a>
           </li>
-          <li class="policy">
-            <span class="tag tag-policy">政策</span>
-            <strong>塔斯马尼亚幼教奖学金首轮申请强劲</strong>：93名准/现任幼教工作者获得首轮资助，劳动力扩张→更多中心需要设施配置。
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>OAC任命新首席运营官，强化管理层</strong>：Only About Children任命新COO，体现其对卓越成果的承诺，可能预示扩张计划。
             <a class="source-link" href="https://thesector.com.au">The Sector 7/31</a>
           </li>
           <li class="expansion">
             <span class="tag tag-expand">扩张</span>
-            <strong>ECA全国大会2026即将召开</strong>：Early Childhood Australia年度全国大会，是行业重要交流平台。可关注家具展示/合作机会。
-            <a class="source-link" href="https://www.earlychildhoodaustralia.org.au">ECA 7/31</a>
+            <strong>Tribunal推翻Cape York幼教机构资质取消决定</strong>：澳大利亚行政法庭推翻了取消某幼教机构资质的决定，该机构得以继续运营。
+            <a class="source-link" href="https://thesector.com.au">The Sector 7/29</a>
+          </li>
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>悉尼托儿所虐待丑闻持续发酵</strong>：超过120个家庭被联系调查，329项虐待指控。此事件将推动全行业安全合规升级，监控、隔离设施、安全家具需求增加。
+            <a class="source-link" href="https://www.theguardian.com">The Guardian 7/30</a>
+          </li>
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>托儿中心面临成本上升和需求下降双重压力</strong>：多家托儿中心报告运营成本持续攀升、入学率下降，行业呼吁政府加大补贴力度。
+            <a class="source-link" href="https://www.michaelwest.com.au">Michael West 7/30</a>
+          </li>
+        </ul>
+
+        <h3>📈 需求与趋势 Demand Signals</h3>
+        <ul class="info-list">
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>Mayfield Childcare Q2入住率改善，成本压力持续</strong>：ASX上市运营商报告显示运营逐步改善，但入住率和成本压力仍在，反映行业复苏但脆弱。
+            <a class="source-link" href="https://thesector.com.au">The Sector 7/29</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>塔斯马尼亚幼教奖学金首轮申请强劲</strong>：93名准/现任幼教工作者接受首轮奖学金，劳动力扩张→更多幼教中心需要设施配置。
+            <a class="source-link" href="https://thesector.com.au">The Sector 7/29</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>幼教工作者薪资低、倦怠严重</strong>：ABC报道行业人才流失加剧，可能影响新园运营能力。
+            <a class="source-link" href="https://www.abc.net.au">ABC News 7/30</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>ACT地区新设Medicare儿童心理健康中心</strong>：联邦政府在Tuggeranong开设新的心理健康儿童中心，为儿童和家庭提供免费服务。
+            <a class="source-link" href="https://thesector.com.au">The Sector 7/31</a>
           </li>
         </ul>
 
         <h3>🎯 West Shore 关联分析</h3>
         <ul class="info-list">
-          <li class="expansion">$8500万投资组合（11个项目）+ 阿德莱德新建中心 = <strong>直接的家具采购机会</strong>。投资组合交易完成后，新业主通常会进行设施翻新。</li>
-          <li class="risk">悉尼虐待丑闻 = <strong>"安全认证家具"细分市场机会</strong>。全行业安全合规升级将推动监控、隔离设施、防碰撞安全家具需求。</li>
-          <li class="demand">合规环境趋严 + 人才流失 = <strong>高品质、易维护、吸引人才的教育环境成为竞争要素</strong>。可推出"合规+品牌"一体化方案。</li>
+          <li class="expansion">$8500万+投资组合上市（11个项目）= <strong>大规模资产交易可能伴随设施更新需求</strong>。新买家通常会对收购的中心进行翻新升级，是家具采购的潜在窗口。建议跟踪这11个项目的交易进展。</li>
+          <li class="risk">悉尼虐待丑闻 → <strong>全澳安全设施升级需求</strong>。监控设备、安全家具、隔离设施的采购需求将集中释放。可推出"安全合规家具方案"。</li>
+          <li class="demand">ECA全国大会 + 劳动力普查 = <strong>行业情报收集和客户拓展窗口</strong>。ECA大会可作为展示West Shore产品的平台。</li>
         </ul>
       </div>
     </div>
 
-    <!-- ── Singapore ── -->
+    <!-- Singapore -->
     <div class="tab-panel" id="panel-sg">
       <div class="country-section">
-        <h3>🏛️ 政策与补贴 Policy &amp; Funding</h3>
+        <h3>🏛️ 政策与补贴 Policy & Funding</h3>
         <ul class="info-list">
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>49所学前中心2026年1月1日起实施更低收费上限</strong>：更多学前中心纳入政府收费管控，扩大普惠覆盖面。
+            <strong>ECDA发布家长-学前教育伙伴关系指南</strong>：由各方共同创建的指南，旨在促进家长与学前教育机构之间更紧密的伙伴关系，提升服务质量标准。
+            <a class="source-link" href="https://www.ecda.gov.sg">ECDA 7/31</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>49所学前中心2026年1月起实施更低收费上限</strong>：更多学前中心纳入政府收费管控，扩大普惠覆盖面。
             <a class="source-link" href="https://www.channelnewsasia.com">CNA 7/30</a>
           </li>
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>更高收入上限让更多家庭享受学前和托儿补贴，惠及6万+家庭</strong>：补贴门槛提高将增加入托需求，推动学位供给扩张。
+            <strong>更高收入上限让更多家庭享受学前和托儿补贴</strong>：补贴门槛提高将惠及6万+家庭，增加入托需求，推动学位供给扩张。
             <a class="source-link" href="https://www.straitstimes.com">Straits Times 7/30</a>
           </li>
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>ECDA发布家长-学前教育伙伴关系指南</strong>：由各方共同创建，旨在促进家长与学前教育机构之间更紧密的伙伴关系。
+            <strong>社会及家庭发展部（MSF）2026年供应委员会</strong>：将新加坡打造为"家庭友好型"社会的重点方向公布。
             <a class="source-link" href="https://www.ecda.gov.sg">ECDA 7/31</a>
           </li>
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>MSF 2026年供应委员会：打造家庭友好型新加坡</strong>：社会及家庭发展部公布重点方向，将新加坡打造为"家庭友好型"社会。
+            <strong>刷新版幼教行业数字计划（IDP 2.0）</strong>：ECDA在更新版的幼教行业数字计划下推出新的实物解决方案资助支持，帮助运营商数字化转型。
             <a class="source-link" href="https://www.ecda.gov.sg">ECDA 7/31</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>ECDA重新设计学前教育教师岗位</strong>：教师角色重新定义，部分教师希望引入AI辅助备课，可能影响教学空间和设备需求。
+            <a class="source-link" href="https://www.straitstimes.com">Straits Times 7/30</a>
           </li>
         </ul>
 
-        <h3>📊 行业趋势与数字化 Industry Trends</h3>
+        <h3>🏗️ 新园与行业动态 New Centres & Industry</h3>
         <ul class="info-list">
-          <li class="demand">
-            <span class="tag tag-demand">趋势</span>
-            <strong>95%家长对学前教育安全满意，89%对教育质量满意</strong>：ECDA大规模家长调查显示新加坡学前教育整体满意度高，行业信心强劲。
-            <a class="source-link" href="https://www.straitstimes.com">Straits Times 7/30</a>
-          </li>
-          <li class="demand">
-            <span class="tag tag-demand">趋势</span>
-            <strong>刷新版幼教行业数字计划（IDP 2.0）——新增实物解决方案补助金</strong>：帮助运营商数字化转型，涉及教学设备和管理系统升级。硬件设备首年成本50%补贴。
-            <a class="source-link" href="https://www.ecda.gov.sg">ECDA 7/31</a>
-          </li>
-          <li class="demand">
-            <span class="tag tag-demand">趋势</span>
-            <strong>ECDA重新设计学前教育教师岗位；部分教师希望引入AI辅助备课</strong>：教师角色重新定义，可能影响教学空间和设备需求。
-            <a class="source-link" href="https://www.straitstimes.com">Straits Times 7/30</a>
-          </li>
-          <li class="policy">
-            <span class="tag tag-policy">政策</span>
-            <strong>婴幼儿托管试点项目（Childminding Pilot）持续推进</strong>：ECDA继续推进，为更多家庭提供灵活托育选择。
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>婴幼儿托管试点项目持续推进</strong>：ECDA继续推进婴幼儿托管试点项目，为更多家庭提供灵活的托育选择。
             <a class="source-link" href="https://www.ecda.gov.sg">ECDA 7/31</a>
           </li>
           <li class="risk">
             <span class="tag tag-risk">风险</span>
-            <strong>大巴窑一所学前中心因租金大幅上涨关闭</strong>：租金压力导致个案关闭，反映新加坡商业地产成本对幼教行业的影响。
+            <strong>大巴窑学前中心因租金大幅上涨关闭</strong>：租金压力导致个案关闭，反映新加坡商业地产成本对幼教行业的影响。
             <a class="source-link" href="https://www.mothership.sg">Mothership 7/30</a>
+          </li>
+        </ul>
+
+        <h3>📈 需求与趋势 Demand Signals</h3>
+        <ul class="info-list">
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>95%家长对学前教育安全满意，89%对教育质量满意</strong>：大规模家长调查显示新加坡学前教育整体满意度高，行业信心强劲。
+            <a class="source-link" href="https://www.straitstimes.com">Straits Times 7/30</a>
           </li>
         </ul>
 
         <h3>🎯 West Shore 关联分析</h3>
         <ul class="info-list">
-          <li class="expansion">收费上限扩大 + 收入门槛提高 = <strong>学位需求增长 = 新建/扩建学前中心 = 家具采购机会</strong>。关注My First Skool、PCF Sparkletots等主要运营商采购计划。</li>
-          <li class="demand">IDP 2.0数字化计划 = <strong>教学设备更新需求</strong>。互动白板、视频安全分析等物理设备纳入资助范围，可探索"数字化+实体设施"一体化方案。</li>
-          <li class="demand">AI辅助备课 + 教师角色重定义 = <strong>教学空间布局可能调整</strong>。灵活、模块化的家具方案更契合新教学模式。</li>
+          <li class="expansion">收费上限扩大 + 收入门槛提高 = <strong>学位需求增长→新建/扩建学前中心→家具采购机会</strong>。49所降费中心+6万+新增补贴家庭将推动学位供给扩张。建议关注My First Skool、PCF Sparkletots等主要运营商采购计划。</li>
+          <li class="policy">IDP 2.0数字化计划 + 教师角色重新设计 = <strong>教学设备和空间布局更新需求</strong>。数字化转型意味着教学设备更新，教师角色变化可能影响教室布局标准。</li>
+          <li class="demand">95%满意度 + 家长合作指南 = <strong>行业成熟度高，质量提升驱动设施更新周期</strong>。高质量要求意味着更频繁的设施更新和家具采购。</li>
         </ul>
       </div>
     </div>
 
-    <!-- ── NZ ── -->
+    <!-- NZ -->
     <div class="tab-panel" id="panel-nz">
       <div class="country-section">
-        <h3>🏛️ 政策与监管 Policy &amp; Regulation</h3>
+        <h3>🏛️ 政策与补贴 Policy & Funding</h3>
         <ul class="info-list">
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>"弱化监管、护理不一致"：大量未资质ECE工作人员引发担忧</strong>：NZ Herald报道ECE行业存在大量未持证人员，行业呼吁加强资质要求和培训投入。
+            <a class="source-link" href="https://www.nzherald.co.nz">NZ Herald 7/30</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>幼教提案搁置员工配比审查</strong>：政府的幼教改革方案未包含对师幼配比的审查，引发行业争议。
+            <a class="source-link" href="https://www.newsroom.co.nz">Newsroom 7/30</a>
+          </li>
           <li class="policy">
             <span class="tag tag-policy">政策</span>
             <strong>ECE资金体系审查：参与摘要已发布</strong>：教育部发布ECE资金体系改革的公众参与摘要，政策走向值得关注。
@@ -829,18 +891,32 @@
           </li>
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>幼教提案搁置员工配比审查</strong>：政府的幼教改革方案未包含对师幼配比的审查，引发行业争议。
-            <a class="source-link" href="https://www.newsroom.co.nz">Newsroom 7/30</a>
-          </li>
-          <li class="risk">
-            <span class="tag tag-risk">风险</span>
-            <strong>"弱化监管、护理不一致"：大量未资质ECE工作人员引发担忧</strong>：NZ Herald报道ECE行业存在大量未持证人员，行业呼吁加强资质要求和培训投入。
-            <a class="source-link" href="https://www.nzherald.co.nz">NZ Herald 7/30</a>
+            <strong>2026年预算：教育领域贸易培训增加，大学补贴冻结</strong>：RNZ报道预算对ECE的具体拨款情况，教育领域资金分配调整。
+            <a class="source-link" href="https://www.rnz.co.nz">RNZ 7/30</a>
           </li>
           <li class="policy">
             <span class="tag tag-policy">政策</span>
-            <strong>2026年预算：教育领域贸易培训增加，大学补贴冻结</strong>：预算对ECE的具体拨款情况。
-            <a class="source-link" href="https://www.rnz.co.nz">RNZ 7/30</a>
+            <strong>澳大利亚托儿虐待丑闻为新西兰敲响警钟</strong>：政界人士呼吁NZ吸取澳大利亚教训，加强幼教监管。
+            <a class="source-link" href="https://www.newsroom.co.nz">Newsroom 7/30</a>
+          </li>
+        </ul>
+
+        <h3>🏗️ 新园与行业动态 New Centres & Industry</h3>
+        <ul class="info-list">
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>OECD报告：幼教工作者压力大，工会要求改善待遇</strong>：国际教育组织指出OECD证据加强了幼教工作者对体面工作和公平薪酬的诉求。
+            <a class="source-link" href="https://www.ei-ie.org">Education International 7/30</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>新西兰孩子可能过早开始学习阅读</strong>：NZ Herald报道探讨了新西兰儿童可能过早开始正式阅读学习的问题，引发关于ECE课程设置的讨论。
+            <a class="source-link" href="https://www.nzherald.co.nz">NZ Herald 7/29</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>奥克兰南区超过四分之一儿童生活在贫困中</strong>：数据显示奥克兰南区超过25%的儿童生活在贫困线以下，凸显幼教服务可及性挑战。
+            <a class="source-link" href="https://www.nzherald.co.nz">NZ Herald 7/29</a>
           </li>
         </ul>
 
@@ -848,78 +924,68 @@
         <ul class="info-list">
           <li class="demand">
             <span class="tag tag-demand">趋势</span>
-            <strong>澳大利亚托儿虐待丑闻为新西兰敲响警钟</strong>：政界人士呼吁NZ吸取澳大利亚教训，加强幼教监管。可能推动安全设施升级。
-            <a class="source-link" href="https://www.newsroom.co.nz">Newsroom 7/30</a>
-          </li>
-          <li class="demand">
-            <span class="tag tag-demand">趋势</span>
-            <strong>OECD报告：幼教工作者压力大，工会要求改善待遇</strong>：全球性趋势，NZ幼教行业同样面临人才流失压力。
-            <a class="source-link" href="https://www.ei-ie.org">Education International 7/30</a>
-          </li>
-          <li class="demand">
-            <span class="tag tag-demand">趋势</span>
-            <strong>奥克兰南区超过四分之一儿童生活在贫困中</strong>：凸显幼教服务可及性挑战，政府可能加大补贴力度。
-            <a class="source-link" href="https://www.nzherald.co.nz">NZ Herald 7/29</a>
+            <strong>ECE资金体系审查持续推进</strong>：教育部公众参与摘要发布，资金审查结果将直接影响园所采购预算和设施投入方向。
+            <a class="source-link" href="https://www.education.govt.nz">MoE NZ 7/30</a>
           </li>
         </ul>
 
         <h3>🎯 West Shore 关联分析</h3>
         <ul class="info-list">
-          <li class="policy">ECE资金体系改革 + 配比审查搁置 = <strong>政策不确定性较高</strong>。改革本身意味着行业洗牌机会，但短期投资需谨慎。关注咨询结果对运营模式和设备投入的影响。</li>
-          <li class="demand">澳洲虐待丑闻波及NZ = <strong>安全监管趋严可能推动现有中心设施升级采购</strong>。以"安全合规"为切入点的家具方案可能获得关注。</li>
-          <li class="demand">未资质人员问题 + 预算低于通胀 = <strong>短期市场需谨慎</strong>。以"高性价比方案"切入NZ市场，关注教育部政策落地时间表。</li>
+          <li class="policy">ECE资金体系审查 + 未资质人员问题 = <strong>行业正处于变革期</strong>。资金审查结果将直接影响园所采购预算。安全监管趋严可能推动现有中心的设施升级采购。建议以"高性价比方案"切入NZ市场。</li>
+          <li class="demand">澳大利亚虐待丑闻波及NZ = <strong>安全设施审查需求上升</strong>。NZ政界人士呼吁吸取教训加强监管，可能推动全行业安全设施升级。</li>
+          <li class="expansion">奥克兰南区贫困数据 + 预算冻结 = <strong>政府可能加大幼教补贴力度</strong>。社会经济压力下，幼教服务可及性问题将推动政策调整。</li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- ═══════════════════════ OPPORTUNITY MATRIX ═══════════════════════ -->
+  <!-- OPPORTUNITY MATRIX -->
   <div class="opp-section">
     <h2>🎯 本周商机矩阵 Opportunity Matrix</h2>
     <div class="opp-grid">
       <div class="opp-card priority-high">
         <div class="opp-priority pri-high">🔴 高优先级 HIGH</div>
-        <h4>英国 — £95亿投资 + 331笔校园幼儿园拨款 + Ofsted新评级</h4>
+        <h4>英国 — £95亿投资 + 331笔校园幼儿园拨款 + 30h免费政策</h4>
         <div class="opp-country">🇬🇧 英国 · 全国</div>
-        <div class="opp-detail">创纪录£95亿投资持续落地，331笔校园幼儿园新拨款发放（每校£150,000含家具）。30小时免费托儿扩大覆盖。Ofsted新"报告卡"评级体系上线，可能引发合规驱动的设施更新潮。教育大臣要求CMA审查隐性费用。军人家庭£6,000/年补贴。</div>
-        <div class="opp-action">→ 通过GOV.UK School-based Nursery Programme渠道联系331个新获拨款学校。推出"Ofsted合规家具方案"（报告卡标准配套）。关注CMA审查对市场定价的影响。</div>
+        <div class="opp-detail">创纪录£95亿早期教育投资是当前全球最强的需求驱动信号。DfE再发放331笔校园幼儿园建设拨款，30小时免费托儿政策全面铺开。新部长Paul Waugh上任，教育大臣审查隐性费用。EYFS评估结果发布，SEND研究报告出炉。国防家庭£6,000/年补贴。</div>
+        <div class="opp-action">→ 主动联系331个新获拨款的学校提供全套家具方案。推出"SEND合规家具方案"。关注新部长政策方向。</div>
       </div>
 
       <div class="opp-card priority-high">
         <div class="opp-priority pri-high">🔴 高优先级 HIGH</div>
-        <h4>加拿大 — BC省53.8亿 + 多省密集新建 + 可用性危机</h4>
-        <div class="opp-country">🇨🇦 加拿大 · BC / ON / NS / NB</div>
-        <div class="opp-detail">BC省获53.8亿加元联邦资金确认。安大略获延期维持$19/天。新斯科舍省Lunenburg斥资数百万新建托儿位。NB省新资金减少等候名单。Jasper 40万扩展。$10/天五年回顾暴露"可用性危机"——从"没钱送"变"没位送"。联邦与育空延长5年协议。阿尔伯塔Montessori集团被接管。</div>
-        <div class="opp-action">→ 重点关注BC省和安大略省新建项目招标。针对加拿大幼教设备采购平台做定向推广。关注阿尔伯塔Montessori资产处置机会。</div>
+        <h4>加拿大 — BC省$53.8亿 + 多省密集新建 + 可用性危机</h4>
+        <div class="opp-country">🇨🇦 加拿大 · BC / NS / NB</div>
+        <div class="opp-detail">BC省获$53.8亿联邦幼教资金确认，是近期最大的资金确认。新斯科舍省Lunenburg斥资数百万新建数十个托儿位。新不伦瑞克省宣布新资金减少等候名单。贾斯珀$40万扩建22个托儿位。曼尼托巴省预算增加托儿资金。$10/天计划从可负担性危机转向可用性危机。</div>
+        <div class="opp-action">→ 优先跟进BC省和新斯科舍省的新建项目。关注各省ChildCareBC New Spaces Fund等项目招标。联系贾斯珀Wildflowers Childcare项目。</div>
       </div>
 
       <div class="opp-card priority-mid">
         <div class="opp-priority pri-mid">🟡 中优先级 MEDIUM</div>
         <h4>澳大利亚 — $8500万投资组合 + 安全丑闻推动合规升级</h4>
         <div class="opp-country">🇦🇺 澳大利亚 · VIC / NSW / QLD / ACT</div>
-        <div class="opp-detail">11个托儿投资项目组合上市（$85M+），覆盖4个州。悉尼虐待丑闻（329项指控，120+家庭）推动全行业安全合规升级。合规环境趋严——史上最复杂。阿德莱德新建一体化早教中心。Mayfield Q2入住率改善。ECA全国大会即将召开。93名塔州幼教奖学金获得者。</div>
-        <div class="opp-action">→ 跟踪$85M投资组合交易进展，新业主可能翻新设施。推出"安全认证家具方案"应对虐待丑闻后的合规需求。关注ECA大会参展/合作机会。</div>
+        <div class="opp-detail">全国托儿投资组合上市（11个项目，$8500万+），新买家可能对收购中心进行翻新升级。悉尼虐待丑闻120+家庭被调查，329项指控推动全行业安全合规升级。合规环境趋严，ECA全国大会即将召开。塔斯马尼亚奖学金首轮93人。</div>
+        <div class="opp-action">→ 跟踪$8500万投资组合的交易进展，提前接触潜在买家。推出"安全合规家具方案"应对虐待丑闻后的整改需求。关注ECA大会参展/合作机会。</div>
       </div>
 
       <div class="opp-card priority-mid">
         <div class="opp-priority pri-mid">🟡 中优先级 MEDIUM</div>
-        <h4>新加坡 — 49中心收费管控 + IDP 2.0 + 95%满意度</h4>
+        <h4>新加坡 — 收费管控扩大 + 补贴门槛提高 + IDP 2.0</h4>
         <div class="opp-country">🇸🇬 新加坡 · 全国</div>
-        <div class="opp-detail">49所学前中心纳入更低收费上限。收入门槛提高惠及6万+家庭。95%家长满意安全，89%满意质量。IDP 2.0数字化计划推出实物解决方案补助金（硬件50%补贴）。教师角色重定义+AI辅助备课。婴幼儿托管试点推进。MSF家庭友好型政策。大巴窑中心因租金关闭。</div>
-        <div class="opp-action">→ 研究IDP 2.0硬件升级方案（互动白板、安全分析设备）。关注My First Skool、PCF Sparkletots等主要运营商采购。探索"数字化+实体设施"一体化方案。</div>
+        <div class="opp-detail">49所学前中心实施更低收费上限，收入门槛提高惠及6万+家庭。ECDA发布家长合作指南和IDP 2.0数字化计划。教师角色重新设计，部分希望引入AI辅助。95%家长对安全满意。婴幼儿托管试点持续推进。MSF家庭友好型政策方向。</div>
+        <div class="opp-action">→ 研究IDP 2.0对硬件升级的要求。关注My First Skool、PCF Sparkletots等主要运营商采购计划。针对新加坡市场推广数字化+实体设施升级方案。</div>
       </div>
 
       <div class="opp-card priority-watch">
         <div class="opp-priority pri-watch">🔵 观察级 WATCH</div>
-        <h4>新西兰 — ECE资金改革 + 安全监管趋严 + 未资质人员问题</h4>
+        <h4>新西兰 — ECE资金审查 + 未资质人员 + 安全监管趋严</h4>
         <div class="opp-country">🇳🇿 新西兰 · 全国</div>
-        <div class="opp-detail">ECE资金体系审查参与摘要发布。幼教提案搁置配比审查引发争议。大量未资质ECE工作人员引发安全担忧。澳洲虐待丑闻为NZ敲响警钟。预算低于通胀。奥克兰南区25%+儿童贫困。OECD报告呼吁改善幼教工作者待遇。</div>
-        <div class="opp-action">→ 关注ECE资金咨询结果对设备投入的影响。以"安全合规"为切入点应对澳洲丑闻波及效应。以"高性价比方案"切入NZ市场。</div>
+        <div class="opp-detail">ECE资金体系审查持续推进，教育部发布公众参与摘要。大量未资质ECE工作人员引发行业担忧。幼教提案搁置师幼配比审查。澳大利亚虐待丑闻为NZ敲响警钟。预算冻结大学补贴但增加贸易培训。奥克兰南区25%+儿童贫困。</div>
+        <div class="opp-action">→ 以"高性价比方案"切入NZ市场。关注ECE资金审查结果对设备投入的影响。安全监管趋严可能推动设施升级采购。</div>
       </div>
     </div>
   </div>
 
-  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <!-- FOOTER -->
   <div class="footer">
     <p>West Shore Furniture · ECE Market Intelligence · <a href="https://westshorefurniture.com">westshorefurniture.com</a></p>
     <p>Report generated: 2026-07-31 · Coverage: 🇦🇺 Australia · 🇬🇧 UK · 🇨🇦 Canada · 🇸🇬 Singapore · 🇳🇿 New Zealand</p>
