@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>幼教市场周报 — 2026年9月1日至9月4日 | West Shore Furniture</title>
+<style>
+  :root {
+    --navy: #061b31;
+    --navy-light: #0d253d;
+    --slate: #64748d;
+    --slate-dark: #273951;
+    --border: #e5edf5;
+    --white: #ffffff;
+    --warm-bg: #f8f9fb;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --accent-light: #eff6ff;
+    --gold: #b8860b;
+    --gold-light: #fef9e7;
+    --red: #dc2626;
+    --red-light: #fef2f2;
+    --green: #16a34a;
+    --green-light: #f0fdf4;
+    --amber: #d97706;
+    --amber-light: #fffbeb;
+    --shadow-sm: rgba(23,23,23,0.06) 0px 3px 6px;
+    --shadow: rgba(50,50,93,0.15) 0px 20px 40px -20px, rgba(0,0,0,0.06) 0px 12px 24px -12px;
+    --shadow-lg: rgba(50,50,93,0.20) 0px 30px 50px -25px, rgba(0,0,0,0.08) 0px 18px 36px -15px;
+    --radius: 8px;
+    --radius-sm: 6px;
+    --radius-xs: 4px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', sans-serif;
+    color: var(--navy);
+    background: var(--warm-bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+  }
+  .report-header {
+    background: linear-gradient(135deg, var(--navy) 0%, #0f2240 100%);
+    color: white;
+    padding: 48px 0 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .report-header::after {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -80px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: rgba(37,99,235,0.12);
+    pointer-events: none;
+  }
+  .report-header::before {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(184,134,11,0.08);
+    pointer-events: none;
+  }
+  .header-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 32px;
+    position: relative;
+    z-index: 1;
+  }
+  .header-brand {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 12px;
+  }
+  .header-title {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .header-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 20px;
+  }
+  .header-meta {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .header-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+  }
+  .header-meta-item .dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  .summary-section {
+    margin-top: -28px;
+    position: relative;
+    z-index: 2;
+  }
+  .summary-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px 32px;
+    box-shadow: var(--shadow);
+    margin-bottom: 32px;
+  }
+  .summary-card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 16px;
+    letter-spacing: -0.3px;
+  }
+  .summary-intro {
+    color: var(--slate);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  .highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+  }
+  .highlight-item {
+    background: var(--accent-light);
+    border: 1px solid rgba(37,99,235,0.15);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .highlight-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .highlight-text {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--navy);
+    line-height: 1.5;
+  }
+  .highlight-text span {
+    display: block;
+    font-weight: 400;
+    color: var(--slate);
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  .metric-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  .metric-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 18px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: default;
+  }
+  .metric-card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+  }
+  .metric-flag {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .metric-country {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .metric-status {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+  .status-hot { background: var(--red-light); color: var(--red); }
+  .status-warm { background: var(--amber-light); color: var(--amber); }
+  .status-stable { background: var(--accent-light); color: var(--accent); }
+  .status-cold { background: #f1f5f9; color: var(--slate); }
+  .metric-detail {
+    font-size: 11px;
+    color: var(--slate);
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+  .tabs-section {
+    margin-bottom: 32px;
+  }
+  .tabs-nav {
+    display: flex;
+    gap: 2px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius) var(--radius) 0 0;
+    padding: 4px;
+    overflow-x: auto;
+  }
+  .tab-btn {
+    flex: 1;
+    min-width: 100px;
+    padding: 12px 16px;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--slate);
+    cursor: pointer;
+    border-radius: var(--radius-xs);
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .tab-btn:hover { background: var(--warm-bg); color: var(--navy); }
+  .tab-btn.active {
+    background: var(--accent);
+    color: white;
+    font-weight: 600;
+  }
+  .tab-panel {
+    display: none;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 var(--radius) var(--radius);
+    padding: 28px 32px;
+    box-shadow: var(--shadow-sm);
+  }
+  .tab-panel.active { display: block; }
+  .country-section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    letter-spacing: -0.2px;
+  }
+  .country-section h3:not(:first-child) {
+    margin-top: 24px;
+  }
+  .info-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .info-list li {
+    font-size: 14px;
+    color: var(--slate-dark);
+    line-height: 1.6;
+    padding: 6px 10px;
+    border-radius: var(--radius-xs);
+    border-left: 3px solid transparent;
+    transition: background 0.15s;
+  }
+  .info-list li:hover { background: var(--warm-bg); }
+  .info-list li.policy { border-left-color: var(--accent); }
+  .info-list li.expansion { border-left-color: var(--green); }
+  .info-list li.demand { border-left-color: var(--amber); }
+  .info-list li.risk { border-left-color: var(--red); }
+  .tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-right: 6px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .tag-policy { background: var(--accent-light); color: var(--accent); }
+  .tag-expand { background: var(--green-light); color: var(--green); }
+  .tag-demand { background: var(--amber-light); color: var(--amber); }
+  .tag-risk { background: var(--red-light); color: var(--red); }
+  .source-link {
+    font-size: 11px;
+    color: var(--accent);
+    text-decoration: none;
+    margin-left: 6px;
+    opacity: 0.6;
+    transition: opacity 0.15s;
+  }
+  .source-link:hover { opacity: 1; text-decoration: underline; }
+  .opp-section {
+    margin-bottom: 32px;
+  }
+  .opp-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 20px;
+    letter-spacing: -0.3px;
+  }
+  .opp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 16px;
+  }
+  .opp-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s;
+    border-top: 3px solid transparent;
+  }
+  .opp-card:hover { box-shadow: var(--shadow); }
+  .opp-card.priority-high { border-top-color: var(--red); }
+  .opp-card.priority-mid { border-top-color: var(--amber); }
+  .opp-card.priority-watch { border-top-color: var(--accent); }
+  .opp-priority {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 9999px;
+    margin-bottom: 10px;
+  }
+  .pri-high { background: var(--red-light); color: var(--red); }
+  .pri-mid { background: var(--amber-light); color: var(--amber); }
+  .pri-watch { background: var(--accent-light); color: var(--accent); }
+  .opp-card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .opp-card .opp-country {
+    font-size: 12px;
+    color: var(--slate);
+    margin-bottom: 10px;
+  }
+  .opp-card .opp-detail {
+    font-size: 13px;
+    color: var(--slate-dark);
+    line-height: 1.6;
+  }
+  .opp-card .opp-action {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .footer {
+    text-align: center;
+    padding: 32px 0;
+    font-size: 12px;
+    color: var(--slate);
+    border-top: 1px solid var(--border);
+    margin-top: 16px;
+  }
+  .footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .footer a:hover { text-decoration: underline; }
+  @media (max-width: 768px) {
+    .report-header { padding: 32px 0 28px; }
+    .header-title { font-size: 24px; }
+    .header-inner, .container { padding: 0 16px; }
+    .metric-row { grid-template-columns: repeat(2, 1fr); }
+    .highlight-grid { grid-template-columns: 1fr; }
+    .opp-grid { grid-template-columns: 1fr; }
+    .tabs-nav { flex-wrap: nowrap; }
+    .tab-btn { min-width: 80px; font-size: 12px; padding: 10px 8px; }
+    .summary-card { padding: 20px 18px; }
+    .tab-panel { padding: 20px 18px; }
+  }
+</style>
+</head>
+
+<!-- ═══════════════════════ HEADER ═══════════════════════ -->
+<header class="report-header">
+  <div class="header-inner">
+    <div class="header-brand">West Shore Furniture · ECE Market Intelligence</div>
+    <h1 class="header-title">幼教市场周报</h1>
+    <div class="header-subtitle">ECE Weekly Intelligence Brief — 2026年9月1日至9月4日 · 第17期</div>
+    <div class="header-meta">
+      <div class="header-meta-item"><span class="dot"></span>Coverage: 5 Markets</div>
+      <div class="header-meta-item"><span class="dot"></span>Report Date: 2026-09-04</div>
+      <div class="header-meta-item"><span class="dot"></span>Sources: Daily cron reports (Sep 1 – Sep 4)</div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════ EXECUTIVE SUMMARY ═══════════════════════ -->
+<div class="container">
+  <div class="summary-section">
+    <div class="summary-card">
+      <h2>📋 本周核心发现 Executive Summary</h2>
+      <p class="summary-intro">
+        本周（9月1日-4日）全球幼教市场呈现"监管重组+行业整合+人才危机"三重主题。澳大利亚方面：G8 Education宣布关闭40家服务中心，市场过剩信号明显；昆士兰州推动儿童保护集中化改革；参议院将调查偏远地区幼教服务准入；六家机构获150万澳元教师培训资助。加拿大方面：BC省宣布约1,200个新托儿学位；温尼伯护理院增设152学位托儿中心；幼教被列为全国高风险短缺职业（至2033年）；商业领袖呼吁将托儿视为"国家建设投资"；BC省公布2026年幼教移民配额360-440个。新西兰方面：教育部整个ECE区域监管团队被解散，引发行业震动；ECE资金审批改由ERO负责，形成双机构体制；2026大选各党派ECE政策对比指南发布；政府投入$2300万建设20间特殊教育教室。英国方面：Ofsted批量更新8篇幼教注册与合规指南；DfE发布幼教学徒学位指南；连续发布新学校开设/组织变更指南；CMA对托儿行业展开调查。新加坡方面：ECDA扩大招聘资助，目标2030年前新增1,800名婴幼儿护理教育者；发布《幼教中心设立指南》及2026版操作守则；推进幼教行业数字化转型。
+      </p>
+      <div class="highlight-grid">
+        <div class="highlight-item">
+          <div class="highlight-icon">🇳🇿</div>
+          <div class="highlight-text">ECE监管体系大重组<span>教育部区域监管团队全部解散，资金审批转至ERO，形成双机构体制</span></div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">🇨🇦</div>
+          <div class="highlight-text">1,200新学位+人才危机<span>BC省新增1,200个托儿学位；幼教被列为全国高风险短缺职业至2033年</span></div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">🇬🇧</div>
+          <div class="highlight-text">Ofsted批量合规更新+CMA调查<span>8篇注册合规指南集中更新；竞争与市场管理局正式调查托儿行业</span></div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">🇸🇬</div>
+          <div class="highlight-text">1,800名婴幼儿护理扩招<span>ECDA扩大招聘资助，目标2030年前新增1,800名infant care教育者</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ COUNTRY METRIC CARDS ═══════════════════════ -->
+  <div class="metric-row">
+    <div class="metric-card">
+      <div class="metric-flag">🇦🇺</div>
+      <div class="metric-country">澳大利亚</div>
+      <div class="metric-status status-hot">🔥 HOT</div>
+      <div class="metric-detail">G8关闭40家 | 昆州保护改革 | 参议院偏远地区调查 | 150万培训资助</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-flag">🇨🇦</div>
+      <div class="metric-country">加拿大</div>
+      <div class="metric-status status-hot">🔥 HOT</div>
+      <div class="metric-detail">1,200新学位 | 152学位新中心 | 人才短缺至2033 | 移民配额</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-flag">🇬🇧</div>
+      <div class="metric-country">英国</div>
+      <div class="metric-status status-hot">🔥 HOT</div>
+      <div class="metric-detail">Ofsted 8篇更新 | CMA调查 | 新学校指南 | 学徒学位 | 技能税</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-flag">🇸🇬</div>
+      <div class="metric-country">新加坡</div>
+      <div class="metric-status status-warm">⚡ ACTIVE</div>
+      <div class="metric-detail">1,800扩招 | 2026操作守则 | 数字化转型 | 家校合作指南</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-flag">🇳🇿</div>
+      <div class="metric-country">新西兰</div>
+      <div class="metric-status status-hot">🔥 HOT</div>
+      <div class="metric-detail">监管团队解散 | ERO接管资金 | 选举政策指南 | $2300万特殊教育</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ COUNTRY TABS ═══════════════════════ -->
+  <div class="tabs-section">
+    <div class="tabs-nav">
+      <button class="tab-btn active" onclick="switchTab('au')">🇦🇺 澳大利亚</button>
+      <button class="tab-btn" onclick="switchTab('ca')">🇨🇦 加拿大</button>
+      <button class="tab-btn" onclick="switchTab('gb')">🇬🇧 英国</button>
+      <button class="tab-btn" onclick="switchTab('sg')">🇸🇬 新加坡</button>
+      <button class="tab-btn" onclick="switchTab('nz')">🇳🇿 新西兰</button>
+    </div>
+
+    <!-- ── Australia ── -->
+    <div class="tab-panel active" id="panel-au">
+      <div class="country-section">
+        <h3>🏛️ 政策与补贴 Policy & Funding</h3>
+        <ul class="info-list">
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>昆士兰州推动儿童保护集中化改革</strong>：昆士兰州政府宣布将儿童保护职能集中到新成立的"保护委员会"(Protection Commission)下统一管理，将影响幼教机构的合规要求和设施标准。
+            <a class="source-link" href="https://thesector.com.au/article/queensland-protection-commission-child-safeguarding-ecec">The Sector 9/4</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>参议院将调查偏远地区幼教服务准入问题</strong>：澳大利亚参议院将启动专项调查，审查区域、农村和偏远地区的幼教服务覆盖情况，可能推动相关基础设施投资。
+            <a class="source-link" href="https://www.thesector.com.au/">The Sector 9/3</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>六家幼教机构获150万澳元教师培训资助</strong>：联邦政府拨款150万澳元给六家幼教服务商，用于加强幼儿教师培训体系建设。
+            <a class="source-link" href="https://www.thesector.com.au/">The Sector 9/3</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>ECA呼吁成立幼教服务委员会</strong>：ECA CEO Samantha Page和Dr Sarah Wight倡导成立专门的"幼教服务委员会"(Early Childhood Services Commission)，以应对当前政策和监管的碎片化问题。
+            <a class="source-link" href="https://www.earlychildhoodaustralia.org.au/the-spoke/why-we-need-an-early-childhood-services-commiss">ECA 9/4</a>
+          </li>
+        </ul>
+
+        <h3>🏗️ 新园与行业动态 New Centres & Industry</h3>
+        <ul class="info-list">
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>G8 Education关闭40家服务中心 — 市场过剩信号</strong>：澳大利亚第二大幼教服务商G8 Education宣布将关闭40家服务中心。ECA分析认为这更多反映了市场过剩问题，而非公众信心丧失。
+            <a class="source-link" href="https://www.earlychildhoodaustralia.org.au/the-spoke/market-failure-and-the-need-for-stewardship-in-early-childhood-services-this-is-more-about-oversupply-than-a-loss-of-public-confidence/">ECA 9/4</a>
+          </li>
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>Edge Early Learning进入自愿托管</strong>：澳大利亚大型连锁幼教品牌Edge Early Learning宣布进入自愿托管程序，旗下所有中心继续正常运营。这是行业财务压力的标志性事件。
+            <a class="source-link" href="https://www.abc.net.au/">ABC News 8/25</a>
+          </li>
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>黄金海岸幼教资产上市</strong>：一处位于黄金海岸Clear Island Waters的幼教投资物业进入市场，被视为"代际投资机会"。新业主可能有翻新/升级家具需求。
+            <a class="source-link" href="https://thesector.com.au/article/gold-coast-childcare-investment-clear-island-waters-sale">The Sector 9/4</a>
+          </li>
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>Goodstart Early Learning开展国际研修之旅</strong>：澳大利亚最大非营利幼教机构Goodstart的员工赴海外考察"下一代实践"，可能引入新的教学环境标准。
+            <a class="source-link" href="https://www.thesector.com.au/">The Sector 9/3</a>
+          </li>
+        </ul>
+
+        <h3>📈 需求与趋势 Demand Signals</h3>
+        <ul class="info-list">
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>"临界点"：托儿危机蔓延，家长大规模退出</strong>：澳大利亚托儿服务危机达到"临界点"，越来越多家长因费用和可及性问题被迫退出劳动力市场，行业呼吁紧急改革。
+            <a class="source-link" href="https://www.adelaidenow.com.au/">Adelaide Now 8/3</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>维多利亚大学报告：澳大利亚幼教行业的隐性成本</strong>：Victoria University发布研究报告，揭示澳大利亚幼教行业长期被低估的隐性成本，包括从业者低薪、设施投资不足等问题。
+            <a class="source-link" href="https://www.vu.edu.au/">Victoria University 7/11</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>构建包容性幼教环境</strong>：ECA探讨如何从"适应儿童"转变为"为儿童设计"的包容性幼教环境理念，可能推动无障碍家具和设施需求。
+            <a class="source-link" href="https://www.earlychildhoodaustralia.org.au/the-spoke/flipping-the-approach-building-inclusive-early-childhood-environments/">ECA 9/4</a>
+          </li>
+        </ul>
+
+        <h3>🎯 West Shore 关联分析</h3>
+        <ul class="info-list">
+          <li class="risk">G8关闭40家 + Edge Early Learning托管 = <strong>行业整合加速</strong>。关闭中心释放二手家具市场，整合后的新中心可能有翻新采购需求。新运营方接管后通常需要统一设施标准。</li>
+          <li class="policy">昆州保护改革 + 参议院偏远地区调查 + ECA呼吁服务委员会 = <strong>监管可能加强，合规家具需求增长</strong>。偏远地区调查可能推动新设施建设，创造家具采购机会。</li>
+          <li class="demand">托儿危机"临界点" + 隐性成本报告 + 包容性环境趋势 = <strong>政策压力下政府可能加大投入</strong>。包容性环境理念推动无障碍家具需求。150万培训资助 = 行业专业化提升。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ── Canada ── -->
+    <div class="tab-panel" id="panel-ca">
+      <div class="country-section">
+        <h3>🏛️ 政策与补贴 Policy & Funding</h3>
+        <ul class="info-list">
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>BC省宣布资助约1,200个新托儿学位</strong>：不列颠哥伦比亚省宣布资金支持约1,200个新托儿学位，预计明年开放。新增名额 = 新建/扩建中心 = 家具采购机会。
+            <a class="source-link" href="https://childcarecanada.org/documents/child-care-news/bc-announces-funding-approximately-1200-new-child-care-spaces-open-next">Childcare Canada 9/2</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>"$10/天"托儿计划的分裂：2026年加拿大托儿费用报告</strong>：CCPA发布报告，分析联邦"$10/天"托儿计划实施后的费用差异，各省执行情况参差不齐。
+            <a class="source-link" href="https://childcarecanada.org/">Policy Alternatives 3/12</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>安大略省称联邦托儿计划长期可持续性面临风险</strong>：安大略省表示，联邦"$10/天"托儿计划实施5年后，其长期可行性面临资金不足的挑战，呼吁联邦增加拨款。
+            <a class="source-link" href="https://www.cbc.ca/">CBC 6/28</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>BC省公布2026年幼教移民配额</strong>：不列颠哥伦比亚省公布2026年技术移民提名计划：幼教行业（NOC 42202）360-440个名额，旨在缓解幼教人才短缺。
+            <a class="source-link" href="https://childcarecanada.org/documents/child-care-news/british-columbia-unveils-provincial-immigration-quotas-health-care-and">Childcare Canada 9/3</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>省政府禁止校园手机、限制托儿中心屏幕时间</strong>：某省宣布禁止校园使用手机，并限制托儿中心的屏幕时间。减少屏幕时间意味着更多实体活动空间需求，可能增加对活动家具、阅读角等的需求。
+            <a class="source-link" href="https://childcarecanada.org/documents/child-care-news/province-bans-cellphones-schools-limits-screen-time-child-care-centres">Childcare Canada 9/2</a>
+          </li>
+        </ul>
+
+        <h3>🏗️ 新园与行业动态 New Centres & Industry</h3>
+        <ul class="info-list">
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>温尼伯护理院增设152学位托儿中心</strong>：温尼伯一家护理院将新增152个托儿学位的托儿中心，属于跨代照护（intergenerational care）模式。全新152学位中心需要全套儿童家具。
+            <a class="source-link" href="https://childcarecanada.org/documents/child-care-news/winnipeg-care-home-add-152-space-child-care-centre">Childcare Canada 9/2</a>
+          </li>
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>商业领袖呼吁企业界支持托儿服务为"国家建设投资"</strong>：近两封由20多位知名商业领袖和慈善家签署的公开信，呼吁加拿大企业支持高质量幼教，称其为"国家建设投资"。
+            <a class="source-link" href="https://childcarecanada.org/documents/child-care-news/business-leaders-urge-corporate-canada-support-daycare-%E2%80%98nation-building">Childcare Canada 9/3</a>
+          </li>
+        </ul>
+
+        <h3>📈 需求与趋势 Demand Signals</h3>
+        <ul class="info-list">
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>幼教人员短缺引发全国紧急需求</strong>：加拿大就业与社会发展部将幼教列为全国高风险短缺职业（至2033年）。人口增长和$10/天托儿计划扩张加剧了人才缺口，ECE已成为全国最紧缺职业之一。
+            <a class="source-link" href="https://childcarecanada.org/documents/child-care-news/daycare-shortage-sparks-urgent-need-early-childhood-educators">Childcare Canada 9/3</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>联邦政府推进新一代劳动力发展政策</strong>：联邦政府正在推进与工业战略挂钩的新劳动力发展政策，工会再次受邀参与新的劳动力发展架构，可能影响幼教行业用工模式。
+            <a class="source-link" href="https://childcarecanada.org/documents/research-policy-practice/hinge-moment-canada%E2%80%99s-workforce-and-industrial-policy">Childcare Canada 9/3</a>
+          </li>
+        </ul>
+
+        <h3>🎯 West Shore 关联分析</h3>
+        <ul class="info-list">
+          <li class="expansion">BC省1,200个新学位 + 温尼伯152学位新中心 = <strong>最直接的家具采购机会</strong>。建议跟进具体项目方和采购时间线。BC省移民配额360-440个 = 新机构开设 = 更多家具需求。</li>
+          <li class="policy">$10/天计划分裂 + 安省可持续性风险 + 商业领袖力挺 = <strong>政策博弈期，但扩建趋势不可逆</strong>。商业领袖公开信提升了行业关注度，资本可能加速流入。</li>
+          <li class="demand">幼教列为高风险短缺职业至2033年 + 屏幕时间限制 = <strong>人才短缺推动机构扩张需配套基础设施</strong>。减少屏幕时间 = 更多实体活动空间和家具需求。跨代照护模式（温尼伯）是创新方向。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ── UK ── -->
+    <div class="tab-panel" id="panel-gb">
+      <div class="country-section">
+        <h3>🏛️ 政策与补贴 Policy & Funding</h3>
+        <ul class="info-list">
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>Ofsted批量更新幼教注册与合规要求（8篇）</strong>：Ofsted于9月1日集中发布一系列关于幼教服务提供者的注册与合规指南更新，涵盖自愿/强制托儿注册、儿童保育员、保姆、严重事故报告、检查推迟政策、执法政策等。合规要求更新可能影响新设机构的设施标准。
+            <a class="source-link" href="https://www.gov.uk/guidance/daycare-providers-on-the-voluntary-childcare-register-ofsted-requirements">Ofsted 9/1</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>幼教学徒学位指南发布</strong>：DfE发布了幼教教师学位学徒制的雇主指南和培训机构指南，推动幼教人才专业化。
+            <a class="source-link" href="https://www.gov.uk/government/publications/early-years-teacher-degree-apprenticeship-guidance-for-employers">DfE 9/2</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>DfE更新：新学校开设指南</strong>：教育部发布更新版"开设新学校"法定指南，涵盖新学校设立的完整流程。与新校建设直接相关，可能带来家具采购需求。
+            <a class="source-link" href="https://www.gov.uk/government/publications/opening-new-schools">DfE 9/4</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>DfE更新：通过免费学校推定路线建立新学院</strong>：教育部更新了通过"免费学校推定"(Free School Presumption)路线建立新学院的指南。
+            <a class="source-link" href="https://www.gov.uk/government/publications/establishing-a-new-academy-free-school-presumption">DfE 9/4</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>DfE更新：地方当局维持学校的组织变更</strong>：发布关于地方当局维持学校开设、关闭或组织变更的法定指南更新。
+            <a class="source-link" href="https://www.gov.uk/government/publications/school-organisation-local-authority-maintained-schools">DfE 9/4</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>幼教初始教师培训2025-2026资金指南</strong>：Gov.uk发布幼教初始教师培训(EYITT)2025-2026学年的资金指南。
+            <a class="source-link" href="https://www.gov.uk/guidance/early-years-initial-teacher-training-2025-to-2026-funding-guidance">Gov.uk 9/4</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>Growth and Skills Levy推广资源发布</strong>：教育部发布Growth and Skills Levy推广材料，该技能税可能影响幼教行业人才培养资金来源。
+            <a class="source-link" href="https://www.gov.uk/government/publications/resources-for-promoting-the-growth-and-skills-levy">DfE 9/3</a>
+          </li>
+        </ul>
+
+        <h3>🏗️ 新园与行业动态 New Centres & Industry</h3>
+        <ul class="info-list">
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>CMA（竞争与市场管理局）对托儿行业展开调查</strong>：英国竞争与市场管理局正式对托儿行业启动调查，审查市场结构、定价和服务可及性问题，可能引发行业监管变革。
+            <a class="source-link" href="https://www.gov.uk/">GOV.UK 6/9</a>
+          </li>
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>Christie & Co发布英国日间托儿所市场报告</strong>：知名地产咨询公司Christie & Co发布《英国日间托儿所市场：所有权、结构与规模》报告，分析行业并购趋势和市场格局。市场并购活跃 = 新运营方接管中心后可能有家具翻新/采购需求。
+            <a class="source-link" href="https://www.christie.com/">Christie & Co 8/14</a>
+          </li>
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>早餐俱乐部家长调查结果</strong>：DfE发布了早餐俱乐部早期采用者的家长调查结果，显示政府推动的免费早餐俱乐部项目正在扩展。
+            <a class="source-link" href="https://www.gov.uk/government/publications/breakfast-clubs-early-adopters-results-from-parents-survey">DfE 9/2</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>政府减轻家庭学校开支</strong>：DfE宣布新措施减轻家庭学校费用负担，可能间接增加对学校附属幼教设施的投入。
+            <a class="source-link" href="https://www.gov.uk/government/news/breathing-space-for-families-as-government-eases-school-costs">DfE 9/2</a>
+          </li>
+        </ul>
+
+        <h3>📈 需求与趋势 Demand Signals</h3>
+        <ul class="info-list">
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>威尔士2026年免费托儿服务政策</strong>：详细介绍威尔士地区2026年免费托儿政策，包括Flying Start、Childcare Offer和Foundation Phase等项目。
+            <a class="source-link" href="https://www.daynurseries.co.uk/">daynurseries.co.uk 7/9</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>学校招聘代课教师和机构工人协议</strong>：教育部发布关于学校招聘代课教师和机构工人的指导文件，可能影响幼教机构的人力资源管理。
+            <a class="source-link" href="https://www.gov.uk/guidance/deal-for-schools-hiring-supply-teachers-and-agency-workers">DfE 9/4</a>
+          </li>
+        </ul>
+
+        <h3>🎯 West Shore 关联分析</h3>
+        <ul class="info-list">
+          <li class="policy">Ofsted 8篇合规更新 + DfE连续3份新学校指南 = <strong>监管密集期，合规家具需求增长</strong>。新学校开设指南 = 新一波学校建设潮的信号。建议研究新规对家具规格的具体要求。</li>
+          <li class="expansion">CMA调查 + Christie & Co市场报告 + 早餐俱乐部扩展 = <strong>行业并购活跃+服务扩展</strong>。CMA调查可能引发行业重组，新运营方接管后有标准化采购需求。早餐俱乐部扩展 = 更多学校设施需求。</li>
+          <li class="demand">幼教学徒学位 + Growth and Skills Levy + 威尔士免费托儿 = <strong>人才专业化+服务扩展双轮驱动</strong>。技能税可能影响人才培养资金来源。免费托儿政策持续推动需求增长。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ── Singapore ── -->
+    <div class="tab-panel" id="panel-sg">
+      <div class="country-section">
+        <h3>🏛️ 政策与补贴 Policy & Funding</h3>
+        <ul class="info-list">
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>ECDA发布《幼教中心设立指南》及2026版操作守则</strong>：ECDA更新了设立幼教发展中心(ECDC)的程序和要求指南，并发布了《幼教发展中心操作守则》第5版(2026年)。新设幼儿园需遵循最新标准，可能影响家具和设备采购规格。
+            <a class="source-link" href="https://www.ecda.gov.sg/operators/setting-up-a-preschool/setting-up-an-ecdc">ECDA 9/4</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>ECDA扩大招聘资助，目标2030年前新增1,800名婴幼儿护理教育者</strong>：新加坡幼儿培育署(ECDA)宣布扩大招聘资助计划，目标在2030年前新增招募1,800名婴幼儿护理(infant care)教育者，以应对日益增长的托幼需求。新增婴幼儿护理中心 = 婴儿床、换尿布台、围栏等婴幼儿专用家具需求增长。
+            <a class="source-link" href="https://www.channelnewsasia.com/">CNA 8/28</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>ECDA发布雇主电子资源指南</strong>：ECDA发布面向幼教雇主的电子资源指南(E-Resource Guide)，整合招聘、培训、合规等一站式信息。
+            <a class="source-link" href="https://www.ecda.gov.sg/">ECDA 8/15</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>ECDA推出家校合作指南</strong>：ECDA联合业界共同推出家长-幼儿园伙伴关系指南，旨在加强家校沟通与合作。
+            <a class="source-link" href="https://www.msf.gov.sg/media-room/article/ecda-launches-co-created-guide-to-foster-stronger-parent-preschool-partnerships">MSF/ECDA</a>
+          </li>
+        </ul>
+
+        <h3>🏗️ 新园与行业动态 New Centres & Industry</h3>
+        <ul class="info-list">
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>幼教行业数字化转型计划</strong>：ECDA持续推进"幼教行业转型倡议"(Early Childhood Transformation Initiative)和行业数字化计划，旨在提升幼教行业的数字化水平。
+            <a class="source-link" href="https://www.ecda.gov.sg/operators/early-childhood-transformation-initiative/early-childhood-industry-digital-plan">ECDA 9/4</a>
+          </li>
+        </ul>
+
+        <h3>📈 需求与趋势 Demand Signals</h3>
+        <ul class="info-list">
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>1,800名婴幼儿护理教育者扩招 = 婴幼儿专用家具需求增长</strong>：ECDA的扩招计划意味着未来几年将新建大量婴幼儿护理中心，对婴儿床、换尿布台、围栏、哺乳椅等婴幼儿专用家具的需求将显著增长。
+            <a class="source-link" href="https://www.ecda.gov.sg/">ECDA 8/28</a>
+          </li>
+        </ul>
+
+        <h3>🎯 West Shore 关联分析</h3>
+        <ul class="info-list">
+          <li class="policy">ECDA 2026版操作守则 + 设立指南更新 = <strong>新设幼儿园需遵循最新标准</strong>，可能对家具规格有新要求。建议研究合规需求，推出"ECDA合规家具方案"。</li>
+          <li class="expansion">1,800名婴幼儿护理教育者扩招 = <strong>婴幼儿专用家具需求增长的明确信号</strong>。婴儿床、换尿布台、围栏、哺乳椅等产品线可重点推广。数字化转型 = 智能家具/数字化教学环境需求。</li>
+          <li class="demand">家校合作指南 + 雇主电子资源 = <strong>行业专业化程度提升</strong>，对家具品质和设计的要求也会提高。建议以"高品质+合规+设计感"定位新加坡市场。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ── NZ ── -->
+    <div class="tab-panel" id="panel-nz">
+      <div class="country-section">
+        <h3>🏛️ 政策与补贴 Policy & Funding</h3>
+        <ul class="info-list">
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>教育部整个ECE区域监管团队被解散</strong>：新西兰教育部的整个幼儿教育区域监管workforce被裁撤，这一"非转移"性质的解散引发行业震动。监管体系面临重大重组。
+            <a class="source-link" href="https://oece.nz/newsroom/stories/regulatory-workforce/">OECE NZ 9/3</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>ECE资金审批现改由ERO负责，形成双机构体制</strong>：幼儿教育资金审批流程从教育部转移至教育审查办公室(ERO)，形成教育部与ERO的双机构管理体系，可能影响资金审批效率和合规要求。
+            <a class="source-link" href="https://oece.nz/newsroom/stories/ero-funding-approvals/">OECE NZ 9/3</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>ERO接管SELO 1资金与法规要求矛盾</strong>：ERO接管教育部SELO 1资金的做法与现行法规要求服务商自费获取合规支持的规定相矛盾，行业合规成本可能上升。
+            <a class="source-link" href="https://oece.nz/newsroom/stories/selo-1-education-review-office/">OECE NZ 9/3</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>2026大选：各党派幼教政策对比指南发布</strong>：OECE NZ发布2026年新西兰大选各政党幼教政策对比指南，涵盖各党对ECE的承诺和政策方向，对行业决策有重要参考价值。
+            <a class="source-link" href="https://oece.nz/newsroom/politics/election-2026-early-childhood-education-policy-guide/">OECE NZ 9/4</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>政府审视教师教育有效性</strong>：教育部正在审查初始教师教育(ITE)提供商的标准，评估教师教育的有效性，可能影响未来幼教师资培训体系。
+            <a class="source-link" href="https://www.rnz.co.nz/news/education/1120141/government-considers-effectiveness-of-teacher-education">RNZ 9/4</a>
+          </li>
+        </ul>
+
+        <h3>🏗️ 新园与行业动态 New Centres & Industry</h3>
+        <ul class="info-list">
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>政府投入$2300万建设20间特殊教育教室</strong>：新西兰政府宣布追加$2300万投资，用于建设20间特殊教育教室，显示政府对教育基础设施的持续投入。可能需要特殊教育家具。
+            <a class="source-link" href="https://www.rnz.co.nz/news/education/1071198/government-to-put-23m-towards-20-specialist-education-classrooms">RNZ 9/4</a>
+          </li>
+          <li class="expansion">
+            <span class="tag tag-expand">扩张</span>
+            <strong>New Shoots Ltd–Educare集团所有权变更暴露监管漏洞</strong>：新西兰ChildForum报道，New Shoots Ltd与Educare集团的所有权变更揭示了一个重大监管漏洞：允许公司在不经过服务提供者变更审查的情况下大量收购幼教中心。
+            <a class="source-link" href="https://oece.nz/newsroom/stories/new-shoots-educare-management-change/">OECE NZ 9/2</a>
+          </li>
+        </ul>
+
+        <h3>📈 需求与趋势 Demand Signals</h3>
+        <ul class="info-list">
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>新西兰幼教体系已破碎，资金审查无法修复</strong>：Newsroom发表深度评论，指出新西兰曾被誉为全球最具前瞻性的幼教体系（Te Whāriki课程），但混合市场化模式导致行业不平等加剧、从业者流失严重。
+            <a class="source-link" href="https://www.newsroom.co.nz/">Newsroom NZ 8/19</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>合格ECE专业人才需求增长推动在线学习</strong>：新西兰对合格幼教专业人才的需求持续增长，推动了在线ECE学历课程的普及，为缓解师资短缺提供新途径。
+            <a class="source-link" href="https://www.scoop.co.nz/">Scoop NZ 8/10</a>
+          </li>
+        </ul>
+
+        <h3>🎯 West Shore 关联分析</h3>
+        <ul class="info-list">
+          <li class="policy">教育部监管团队解散 + ERO接管资金 + 双机构体制 = <strong>监管体系重大重组，合规要求可能变化</strong>。短期内政策不确定性高，但长期来看新的监管框架可能带来设施标准更新。</li>
+          <li class="expansion">$2300万特殊教育教室 + New Shoots/Educare收购 = <strong>基础设施投资+行业整合并行</strong>。特殊教育教室需要专业家具。大型连锁收购可能带来集中采购需求。</li>
+          <li class="demand">体系"破碎"讨论 + 选举年 + 人才短缺 = <strong>政策不确定性较高，但ECE需求基本面稳固</strong>。建议以"高性价比合规方案"切入NZ市场，等待政策明朗后加大投入。选举结果将直接影响ECE资金方向。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ OPPORTUNITY MATRIX ═══════════════════════ -->
+  <div class="opp-section">
+    <h2>🎯 本周商机矩阵 Opportunity Matrix</h2>
+    <div class="opp-grid">
+      <div class="opp-card priority-high">
+        <div class="opp-priority pri-high">🔴 高优先级 HIGH</div>
+        <h4>加拿大 — BC省1,200新学位+温尼伯152学位+人才危机</h4>
+        <div class="opp-country">🇨🇦 加拿大 · BC / MB</div>
+        <div class="opp-detail">BC省宣布约1,200个新托儿学位，预计明年开放。温尼伯护理院新增152学位托儿中心。幼教被列为全国高风险短缺职业至2033年。商业领袖呼吁将托儿视为"国家建设投资"。BC省公布2026年幼教移民配额360-440个。限制托儿中心屏幕时间。</div>
+        <div class="opp-action">→ 重点跟进BC省1,200个新学位的具体项目方和采购时间线。联系温尼伯152学位中心了解家具需求。针对BC省移民配额带来的新机构开设做定向推广。推出"实体活动空间"家具方案应对屏幕时间限制趋势。</div>
+      </div>
+
+      <div class="opp-card priority-high">
+        <div class="opp-priority pri-high">🔴 高优先级 HIGH</div>
+        <h4>新加坡 — 1,800婴幼儿护理扩招+2026操作守则</h4>
+        <div class="opp-country">🇸🇬 新加坡 · 全国</div>
+        <div class="opp-detail">ECDA扩大招聘资助，目标2030年前新增1,800名婴幼儿护理教育者。发布《幼教中心设立指南》及2026版操作守则（第5版）。推进幼教行业数字化转型。推出家校合作指南和雇主电子资源。</div>
+        <div class="opp-action">→ 研究ECDA 2026版操作守则对家具规格的具体要求。推出婴幼儿专用家具产品线（婴儿床、换尿布台、围栏、哺乳椅）。以"ECDA合规+高品质+设计感"定位新加坡市场。</div>
+      </div>
+
+      <div class="opp-card priority-high">
+        <div class="opp-priority pri-high">🔴 高优先级 HIGH</div>
+        <h4>新西兰 — 监管体系大重组+$2300万特殊教育</h4>
+        <div class="opp-country">🇳🇿 新西兰 · 全国</div>
+        <div class="opp-detail">教育部整个ECE区域监管团队被解散。ECE资金审批改由ERO负责，形成双机构体制。2026大选各党派ECE政策对比指南发布。政府投入$2300万建设20间特殊教育教室。New Shoots/Educare所有权变更暴露监管漏洞。</div>
+        <div class="opp-action">→ 关注$2300万特殊教育教室的家具采购机会。跟踪New Shoots/Educare收购后的集中采购需求。关注选举结果对ECE资金方向的影响。以"高性价比合规方案"切入NZ市场。</div>
+      </div>
+
+      <div class="opp-card priority-mid">
+        <div class="opp-priority pri-mid">🟡 中优先级 MEDIUM</div>
+        <h4>英国 — Ofsted合规更新+CMA调查+新学校建设</h4>
+        <div class="opp-country">🇬🇧 英国 · 全国</div>
+        <div class="opp-detail">Ofsted批量更新8篇幼教注册与合规指南。CMA对托儿行业展开调查。DfE连续发布新学校开设/组织变更指南。幼教学徒学位指南发布。Growth and Skills Levy推广。Christie & Co市场报告显示并购活跃。</div>
+        <div class="opp-action">→ 研究Ofsted新规对家具规格的具体要求。关注CMA调查可能引发的行业重组。通过Nursery World渠道推广合规家具产品。关注新学校建设的政府采购机会。</div>
+      </div>
+
+      <div class="opp-card priority-mid">
+        <div class="opp-priority pri-mid">🟡 中优先级 MEDIUM</div>
+        <h4>澳大利亚 — G8关闭40家+昆州改革+偏远地区调查</h4>
+        <div class="opp-country">🇦🇺 澳大利亚 · 全国 / QLD</div>
+        <div class="opp-detail">G8 Education关闭40家服务中心，市场过剩信号。Edge Early Learning进入自愿托管。昆士兰州儿童保护集中化改革。参议院调查偏远地区幼教服务准入。六家机构获150万培训资助。ECA呼吁成立幼教服务委员会。</div>
+        <div class="opp-action">→ 跟踪G8关闭中心的整合后翻新需求。关注Edge Early Learning托管重组进展。针对偏远地区调查可能推动的新设施建设做准备。推出"ACECQA合规家具方案"。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <div class="footer">
+    <p>West Shore Furniture · ECE Market Intelligence · <a href="https://westshorefurniture.com">westshorefurniture.com</a></p>
+    <p style="margin-top: 6px;">Report #17 · 2026年9月1日至9月4日 · Data sources: Daily cron reports (Sep 1–4), Google News, Blogwatcher RSS, Gov.uk, ECDA, OECE NZ, Childcare Canada, The Sector AU, ECA</p>
+  </div>
+</div>
+
+<script>
+function switchTab(id) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('panel-' + id).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>
