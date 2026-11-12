@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>幼教市场周报 第27期 · ECE Market Intelligence 2026-11-13 | West Shore Furniture</title>
+<style>
+  :root {
+    --navy: #061b31;
+    --navy-light: #0d253d;
+    --slate: #64748d;
+    --slate-dark: #273951;
+    --border: #e5edf5;
+    --white: #ffffff;
+    --warm-bg: #f8f9fb;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --accent-light: #eff6ff;
+    --gold: #b8860b;
+    --gold-light: #fef9e7;
+    --red: #dc2626;
+    --red-light: #fef2f2;
+    --green: #16a34a;
+    --green-light: #f0fdf4;
+    --amber: #d97706;
+    --amber-light: #fffbeb;
+    --shadow-sm: rgba(23,23,23,0.06) 0px 3px 6px;
+    --shadow: rgba(50,50,93,0.15) 0px 20px 40px -20px, rgba(0,0,0,0.06) 0px 12px 24px -12px;
+    --shadow-lg: rgba(50,50,93,0.20) 0px 30px 50px -25px, rgba(0,0,0,0.08) 0px 18px 36px -15px;
+    --radius: 8px;
+    --radius-sm: 6px;
+    --radius-xs: 4px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', sans-serif;
+    color: var(--navy);
+    background: var(--warm-bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+  }
+  .report-header {
+    background: linear-gradient(135deg, var(--navy) 0%, #0f2240 100%);
+    color: white;
+    padding: 48px 0 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .report-header::after {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -80px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: rgba(37,99,235,0.12);
+    pointer-events: none;
+  }
+  .report-header::before {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(184,134,11,0.08);
+    pointer-events: none;
+  }
+  .header-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 32px;
+    position: relative;
+    z-index: 1;
+  }
+  .header-brand {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 12px;
+  }
+  .header-title {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .header-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 20px;
+  }
+  .header-meta {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .header-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+  }
+  .header-meta-item .dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  .summary-section {
+    margin-top: -28px;
+    position: relative;
+    z-index: 2;
+  }
+  .summary-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px 32px;
+    box-shadow: var(--shadow);
+    margin-bottom: 32px;
+  }
+  .summary-card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 16px;
+    letter-spacing: -0.3px;
+  }
+  .summary-intro {
+    color: var(--slate);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  .highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+  }
+  .highlight-item {
+    background: var(--accent-light);
+    border: 1px solid rgba(37,99,235,0.15);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .highlight-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .highlight-text {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--navy);
+    line-height: 1.5;
+  }
+  .highlight-text span {
+    display: block;
+    font-weight: 400;
+    color: var(--slate);
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  .metric-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  .metric-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 18px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: default;
+  }
+  .metric-card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+  }
+  .metric-flag {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .metric-country {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .metric-status {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+  .status-hot { background: var(--red-light); color: var(--red); }
+  .status-warm { background: var(--amber-light); color: var(--amber); }
+  .status-stable { background: var(--accent-light); color: var(--accent); }
+  .status-cold { background: #f1f5f9; color: var(--slate); }
+  .metric-detail {
+    font-size: 11px;
+    color: var(--slate);
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+  .tabs-section {
+    margin-bottom: 32px;
+  }
+  .tabs-nav {
+    display: flex;
+    gap: 2px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius) var(--radius) 0 0;
+    padding: 4px;
+    overflow-x: auto;
+  }
+  .tab-btn {
+    flex: 1;
+    min-width: 100px;
+    padding: 12px 16px;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--slate);
+    cursor: pointer;
+    border-radius: var(--radius-xs);
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .tab-btn:hover { background: var(--warm-bg); color: var(--navy); }
+  .tab-btn.active {
+    background: var(--accent);
+    color: white;
+    font-weight: 600;
+  }
+  .tab-panel {
+    display: none;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 var(--radius) var(--radius);
+    padding: 28px 32px;
+    box-shadow: var(--shadow-sm);
+  }
+  .tab-panel.active { display: block; }
+  .country-section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    letter-spacing: -0.2px;
+  }
+  .country-section h3:not(:first-child) {
+    margin-top: 24px;
+  }
+  .info-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .info-list li {
+    font-size: 14px;
+    color: var(--slate-dark);
+    line-height: 1.6;
+    padding: 6px 10px;
+    border-radius: var(--radius-xs);
+    border-left: 3px solid transparent;
+    transition: background 0.15s;
+  }
+  .info-list li:hover { background: var(--warm-bg); }
+  .info-list li.policy { border-left-color: var(--accent); }
+  .info-list li.expansion { border-left-color: var(--green); }
+  .info-list li.demand { border-left-color: var(--amber); }
+  .info-list li.risk { border-left-color: var(--red); }
+  .tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-right: 6px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .tag-policy { background: var(--accent-light); color: var(--accent); }
+  .tag-expand { background: var(--green-light); color: var(--green); }
+  .tag-demand { background: var(--amber-light); color: var(--amber); }
+  .tag-risk { background: var(--red-light); color: var(--red); }
+  .source-link {
+    font-size: 11px;
+    color: var(--accent);
+    text-decoration: none;
+    margin-left: 6px;
+    opacity: 0.6;
+    transition: opacity 0.15s;
+  }
+  .source-link:hover { opacity: 1; text-decoration: underline; }
+  .opp-section {
+    margin-bottom: 32px;
+  }
+  .opp-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 20px;
+    letter-spacing: -0.3px;
+  }
+  .opp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 16px;
+  }
+  .opp-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s;
+    border-top: 3px solid transparent;
+  }
+  .opp-card:hover { box-shadow: var(--shadow); }
+  .opp-card.priority-high { border-top-color: var(--red); }
+  .opp-card.priority-mid { border-top-color: var(--amber); }
+  .opp-card.priority-watch { border-top-color: var(--accent); }
+  .opp-priority {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 9999px;
+    margin-bottom: 10px;
+  }
+  .pri-high { background: var(--red-light); color: var(--red); }
+  .pri-mid { background: var(--amber-light); color: var(--amber); }
+  .pri-watch { background: var(--accent-light); color: var(--accent); }
+  .opp-card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .opp-card .opp-country {
+    font-size: 12px;
+    color: var(--slate);
+    margin-bottom: 10px;
+  }
+  .opp-card .opp-detail {
+    font-size: 13px;
+    color: var(--slate-dark);
+    line-height: 1.6;
+  }
+  .opp-card .opp-action {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .footer {
+    text-align: center;
+    padding: 32px 0;
+    font-size: 12px;
+    color: var(--slate);
+    border-top: 1px solid var(--border);
+    margin-top: 16px;
+  }
+  .footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .footer a:hover { text-decoration: underline; }
+  @media (max-width: 768px) {
+    .report-header { padding: 32px 0 28px; }
+    .header-title { font-size: 24px; }
+    .header-inner, .container { padding: 0 16px; }
+    .metric-row { grid-template-columns: repeat(2, 1fr); }
+    .highlight-grid { grid-template-columns: 1fr; }
+    .opp-grid { grid-template-columns: 1fr; }
+    .tabs-nav { flex-wrap: nowrap; }
+    .tab-btn { min-width: 80px; font-size: 12px; padding: 10px 8px; }
+    .summary-card { padding: 20px 18px; }
+    .tab-panel { padding: 20px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="report-header">
+  <div class="header-inner">
+    <div class="header-brand">West Shore Furniture · ECE Market Intelligence</div>
+    <h1 class="header-title">幼教市场周报</h1>
+    <div class="header-subtitle">ECE Weekly Intelligence Brief — 2026年11月9日至11月13日 · 第27期</div>
+    <div class="header-meta">
+      <div class="header-meta-item"><span class="dot"></span>Coverage: 5 Markets</div>
+      <div class="header-meta-item"><span class="dot"></span>Report Date: 2026-11-13</div>
+      <div class="header-meta-item"><span class="dot"></span>Sources: Daily cron reports (Nov 9 – Nov 13)</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!-- EXECUTIVE SUMMARY -->
+  <div class="summary-section">
+    <div class="summary-card">
+      <h2>📋 本周核心发现 Executive Summary</h2>
+      <p class="summary-intro">
+        本周三大主题：<strong>并购整合与资本扩张加速</strong>（G8 Education 收到 Majority Capital 每股 $0.26、总价 $1.967 亿收购要约，股价暴涨 85%；英国 Clever Clogs 获 BGF 七位数投资、Monkey Puzzle 获私募入股；加拿大 Kids & Company 接管 Kelowna 困境日托；澳洲物业两天成交 $1,860 万）、<strong>安防合规升级成为跨国主线</strong>（澳联邦发布 300+ 早教机构 CCTV 评估、教育部长会议拟设 Early Learning Commission 并推进强制 CCTV；英国强制 CCTV 决定「明年初」出台、Ofsted 一日两停业一逮捕；NSW 近 400 园 NQS 不达标、6,000+ 机构限期整改）、<strong>政府扩容与新建管道持续释放</strong>（加拿大 Manitoba $210 万、Carleton Place $100 万+ 新建拨款与多省新园落地；新加坡 MOE 幼儿园 2027 全日制试点、SJI 双语扩容；澳洲联邦与各州签署《儿童优先宣言》）。本周「资本换手 → 集中翻新」与「合规升级 → 设施改造」两条采购主线更加清晰；同时 NZ 工资平权抗议升温、NSW 学费大涨令部分私营园所价格敏感度上升——跟进策略宜锁定政府资金与资本支持项目，对承压园所主推高性价比产品线。
+      </p>
+      <div class="highlight-grid">
+        <div class="highlight-item">
+          <div class="highlight-icon">🇦🇺</div>
+          <div class="highlight-text">G8 Education 收到 $1.97 亿收购要约<span>Majority Capital 溢价约 160% 拟私有化澳交所最大托育集团，400+ 中心或迎品牌标准化与设施翻新；同期 Edge 南澳 6 园关闭、Goodstart 接管昆州困境园——整合期换手即翻新窗口</span></div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">🇬🇧</div>
+          <div class="highlight-text">资本扩张潮 + 强制 CCTV 临近<span>Clever Clogs 获 BGF 七位数投资（340 学位、东北部扩张）、Monkey Puzzle 私募入股；Savills 发布《UK Children's Day Nursery Market 2026》；强制 CCTV 决定明年初公布——新建、收购翻新、安防改造三线并进</span></div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">🇨🇦</div>
+          <div class="highlight-text">新建管道集中释放<span>Manitoba $210 万志愿者项目获批开建、Carleton Place $100 万+ 扩建拨款、Wellington Place 扩建开业、Dauphin 120 位（2027 秋）、Moosomin 90 位开业——2027 上半年为采购窗口</span></div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">🇸🇬</div>
+          <div class="highlight-text">MOE 全日制试点与扩容提速<span>MOE 幼儿园 2027 年 2 所中心全日制试点、SJI International Preschool 扩大双语课程、全球 AI 幼教对话大会在新召开——教室功能重组与扩容配套需求延续</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COUNTRY METRIC CARDS -->
+  <div class="metric-row">
+    <div class="metric-card">
+      <div class="metric-flag">🇸🇬</div>
+      <div class="metric-country">新加坡</div>
+      <div class="metric-status status-warm">⚡ ACTIVE</div>
+      <div class="metric-detail">MOE 全日制试点 2027 | SJI 双语扩容 | 全球幼教对话 | 家长焦虑纾解</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-flag">🇬🇧</div>
+      <div class="metric-country">英国</div>
+      <div class="metric-status status-hot">🔥 HOT</div>
+      <div class="metric-detail">资本扩张潮 | 强制 CCTV 在即 | Savills 年报 | Ofsted 执法趋严</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-flag">🇦🇺</div>
+      <div class="metric-country">澳大利亚</div>
+      <div class="metric-status status-hot">🔥 HOT</div>
+      <div class="metric-detail">G8 收购要约 | 儿童优先宣言 | 400 园整改 | 物业投资活跃</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-flag">🇨🇦</div>
+      <div class="metric-country">加拿大</div>
+      <div class="metric-status status-warm">⚡ ACTIVE</div>
+      <div class="metric-detail">新建项目集群 | $210 万拨款 | Kids&Co 接管 | 工资冻结发酵</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-flag">🇳🇿</div>
+      <div class="metric-country">新西兰</div>
+      <div class="metric-status status-stable">🔵 WATCH</div>
+      <div class="metric-detail">工资平权抗议 | PTE 师资崛起 | 教学委员会整顿 | 薄报延续</div>
+    </div>
+  </div>
+
+  <!-- COUNTRY TABS -->
+  <div class="tabs-section">
+    <div class="tabs-nav">
+      <button class="tab-btn active" onclick="switchTab('sg')">🇸🇬 新加坡</button>
+      <button class="tab-btn" onclick="switchTab('gb')">🇬🇧 英国</button>
+      <button class="tab-btn" onclick="switchTab('au')">🇦🇺 澳大利亚</button>
+      <button class="tab-btn" onclick="switchTab('ca')">🇨🇦 加拿大</button>
+      <button class="tab-btn" onclick="switchTab('nz')">🇳🇿 新西兰</button>
+    </div>
+
+    <!-- ── SG ── -->
+    <div class="tab-panel active" id="panel-sg">
+      <div class="country-section">
+        <h3>🏛️ 政策与补贴 Policy &amp; Funding</h3>
+        <ul class="info-list">
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>MOE 幼儿园全日制模式 2027 年在 2 所中心试点，教师对工作生活平衡表达担忧</strong>：教育部幼儿园全日制扩展计划（10/28 宣布）落地节奏明确，但教师反应强烈（Stomp 11/4「非常失望」）——试点推进中或有师资配套调整；全日制模式 = 教室功能重组、午睡/餐饮/活动区改造与家具扩充。
+            <a class="source-link" href="https://www.stomp.sg/the-big-picture/very-disappointed-moe-kindergarten-teachers-fear-new-full-day-model-will-kill-work-life-balance">Stomp 11/4 · Human Resources Online 10/29</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>政务部长 Goh Pei Ming：纾解家长学前焦虑、强化家庭支持</strong>：政府就学前供给与家长支持政策公开表态，叠加 NDR 2026 补贴加码（收入上限提高、60,000+ 家庭受益）——政策红利延续，入园需求长线支撑学位扩张。
+            <a class="source-link" href="https://www.straitstimes.com/singapore">Straits Times 11/9</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>超九成学前中心已有空调，雾霾期需增配空气净化器</strong>：部长披露设施普及率数据，空气质量管理要求提高——环境设备配套标准上升，或延伸至园所设施采购规范。
+            <a class="source-link" href="https://www.straitstimes.com/singapore">Straits Times 11/3</a>
+          </li>
+        </ul>
+
+        <h3>🏗️ 新建与扩张 Expansion &amp; Quality</h3>
+        <ul class="info-list">
+          <li class="expansion">
+            <span class="tag tag-expand">扩建</span>
+            <strong>SJI International Preschool 扩大双语课程</strong>：名校学前部扩招扩容，课程升级带动空间与教具配套调整——国际学校学前部是高客单价家具的优质客群。
+            <a class="source-link" href="https://www.straitstimes.com/singapore">Straits Times 11/10</a>
+          </li>
+          <li class="expansion">
+            <span class="tag tag-expand">扩建</span>
+            <strong>婴儿托育扩容延续：2030 年前增聘 1,800 名婴幼儿看护教师</strong>：ECDA 产能扩张路线明确（10/14 报道持续发酵），infant care 新开班/新空间需配套婴儿床、护理台、爬行垫、矮柜等专用品类。
+            <a class="source-link" href="https://www.mothership.sg/">Mothership / Straits Times 10/14</a>
+          </li>
+        </ul>
+
+        <h3>🔄 行业动态与活动 Industry Moves</h3>
+        <ul class="info-list">
+          <li class="demand">
+            <span class="tag tag-demand">动态</span>
+            <strong>新加坡牵头全球幼教对话：AI 重塑教育背景下的早期教育未来</strong>：REACH Reggio Emilia 2026 大会 10/30 在新开幕（主题「复杂时代的教育」）；EtonHouse/E-Bridge 与 Reggio Children 深化专业学习合作——课程理念升级常带动环境布置与教具更新需求。
+            <a class="source-link" href="https://vietnamnews.vn/media-outreach/1803356/as-ai-reshapes-education-singapore-to-convene-global-dialogue-on-the-future-of-early-childhood-education.html">Vietnam News / The Manila Times 11/8-11</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">动态</span>
+            <strong>PCF 重塑从幼教到乐龄的照护体系；400+ 学前领袖参与艺术治疗项目</strong>：最大托育运营商战略升级中，关注后续中心升级动作；艺术治疗项目带动专用活动空间与教具配置。
+            <a class="source-link" href="https://www.channelnewsasia.com/">CNA / PAP 11/6 · 10/29</a>
+          </li>
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>2023–2025 年每年约 70 所幼儿园关闭，市场向政府支持型集中</strong>：成本与竞争驱动整合，49 所幼儿园加入 Partner Operator 计划（收费上限下调）——存量翻新与出清处置需求并存，私营独立园价格敏感度上升。
+            <a class="source-link" href="https://www.channelnewsasia.com/">CNA / Straits Times 持续</a>
+          </li>
+        </ul>
+
+        <h3>🎯 West Shore 关联分析</h3>
+        <ul class="info-list">
+          <li class="expansion">MOE 全日制试点是本周最明确的采购风向标：2 所试点园（2027）教室需从半日模式重组为全日模式，午睡区、餐饮角、多功能活动家具需求可提前对接；建议主动联系 MOE 采购与试点园供应商名单，把 2030 全覆盖路线图按年度拆解为采购预测。</li>
+          <li class="expansion">SJI 双语扩容 + infant care 增聘 1,800 教师：国际学校学前部主推高端环保材质线，infant care 品类（婴儿床、护理台、爬行垫、矮柜）独立成套投标 ECDA/Anchor Operator 扩容项目。</li>
+          <li class="demand">瑞吉欧合作深化与全球幼教对话：以「环境作为第三位教师」为话术切入课程理念升级型客户，主推开放式教具架、活动家具与自然材质配置包。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ── GB ── -->
+    <div class="tab-panel" id="panel-gb">
+      <div class="country-section">
+        <h3>🏛️ 政策与法规 Policy &amp; Regulation</h3>
+        <ul class="info-list">
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>幼教场所强制 CCTV 决定将于明年初公布 ⭐</strong>：Nursery World 11/9 报道，政府对「幼教场所强制安装 CCTV」的决定预计明年初出台（距宣布约 12 个月），专家小组仍在征集行业意见——若强制落地，全英幼教场所将迎来安防设备与室内布线改造潮。
+            <a class="source-link" href="https://www.nurseryworld.co.uk/content/news/government-decision-on-cctv-use-in-early-years-settings-to-be-published-early-next-year">Nursery World 11/9</a>
+          </li>
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>EYA 调查：新 Ofsted 框架检查损害从业者心理健康</strong>：早教联盟调查发现新检查框架下督查对从业者心理产生负面影响，叠加一日两停业一逮捕（Wednesbury 关停+逮捕、Sussex Happy Valley 吊销注册）——监管摩擦加剧，合规升级是确定性需求。
+            <a class="source-link" href="https://www.nurseryworld.co.uk/content/news/ofsted-inspections-under-new-framework-have-negative-impact-on-providers-mental-health-eya-survey-finds">Nursery World 11/13 · BBC 11/10</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>DfE 持续推进数据与改革议程</strong>：《2027 年托育与早期教育提供者调查》即将开展、EYFS profile results 2026-27 发布日期已定、SEND「Experts at Hand」方案推进；Budget 宣布最高 £1,500 万用于 30 万幼儿图书赠送/阅读推广。
+            <a class="source-link" href="https://www.gov.uk/">GOV.UK 11/5 · 11/11</a>
+          </li>
+        </ul>
+
+        <h3>🏗️ 资本与扩张 Capital &amp; Expansion</h3>
+        <ul class="info-list">
+          <li class="expansion">
+            <span class="tag tag-expand">扩建</span>
+            <strong>Clever Clogs 日托集团获 BGF 七位数投资，加速北英格兰扩张 ⭐</strong>：Stockton 起家、三度获评全英最佳的连锁集团获数百万英镑支持，用于新址开发与战略收购；现有 340 个学位、规划东北部新建+收购扩张——新建与收购翻新的成套家具采购窗口。
+            <a class="source-link" href="https://www.bgf.co.uk/posts/news/clever-clogs-investment/">BGF / Northern Echo 11/9-10</a>
+          </li>
+          <li class="expansion">
+            <span class="tag tag-expand">扩建</span>
+            <strong>Monkey Puzzle 获私募股权投资，加盟体系加速扩张</strong>：资本加持连锁扩张——加盟新园开张 = 全套标准化家具配置需求。
+            <a class="source-link" href="https://www.nurseryworld.co.uk/">Nursery World 11/9-10</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">动态</span>
+            <strong>Savills 发布《Market in Minutes: UK Children's Day Nursery Market – 2026》</strong>：英国日托市场年度报告——市场交易、估值与增长趋势全景，是判断英国市场容量与投资节奏的核心参考；Christie & Co 同期举办日托市场圆桌（增长、资金、监管）。
+            <a class="source-link" href="https://www.savills.co.uk/">Savills 11/11 · Christie &amp; Co 11/13</a>
+          </li>
+        </ul>
+
+        <h3>🔄 行业整合与风险 Industry Moves &amp; Risks</h3>
+        <ul class="info-list">
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>Barnsley 六家园因养老金争议罢工关闭，叠加市政私有化计划</strong>：Reform 党控制的市政拟将市属托儿所私有化，员工「一代人以来首次」罢工、6 家园当日关闭——私有化易主后通常伴随标准化翻新，但需注意市政采购信用与周期风险。
+            <a class="source-link" href="https://www.theguardian.com/uk-news/2026/nov/09/barnsley-strike-nursery-privatisation-reform-council-yorkshire-grimethorpe">Guardian / BBC / The Star 11/9</a>
+          </li>
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>伦敦托儿所在一串 Ofsted 投诉后突然关闭；威尔士 Carmarthenshire 学校关闭计划威胁托儿所与游戏小组</strong>：农村与弱势地区供给收缩持续，无预警关停案例引发家长混乱——区域市场信用筛查需前置。
+            <a class="source-link" href="https://uk.news.yahoo.com/london-nursery-shuts-down-without-093128412.html">Yahoo UK 11/9 · Wales Online 11/13</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">动态</span>
+            <strong>「早期 years 技能集体」成立 + NFER 承接全英幼教劳动力研究</strong>：教育者、雇主、培训机构联合应对长期师资短缺；政府另将调查「白人工人阶层儿童入学前落后」成因——school readiness 议题升温，或带动园所环境与教学资源配置调整。
+            <a class="source-link" href="https://www.nurseryworld.co.uk/">Nursery World / CYP Now 11/9-11</a>
+          </li>
+        </ul>
+
+        <h3>🎯 West Shore 关联分析</h3>
+        <ul class="info-list">
+          <li class="expansion">资本扩张潮是英国本周最强采购信号：Clever Clogs（新址+收购）、Monkey Puzzle（加盟扩张）、County Durham 340 学位集团均在建管线——建议 2 周内完成三家扩张方的首轮触达，提供批量家具方案与收购翻新包（3-18 个月标准化翻新窗口）。</li>
+          <li class="expansion">强制 CCTV 决定（明年初）+ Ofsted 执法趋严：把「安防兼容」做成产品差异化卖点（预留走线槽、监控友好布局、防撞软包、安全家具），提前推送「安防合规改造配置方案」给连锁客户抢占预算。</li>
+          <li class="risk">Barnsley 私有化与威尔士收缩提示区域信用风险：市政/困境资产项目要求预付款或信用证结算；Savills 年报可作为英国市场容量与投资节奏的对客论据，辅助年度销售目标校准。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ── AU ── -->
+    <div class="tab-panel" id="panel-au">
+      <div class="country-section">
+        <h3>🏛️ 政策与监管 Policy &amp; Regulation</h3>
+        <ul class="info-list">
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>联邦与各州签署《儿童优先宣言》，早期学习列为重点 ⭐</strong>：将早期学习置于儿童政策优先位置，预示更多幼教投入与合规要求；教育部长会议同期闭幕，拟设 Early Learning Commission（早期学习委员会）、强制 CCTV、加强督导均列入议程。
+            <a class="source-link" href="https://thesector.com.au/article/government-response-senate-ecec-quality-safety-inquiry">The Sector 11/5 · 11/10</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>联邦政府发布 300+ 早教机构 CCTV 使用评估报告</strong>：正值全国 CCTV 强制化讨论高潮（各州教育部长已将 CCTV/监管规则提交审议）——若强制安装落地，将催生安防设备与室内改造需求。
+            <a class="source-link" href="https://theconversation.com/cctv-is-touted-as-a-safety-measure-for-daycare-centres-but-does-it-work-296276">The Conversation 11/12</a>
+          </li>
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>政府回应参议院 ECEC 质量与安全调查：23 项建议仅支持 1 项</strong>：监管走向引发行业关注；NSW 联盟党承诺若当选恢复 Start Strong 学前拨款（回应 $1,500 万削减争议与家长 $1,100 涨费警告），维州联盟党承诺保留 Free Kinder——州选前学前教育拨款成为政治主战场。
+            <a class="source-link" href="https://thesector.com.au/article/nsw-coalition-pledges-restore-start-strong-preschool-funding">The Sector 11/11 · 11/12-13</a>
+          </li>
+        </ul>
+
+        <h3>🏗️ 市场趋势与投资 Trends &amp; Investment</h3>
+        <ul class="info-list">
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>幼教中心「大型化」趋势：「超级大园」建设引发专家担忧</strong>：新研究分析数千笔地产交易发现托儿中心朝 mega facilities 方向发展抢生源——大型化 = 规模化家具采购需求，同时提示市场过热风险。
+            <a class="source-link" href="https://www.smh.com.au/national/victoria/early-childhood-education-centres-are-growing-some-experts-are-worried-20261110-p61c8c.html">SMH 11/9-10</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">动态</span>
+            <strong>托儿物业投资持续升温：两天成交 $1,860 万</strong>：布里斯班 Rochedale South 中心拍前 $500 万售予海外投资者（租约至 2039）；南澳 10 天成交 $1,360 万（阿德莱德内北 100 位中心 $700 万 + Murray Bridge $660 万）——业主换手常伴设施翻新采购。
+            <a class="source-link" href="https://www.realestatesource.com.au/south-australian-childcare-sales-top-13-6m-in-10-days/">Real Commercial / realestatesource 11/10</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">动态</span>
+            <strong>LDC 新园增长率降至 2.2%，行业进入整合期；TAFE 幼教培训获 $5.6 亿五年协议</strong>：关园上升、新开减少，但并购后翻新需求仍在；联邦与 TAFE 的培训协议缓解师资短缺、支撑长期学位供给。
+            <a class="source-link" href="https://thesector.com.au/">The Sector 11/3 · 11/10</a>
+          </li>
+        </ul>
+
+        <h3>🔄 并购整合与关园 M&amp;A &amp; Closures</h3>
+        <ul class="info-list">
+          <li class="demand">
+            <span class="tag tag-demand">动态</span>
+            <strong>G8 Education 收到 Majority Capital $1.967 亿收购要约 ⭐</strong>：每股 $0.26（溢价约 160%）非约束性要约，董事会签署流程协议并支持交易，股价暴涨 85%——G8 为澳交所最大上市托儿集团，若私有化完成，旗下数百家中心或迎新一轮品牌标准化和设施翻新。
+            <a class="source-link" href="https://www.businessnewsaustralia.com/articles/majority-capital-offering-a-big-premium-to-scoop-up-childcare-group-g8-education-for-196m.html">Business News Australia 11/13</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">动态</span>
+            <strong>关园与换手并行：Edge 南澳 6 园关闭、Goodstart 收缩与收购</strong>：Edge 早教连锁南澳 6 家中心未找到买家关闭；Goodstart 关闭西澳西南部 3 家分支、收购昆州困境园所；YMCA 圣诞前关闭布里斯班 Acacia Ridge 75 位中心；Uplyft 退出 Mount Barker（SA）与 Katanning（WA）——Katanning 接替安排或与 Gowrie WA 67 位新园衔接，新运营方入驻 = 翻新窗口。
+            <a class="source-link" href="https://thesector.com.au/article/uplyft-regional-early-learning-exit-transition-arrangements">ABC / 7NEWS 11/5 · The Sector 11/11</a>
+          </li>
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>西悉尼托儿运营商清算：欠债 $651 万，涉加密货币与赌博调查</strong>：监管关停后调查揭出疑似加密货币购买与赌博资金流——私营运营商信用风险上升，大额订单需强化付款条件审查。
+            <a class="source-link" href="https://www.dailytelegraph.com.au/business/new-south-wales/sydney-childcare-centre-collapses-owing-65m-amid-crypto-gambling-probe/news-story/55d7450b219005795eb531f7cedbe9a6">Daily Telegraph 11/13</a>
+          </li>
+        </ul>
+
+        <h3>⚠️ 竞争与风险 Compliance &amp; Risks</h3>
+        <ul class="info-list">
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>NSW 近 400 家托儿中心未达 NQS，6,000+ 机构被限期两周落实新规</strong>：ACECQA 数据显示约 390 家不达标、超五分之一「正在整改」中心自 2023 年未复评；手机禁令强制执行（现场罚款 $3,420 起、最高 $51,600）——合规整改潮将持续拉动设施升级/翻新需求。
+            <a class="source-link" href="https://www.ntnews.com.au/education/regions/new-south-wales/more-than-300-nsw-long-day-care-centres-below-minimum-standard/news-story/82b6c2fd8f0f601ff2e58d2fee1aaa94">News Corp / News24 11/7-8</a>
+          </li>
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>NSW 家长面临约 $1,100 幼儿园学费上涨，社区幼儿园警告涨幅最高达 400%</strong>：Minns 政府 $642M 学前改革落地引发费率危机，新分析显示 NSW 学前经费全国垫底——采购决策趋于谨慎、价格敏感度上升。
+            <a class="source-link" href="https://www.dailytelegraph.com.au/newslocal/central-sydney/nsw-parents-face-1100-preschool-fee-hike-as-minns-government-slashes-daycare-subsides/news-story/46b8f4d58919fd38af63524191983ee8">Daily Telegraph / The Sector 11/11-13</a>
+          </li>
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>塔州新规把农村托儿中心逼到悬崖边；NT 洪灾地区 CCS 规则临时放宽</strong>：严格人员配置规定推高区域运营成本；昆大报告另建议将「营养充足的食物供应」纳入 NQS——若采纳，中心用餐区设施升级值得留意。
+            <a class="source-link" href="https://www.theadvocate.com.au/story/9386211/tasmanian-rural-childcare-in-crisis-over-strict-new-rules/">The Advocate 11/13 · NewsCop 11/12 · UQ News</a>
+          </li>
+        </ul>
+
+        <h3>🎯 West Shore 关联分析</h3>
+        <ul class="info-list">
+          <li class="expansion">G8 收购案是本周最大行业事件：私有化后通常启动品牌标准化与设施翻新（400+ 中心）——立即建档跟踪交易进程与 G8 供应链准入，联合本地并购中介建立转介；即便交易流产，整合期换手（Edge/Goodstart/YMCA/Uplyft）也带来持续翻新机会。</li>
+          <li class="expansion">「合规升级 → 设施改造」主线确定性强：CCTV 强制化 + Early Learning Commission + NSW 整改潮下，主推「安防兼容 + 合规友好」产品线（预留走线、防撞软包、易清洁材质），对 390 家不达标园所做定向整改方案营销。</li>
+          <li class="risk">NSW 费率危机与清算案提示信用风险：对 NSW 社区非营利园所提供价格灵活的高性价比款；对私营连锁大额订单加强付款条件（预付比例/信用证），优先跟进政府资金支持的公立项目。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ── CA ── -->
+    <div class="tab-panel" id="panel-ca">
+      <div class="country-section">
+        <h3>🏗️ 新建与扩建 New Builds &amp; Expansion</h3>
+        <ul class="info-list">
+          <li class="expansion">
+            <span class="tag tag-expand">扩建</span>
+            <strong>Manitoba 志愿者团队托儿项目获 $210 万政府拨款，即将建设 ⭐</strong>：志愿者董事会「白手起家」规划的托儿项目获省+联邦共 $210 万资金落地实施——新建中心 = 成套家具采购机会。
+            <a class="source-link" href="https://www.brandonsun.com/national/2026/11/12/bootstrapped-daycare-plan-gets-funded-by-government">Brandon Sun 11/12</a>
+          </li>
+          <li class="expansion">
+            <span class="tag tag-expand">扩建</span>
+            <strong>Carleton Place（安省）获超 $100 万拨款扩建市政托育学位</strong>：联邦/省府资金支持，即将进入建设采购阶段——市政项目付款确定性高，值得优先投标。
+            <a class="source-link" href="https://childcarecanada.org/documents/child-care-news/carleton-place-receives-more-1-million-expand-municipal-child-care-spaces">The Lanarkist / Childcare Canada 11/11</a>
+          </li>
+          <li class="expansion">
+            <span class="tag tag-expand">扩建</span>
+            <strong>Wellington Place（Elora-Fergus）扩建开业 + Wellington County（Aboyne）儿童保育扩展开业</strong>：安省连续两个扩容项目落地——典型的新设施家具采购案例。
+            <a class="source-link" href="https://thegrand101.com/2026/11/10/county-opens-the-doors-to-child-care-expansion/">EloraFergusToday / Grand 101.1 11/10-11</a>
+          </li>
+          <li class="expansion">
+            <span class="tag tag-expand">扩建</span>
+            <strong>多省新园管线：Dauphin 120 位（2027 秋）、Moosomin Playfair 90 位开业、Kamloops 通过市议会、Little Lions（Austin）开工、Altona 新址开业</strong>：曼省/萨省/BC 新建与待建项目密集——2027 上半年为集中采购窗口。
+            <a class="source-link" href="https://www.sasktoday.ca/">The Spec / SaskToday / Castanet / PortageOnline / PembinaValleyOnline 10/30-11/9</a>
+          </li>
+        </ul>
+
+        <h3>🔄 行业整合 Industry Moves</h3>
+        <ul class="info-list">
+          <li class="demand">
+            <span class="tag tag-demand">动态</span>
+            <strong>Kids &amp; Company 接管 Kelowna 多家困境日托</strong>：中央奥肯那根地区经营困难、多年动荡的日托群被全国连锁接管——连锁接手后通常启动品牌标准化翻新，是成套家具更换窗口。
+            <a class="source-link" href="https://www.castanetkamloops.net/news/Kelowna/637409/Kids-Company-takes-over-Kelowna-daycares-following-closures-financial-troubles">Castanet 11/12</a>
+          </li>
+        </ul>
+
+        <h3>🏛️ 政策与劳工 Policy &amp; Workforce</h3>
+        <ul class="info-list">
+          <li class="policy">
+            <span class="tag tag-policy">政策</span>
+            <strong>联邦 2026 预算：$54 亿托育投资获肯定，但被批「对工人不足」</strong>：Child Now 称其为「明智的经济决策」，CUPE 等工会批评偏向大投资者；联邦另申请 $221 亿新支出授权（含托育）——资金面长线支撑供给侧扩张。
+            <a class="source-link" href="https://childcarecanada.org/documents/child-care-news/media-release-child-care-now-says-54-billion-investment-child-care-smart">Childcare Canada / CUPE 11/10-11</a>
+          </li>
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>安省冻结 2027 年 ECE 工资，$10/日托育明年无望；Manitoba 距全国基准尚缺 77,000 个托位</strong>：OCBCC 发起「Wages Matter」行动，工资补贴截止临近——行业成本压力上升；曼省巨大缺口则意味着长期大规模新建需求。
+            <a class="source-link" href="https://childcarecanada.org/">Childcare Canada / CBC / Toronto Star 11/3-4 持续</a>
+          </li>
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>Costway 婴儿高脚椅因跌落/困陷风险被召回</strong>：北美儿童家具安全召回执法趋严——产品合规（ASTM / Health Canada）是进入托育渠道的前提，投标文件需附完整检测报告。
+            <a class="source-link" href="https://todaysparent.com/">Today's Parent 11/10</a>
+          </li>
+        </ul>
+
+        <h3>🎯 West Shore 关联分析</h3>
+        <ul class="info-list">
+          <li class="expansion">加拿大本周新建线索五国最密集（Manitoba $210 万、Carleton Place $100 万+、Wellington Place、Dauphin、Moosomin、Kamloops、Little Lions、Altona）——建议建立项目清单逐一建档报价，市政/政府拨款项目优先（付款确定性高）；Dauphin（2027 秋）等中周期项目提前介入设计阶段。</li>
+          <li class="expansion">Kids &amp; Company 接管 Kelowna + 77,000 托位缺口：连锁接手后 3-12 个月品牌标准化翻新，主推整园包；曼省缺口跟踪省级扩建资金落地节点，与 Child Care Coalition 等协会建立联系。</li>
+          <li class="risk">工资冻结与召回执法趋严：产品线强调高性价比/耐用卖点对冲园所成本压力；全线附 ASTM/Health Canada 检测报告做投标加分项，婴儿高脚椅类品类自查合规。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ── NZ ── -->
+    <div class="tab-panel" id="panel-nz">
+      <div class="country-section">
+        <h3>🏛️ 工资与劳工 Pay &amp; Workforce</h3>
+        <ul class="info-list">
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>ECE 工资平权斗争升温：全国幼教工人抗议 ⭐</strong>：「Taken for granted」——数百幼教工人在中心外抗议（The Press 11/10）；Masterton 教师罢工反对 Evolve 薪酬方案（Stuff 11/11）；OECE 发布《ECE Pay Parity: A Quick History》梳理运动史——工资压力仍是行业核心议题，园所运营成本敏感度上升。
+            <a class="source-link" href="https://oece.nz/public/big-issues/pay-parity/history/">OECE NZ 11/11 · The Press / Stuff 11/10-11</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>私立培训机构（PTE）在 ECE 师资教育中超越公立院校</strong>：OECE 报告显示 PTE 培养的 ECE 教师数量已超过公立高校——师资供给格局转变，培训渠道多元化。
+            <a class="source-link" href="https://oece.nz/newsroom/stories/pte-ece-teacher-education/">OECE NZ / ChildForum 11/10</a>
+          </li>
+        </ul>
+
+        <h3>📈 需求与趋势 Demand &amp; Trends</h3>
+        <ul class="info-list">
+          <li class="demand">
+            <span class="tag tag-demand">趋势</span>
+            <strong>养育成本「惊人且持续上涨」引发关注</strong>：最新报道聚焦养育成本对家庭财富规划的冲击——可负担性压力是托位需求与政策关注的双重信号。
+            <a class="source-link" href="https://www.stuff.co.nz/money/361054850/staggering-and-growing-cost-having-child-new-zealand">Stuff 11/9</a>
+          </li>
+          <li class="demand">
+            <span class="tag tag-demand">动态</span>
+            <strong>幼教科技产品持续渗透：Coactive 幼儿口语筛查工具；早教专业人士对生成式 AI 态度研究发布</strong>：数字化工具在早教场景关注度上升（NZIRECE Journal 11/3）——教具/评估类产品渠道机会显现。
+            <a class="source-link" href="https://www.channellife.co.nz/">ChannelLife NZ 11/10 · OECE NZ 11/3</a>
+          </li>
+        </ul>
+
+        <h3>🔄 治理与风险 Governance &amp; Risks</h3>
+        <ul class="info-list">
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>教学委员会高管被解职：Timothy Fisher 丑闻审查余波</strong>：针对「有毒」文化的多份严厉审查报告后治理整顿持续发酵——行业治理透明度提升中，资质与合规审查趋严。
+            <a class="source-link" href="https://www.nzherald.co.nz/nz/auckland/teaching-council-executive-loses-job-weeks-after-damning-kc-review-of-timothy-fisher-scandal/premium/5OYGWC5TSRF5BDJOAJLLDFOKSU/">NZ Herald 11/13</a>
+          </li>
+          <li class="risk">
+            <span class="tag tag-risk">风险</span>
+            <strong>农村地区幼儿园关闭引发家长担忧；行业财务危机持续（或有多达 400 家 ECE 中心面临关闭）</strong>：Auckland 园所靠大幅折扣求生、郊区「价格战」持续——关园潮短期收缩家具需求，但存活园所翻新/整并需求存在。
+            <a class="source-link" href="https://www.rnz.co.nz/">NZ Herald / RNZ / Stuff 持续</a>
+          </li>
+        </ul>
+
+        <h3>🎯 West Shore 关联分析</h3>
+        <ul class="info-list">
+          <li class="demand">工资平权争议下园所成本敏感度高企：营销话术转向「高性价比/耐用/易维护」产品线，主推 5-8 年质保与低维护成本卖点；优先跟进政府资金支持的公立/社区项目（受关园潮影响小）。</li>
+          <li class="expansion">PTE 师资渠道多元化 + 幼教科技渗透：经 ChildForum/OECE 渠道触达培训机构与新办园所；教具/评估类合作方可发展为转介渠道（口语筛查工具配套的活动区家具）。</li>
+          <li class="risk">关园潮与治理整顿并行：建立「存活园所翻新跟进表」，对整并后的新运营方主推标准化翻新包；大额订单对承压私营园所要求预付款，规避信用风险。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- OPPORTUNITY MATRIX -->
+  <div class="opp-section">
+    <h2>🎯 本周商机矩阵 Opportunity Matrix</h2>
+    <div class="opp-grid">
+      <div class="opp-card priority-high">
+        <div class="opp-priority pri-high">🔴 高优先级 HIGH</div>
+        <h4>澳大利亚 — G8 Education 收购要约：400+ 中心标准化翻新窗口</h4>
+        <div class="opp-country">🇦🇺 澳大利亚 · 全国</div>
+        <div class="opp-detail">Majority Capital 提出每股 $0.26、总价 $1.967 亿非约束性收购要约（溢价约 160%），G8 董事会签署流程协议并支持交易，股价暴涨 85%。G8 为澳交所最大上市托儿集团，私有化完成后旗下数百家中心通常在 6-18 个月内启动品牌标准化与设施翻新；叠加本周物业两天成交 $1,860 万、Edge 南澳 6 园关闭、Goodstart 接管昆州困境园——整合期换手即翻新。</div>
+        <div class="opp-action">→ 立即建档跟踪 G8 交易进程与供应链准入（2 周内完成首轮触达）；联合本地并购中介/物业经纪人建立转介关系；主推整园标准化翻新包（教室家具、储物、户外设施）并给出分批交付方案适配连锁翻新节奏。</div>
+      </div>
+
+      <div class="opp-card priority-high">
+        <div class="opp-priority pri-high">🔴 高优先级 HIGH</div>
+        <h4>英国 — 资本扩张潮：Clever Clogs / Monkey Puzzle / 区域集团批量采购</h4>
+        <div class="opp-country">🇬🇧 英格兰 · 东北部及全国</div>
+        <div class="opp-detail">Clever Clogs 获 BGF 七位数投资（现有 340 学位，规划东北部新建+收购扩张）；Monkey Puzzle 获私募股权投资加速加盟扩张；County Durham 340 学位集团公布扩张计划；Savills 发布《UK Children's Day Nursery Market 2026》确认资本持续流入。新建开张 + 收购翻新双通道，均为成套家具采购。</div>
+        <div class="opp-action">→ 2 周内完成三家扩张方首轮触达并提供批量家具报价；针对加盟体系推出「标准园配置包」（按学位数分级）；用 Savills 年报数据校准英国销售目标，季度回访在建/收购管线。</div>
+      </div>
+
+      <div class="opp-card priority-high">
+        <div class="opp-priority pri-high">🔴 高优先级 HIGH</div>
+        <h4>加拿大 — 新建管道集群：政府拨款项目集中进入采购期</h4>
+        <div class="opp-country">🇨🇦 加拿大 · MB / ON / SK / BC</div>
+        <div class="opp-detail">Manitoba 志愿者托儿项目获 $210 万拨款即将建设；Carleton Place（ON）获 $100 万+ 扩建拨款；Wellington Place 扩建开业 + Wellington County 扩展落地；Dauphin（MB）120 位 2027 秋开业；Moosomin（SK）Playfair 90 位开业；Kamloops（BC）市议会通过；Little Lions（Austin, MB）开工；Altona 新址开业。Manitoba 距全国基准尚缺 77,000 位，长期缺口明确。</div>
+        <div class="opp-action">→ 建立八项目清单逐一建档报价，政府拨款项目优先（付款确定性高）；Dauphin 等 2027 上半年交付项目提前介入设计阶段提供配置图；与省级协会（Child Care Coalition）及建设方建立联系，跟踪曼省扩建资金落地节点。</div>
+      </div>
+
+      <div class="opp-card priority-mid">
+        <div class="opp-priority pri-mid">🟡 中优先级 MEDIUM</div>
+        <h4>澳英双国 — 安防合规升级：CCTV 强制化 + 整改潮的设施改造需求</h4>
+        <div class="opp-country">🇦🇺🇬🇧 澳大利亚 / 英国 · 全国</div>
+        <div class="opp-detail">澳联邦发布 300+ 机构 CCTV 评估、教育部长会议拟设 Early Learning Commission 与强制 CCTV；NSW 近 400 园 NQS 不达标、6,000+ 机构限期两周整改、罚款 $3,420-$51,600；英国强制 CCTV 决定明年初出台、Ofsted 一日两停业一逮捕、新检查框架重塑 room setup。「合规升级 → 设施改造」是当前最确定的存量需求。</div>
+        <div class="opp-action">→ 开发「安防合规改造配置方案」（预留走线槽、监控友好布局、防撞软包、易清洁材质）；产品资料突出安全标准与安防兼容性作为差异化卖点；对 NSW 390 家不达标园所做定向整改营销，CCTV 决定落地前抢先推送预算。</div>
+      </div>
+
+      <div class="opp-card priority-mid">
+        <div class="opp-priority pri-mid">🟡 中优先级 MEDIUM</div>
+        <h4>澳大利亚 — 易主翻新窗口：物业换手与连锁转手的集中翻新</h4>
+        <div class="opp-country">🇦🇺 澳大利亚 · NSW / SA / WA / QLD</div>
+        <div class="opp-detail">托儿物业两天成交 $1,860 万（Rochedale South $500 万海外买家、阿德莱德内北 $700 万、Murray Bridge $660 万）；YMCA Acacia Ridge 75 位中心关闭转手在即；Uplyft 退出 Mount Barker/Katanning（Katanning 或与 Gowrie WA 67 位新园衔接）；Goodstart 收购昆州困境园。新业主接手后 3-6 个月内通常集中翻新。</div>
+        <div class="opp-action">→ 建立「换手园所跟进表」按买家/新运营方逐一建档；与 realestatesource 类物业经纪建立转介关系；主推 3-6 个月快速翻新包（含午睡区、餐饮角、多功能活动家具），按新业主预算分级报价。</div>
+      </div>
+
+      <div class="opp-card priority-mid">
+        <div class="opp-priority pri-mid">🟡 中优先级 MEDIUM</div>
+        <h4>新加坡 — MOE 全日制试点 + SJI 扩容：功能重组与扩容配套</h4>
+        <div class="opp-country">🇸🇬 新加坡 · 全国</div>
+        <div class="opp-detail">MOE 幼儿园全日制模式 2027 年在 2 所中心试点（2030 年前全部全日制）= 教室功能重组、午睡/餐饮/活动区改造；SJI International Preschool 扩大双语课程带动扩容配套；婴儿托育 2030 年前增聘 1,800 教师拉动 infant care 品类；REACH Reggio Emilia 大会与 EtonHouse×Reggio 合作深化带动环境升级需求。</div>
+        <div class="opp-action">→ 对接 2 所 MOE 试点园采购/装修时间表，推全日制空间方案（午睡区、餐饮角、多功能活动家具）；单列 infant care 品类（婴儿床、护理台、爬行垫、矮柜）投标扩容项目；以瑞吉欧「环境作为第三位教师」话术切入理念升级型客户。</div>
+      </div>
+
+      <div class="opp-card priority-watch">
+        <div class="opp-priority pri-watch">🔵 关注 WATCH</div>
+        <h4>新西兰 — 成本敏感期的产品线策略：高性价比 + 教具升级</h4>
+        <div class="opp-country">🇳🇿 新西兰 · 全国</div>
+        <div class="opp-detail">工资平权抗议升温（数百人集会、Masterton 罢工）令园所成本压力高企；养育成本上涨引发社会关注；PTE 师资崛起与幼教科技产品（Coactive 口语筛查）渗透带来新渠道；行业财务危机持续（或有 400 家中心面临关闭）——需求收缩但翻新/整并机会并存。</div>
+        <div class="opp-action">→ 营销话术转向「高性价比/耐用/低维护」产品线（5-8 年质保卖点）；经 ChildForum/OECE 渠道触达 PTE 培训机构与新办园所；对存活园所建立翻新跟进表，大额订单要求预付款规避信用风险。</div>
+      </div>
+
+      <div class="opp-card priority-watch">
+        <div class="opp-priority pri-watch">🔵 关注 WATCH</div>
+        <h4>英国 — 地方政府易主与收缩：私有化翻新机会与信用风险并存</h4>
+        <div class="opp-country">🇬🇧 英格兰 / 威尔士 · Barnsley / Carmarthenshire</div>
+        <div class="opp-detail">Barnsley 六家园因养老金争议罢工关闭，Reform 党市政拟私有化市属托儿所——易主后通常标准化翻新；威尔士 Carmarthenshire 学校关闭计划威胁多个托儿所与游戏小组；伦敦一园在 Ofsted 投诉后突然关停。区域供给收缩与易主并行，机会与信用风险共存。</div>
+        <div class="opp-action">→ 跟踪 Barnsley 私有化招标进程，易主后 3 个月内推送标准化翻新方案；市政/困境资产项目要求预付款或信用证结算；对威尔士等收缩市场仅跟进政府资金支持项目，控制应收敞口。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p>West Shore Furniture · ECE Market Intelligence · <a href="https://westshorefurniture.com">westshorefurniture.com</a></p>
+    <p style="margin-top: 6px;">Report #27 · 2026年11月9日至11月13日 · Data sources: Daily cron reports (Nov 9 – Nov 13), Blogwatcher RSS, Google News RSS, The Sector AU, ABC News AU, News Corp, Daily Telegraph AU, SMH, realestatesource, Business News Australia, The Conversation, UQ News, Straits Times, CNA, Stomp, Human Resources Online, Nursery World, GOV.UK/DfE/Ofsted, BGF, Savills, Christie &amp; Co, The Guardian, BBC, Yahoo UK, Childcare Canada, Brandon Sun, Castanet, Today's Parent, OECE NZ, ChildForum, NZ Herald, Stuff</p>
+  </div>
+</div>
+
+<script>
+function switchTab(id) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('panel-' + id).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>
